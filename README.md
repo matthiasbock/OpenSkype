@@ -4,7 +4,8 @@ OpenSkype
 Welcome to OpenSkype!
 
 In this project we analyze and document the non-free Skype client's functionalities
-and try to implement an Open Source client.
+and try to implement an Open Source client,
+which is interoperable with other VoIP clients.
 
 Find the Wiki here:
 https://github.com/matthiasbock/OpenSkype/wiki
