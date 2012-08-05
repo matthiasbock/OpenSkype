@@ -1,0 +1,2596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pricelist version="1.0" language="de" currency="EUR" country="DE">
+ <destination default="false" country="AF" name="Afghanistan">
+  <termination name="Afghanistan">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-af-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AL" name="Albanien">
+  <termination name="Albanien">
+   <payg price="14,2 Cent" price-vat="16,3 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-al-60-1m"/>
+  </termination>
+  <termination name="Albanien – Mobilfunknetz">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DZ" name="Algerien">
+  <termination name="Algerien">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-dz-60-1m"/>
+  </termination>
+  <termination name="Algerien – Algier">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-dz-60-1m"/>
+  </termination>
+  <termination name="Algerien – Mobilfunknetz">
+   <payg price="27,2 Cent" price-vat="31,3 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-dz-60-1m"/>
+  </termination>
+  <termination name="Algerien – Mobilfunknetz – Wataniya">
+   <payg price="27 Cent" price-vat="31,1 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-dz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AS" name="Amerikanisch-Samoa">
+  <termination name="Amerikanisch-Samoa">
+   <payg price="8,5 Cent" price-vat="9,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VI" name="Amerikanische Jungferninseln">
+  <termination name="Amerikanische Jungferninseln">
+   <payg price="5 Cent" price-vat="5,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AD" name="Andorra">
+  <termination name="Andorra">
+   <payg price="4,5 Cent" price-vat="5,2 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-ad-120-1m"/>
+  </termination>
+  <termination name="Andorra – Mobilfunknetz">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ad-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AO" name="Angola">
+  <termination name="Angola">
+   <payg price="15 Cent" price-vat="17,3 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-ao-60-1m"/>
+  </termination>
+  <termination name="Angola – Mobilfunknetz">
+   <payg price="20,8 Cent" price-vat="23,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ao-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AI" name="Anguilla">
+  <termination name="Anguilla">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-ai-60-1m"/>
+  </termination>
+  <termination name="Anguilla – Mobilfunknetz">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ai-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AQ" name="Antarktis">
+  <termination name="Antarktis">
+   <payg price="€1,99" price-vat="€2,29"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AG" name="Antigua und Barbuda">
+  <termination name="Antigua und Barbuda">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ag-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AR" name="Argentinien">
+  <termination name="Argentinien">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€0,89" price-vat="€1,02" period="1 Monat" group="" id="package-global-country-landline-ar-60-1m"/>
+  </termination>
+  <termination name="Argentinien – Buenos Aires">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€0,89" price-vat="€1,02" period="1 Monat" group="" id="package-global-country-landline-ar-60-1m"/>
+  </termination>
+  <termination name="Argentinien – Córdoba">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€0,89" price-vat="€1,02" period="1 Monat" group="" id="package-global-country-landline-ar-60-1m"/>
+  </termination>
+  <termination name="Argentinien – Mobilfunknetz">
+   <payg price="18,9 Cent" price-vat="21,7 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mobile-ar-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AM" name="Armenien">
+  <termination name="Armenien">
+   <payg price="9 Cent" price-vat="10,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-am-60-1m"/>
+  </termination>
+  <termination name="Armenien – Erevan">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-am-60-1m"/>
+  </termination>
+  <termination name="Armenien – Mobilfunknetz">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-am-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AW" name="Aruba">
+  <termination name="Aruba">
+   <payg price="14,00 Cent" price-vat="16,1 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-aw-60-1m"/>
+  </termination>
+  <termination name="Aruba – Mobilfunknetz">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-aw-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AC" name="Ascension Inseln">
+  <termination name="Ascension Inseln">
+   <payg price="€1,20" price-vat="€1,38"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AZ" name="Aserbaidschan">
+  <termination name="Aserbaidschan">
+   <payg price="18 Cent" price-vat="20,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-landline-az-60-1m"/>
+  </termination>
+  <termination name="Aserbaidschan – Mobilfunknetz">
+   <payg price="19,7 Cent" price-vat="22,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-az-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AU" name="Australien">
+  <termination name="Australien">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-au-60-3m"/>
+  </termination>
+  <termination name="Australien – Canberra">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-au-60-3m"/>
+  </termination>
+  <termination name="Australien – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-au-60-3m"/>
+  </termination>
+  <termination name="Australien – Mobilfunknetz">
+   <payg price="16,8 Cent" price-vat="19,3 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-au-60-1m"/>
+  </termination>
+  <termination name="Australien – Shared Cost - 1300 prefix">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+  </termination>
+  <termination name="Australien – Special Service - 13 prefix">
+   <payg price="5,1 Cent" price-vat="5,9 Cent"/>
+  </termination>
+  <termination name="Australien – Sydney">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-au-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BS" name="Bahamas">
+  <termination name="Bahamas">
+   <payg price="9,9 Cent" price-vat="11,4 Cent"/>
+   <subscription price="€11,49" price-vat="€13,21" period="1 Monat" group="" id="package-global-country-mixed-bs-v2-120-1m"/>
+  </termination>
+  <termination name="Bahamas – Mobilfunknetz">
+   <payg price="19,9 Cent" price-vat="22,9 Cent"/>
+   <subscription price="€11,49" price-vat="€13,21" period="1 Monat" group="" id="package-global-country-mixed-bs-v2-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BH" name="Bahrain">
+  <termination name="Bahrain">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bh-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BD" name="Bangladesch">
+  <termination name="Bangladesch">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-bd-800-1m"/>
+  </termination>
+  <termination name="Bangladesch – Chittagong">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-bd-800-1m"/>
+  </termination>
+  <termination name="Bangladesch – Dhaka">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-bd-800-1m"/>
+  </termination>
+  <termination name="Bangladesch – Mobilfunknetz">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-bd-800-1m"/>
+  </termination>
+  <termination name="Bangladesch – Sylhet">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-bd-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BB" name="Barbados">
+  <termination name="Barbados">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-bb-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BY" name="Belarus">
+  <termination name="Belarus">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-by-60-1m"/>
+  </termination>
+  <termination name="Belarus – Minsk">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-by-60-1m"/>
+  </termination>
+  <termination name="Belarus – Mobilfunknetz">
+   <payg price="22,5 Cent" price-vat="25,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-by-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BE" name="Belgien">
+  <termination name="Belgien">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-be-60-3m"/>
+  </termination>
+  <termination name="Belgien – Mobilfunknetz">
+   <payg price="22 Cent" price-vat="25,3 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-be-60-1m"/>
+  </termination>
+  <termination name="Belgien – Mobilfunknetz – Proximus">
+   <payg price="14,8 Cent" price-vat="17 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-be-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BZ" name="Belize">
+  <termination name="Belize">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BJ" name="Benin">
+  <termination name="Benin">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bj-60-1m"/>
+  </termination>
+  <termination name="Benin – Mobilfunknetz">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bj-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BM" name="Bermuda">
+  <termination name="Bermuda">
+   <payg price="9 Cent" price-vat="10,4 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-bm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BT" name="Bhutan">
+  <termination name="Bhutan">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bt-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BO" name="Bolivien">
+  <termination name="Bolivien">
+   <payg price="12,8 Cent" price-vat="14,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-bo-60-1m"/>
+  </termination>
+  <termination name="Bolivien – Cochabamba">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-bo-60-1m"/>
+  </termination>
+  <termination name="Bolivien – La Paz">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-bo-60-1m"/>
+  </termination>
+  <termination name="Bolivien – Mobilfunknetz">
+   <payg price="14,2 Cent" price-vat="16,3 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-bo-60-1m"/>
+  </termination>
+  <termination name="Bolivien – Santa Cruz">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-bo-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BA" name="Bosnien und Herzegowina">
+  <termination name="Bosnien und Herzegowina">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-ba-60-1m"/>
+  </termination>
+  <termination name="Bosnien und Herzegowina – Mobilfunknetz">
+   <payg price="27 Cent" price-vat="31,1 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-ba-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BW" name="Botsuana">
+  <termination name="Botsuana">
+   <payg price="13 Cent" price-vat="15 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-bw-60-1m"/>
+  </termination>
+  <termination name="Botsuana – Mobilfunknetz">
+   <payg price="18,7 Cent" price-vat="21,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-bw-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BR" name="Brasilien">
+  <termination name="Brasilien">
+   <payg price="4,6 Cent" price-vat="5,3 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-br-unlimited-1m"/>
+  </termination>
+  <termination name="Brasilien – Mobilfunknetz">
+   <payg price="17,9 Cent" price-vat="20,6 Cent"/>
+   <subscription price="€36,99" price-vat="€42,54" period="1 Monat" group="" id="package-global-country-mobile-br-400-1m"/>
+  </termination>
+  <termination name="Brasilien – Rio de Janeiro">
+   <payg price="3 Cent" price-vat="3,5 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-br-unlimited-1m"/>
+  </termination>
+  <termination name="Brasilien – São Paulo">
+   <payg price="2,3 Cent" price-vat="2,6 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-br-unlimited-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VG" name="Britische Jungferninseln">
+  <termination name="Britische Jungferninseln">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+  </termination>
+  <termination name="Britische Jungferninseln – Mobilfunknetz">
+   <payg price="18,5 Cent" price-vat="21,3 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IO" name="Britisches Territorium im Indischen Ozean">
+  <termination name="Britisches Territorium im Indischen Ozean">
+   <payg price="€1,51" price-vat="€1,74"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BN" name="Brunei Darussalam">
+  <termination name="Brunei Darussalam">
+   <payg price="14,00 Cent" price-vat="16,1 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-bn-120-1m"/>
+  </termination>
+  <termination name="Brunei Darussalam – Mobilfunknetz">
+   <payg price="12,5 Cent" price-vat="14,4 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-bn-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BG" name="Bulgarien">
+  <termination name="Bulgarien">
+   <payg price="5,5 Cent" price-vat="6,3 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-bg-120-1m"/>
+  </termination>
+  <termination name="Bulgarien – Mobilfunknetz">
+   <payg price="27 Cent" price-vat="31,1 Cent"/>
+  </termination>
+  <termination name="Bulgarien – Sofia">
+   <payg price="3,6 Cent" price-vat="4,1 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-bg-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BF" name="Burkina Faso">
+  <termination name="Burkina Faso">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-bf-60-1m"/>
+  </termination>
+  <termination name="Burkina Faso – Mobilfunknetz">
+   <payg price="29 Cent" price-vat="33,4 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-bf-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="BI" name="Burundi">
+  <termination name="Burundi">
+   <payg price="12,5 Cent" price-vat="14,4 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-bi-60-1m"/>
+  </termination>
+  <termination name="Burundi – Mobilfunknetz">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-bi-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CL" name="Chile">
+  <termination name="Chile">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-cl-60-3m"/>
+  </termination>
+  <termination name="Chile – Mobilfunknetz">
+   <payg price="18,9 Cent" price-vat="21,7 Cent"/>
+   <subscription price="€22,99" price-vat="€26,44" period="1 Monat" group="" id="package-global-country-mobile-cl-400-1m"/>
+  </termination>
+  <termination name="Chile – Santiago">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-cl-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CN" name="China">
+  <termination name="China">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+  <termination name="China – Beijing">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+  <termination name="China – Guangzhou">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+  <termination name="China – Mobilfunknetz">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+  <termination name="China – Schanghai">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+  <termination name="China – Shenzhen">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-cn-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CK" name="Cookinseln">
+  <termination name="Cookinseln">
+   <payg price="71 Cent" price-vat="81,70 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CR" name="Costa Rica">
+  <termination name="Costa Rica">
+   <payg price="5,8 Cent" price-vat="6,7 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-cr-120-1m"/>
+  </termination>
+  <termination name="Costa Rica – Mobilfunknetz">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-cr-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CI" name="Côte d’Ivoire">
+  <termination name="Côte d’Ivoire">
+   <payg price="18 Cent" price-vat="20,7 Cent"/>
+  </termination>
+  <termination name="Côte d’Ivoire – Mobilfunknetz">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CD" name="Demokratische Republik Kongo">
+  <termination name="Demokratische Republik Kongo">
+   <payg price="30,5 Cent" price-vat="35,10 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cd-60-1m"/>
+  </termination>
+  <termination name="Demokratische Republik Kongo – Mobile - Tatem">
+   <payg price="39 Cent" price-vat="44,9 Cent"/>
+  </termination>
+  <termination name="Demokratische Republik Kongo – Mobilfunknetz">
+   <payg price="28,5 Cent" price-vat="32,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cd-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KP" name="Demokratische Volksrepublik Korea">
+  <termination name="Demokratische Volksrepublik Korea">
+   <payg price="57,00 Cent" price-vat="65,60 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DE" name="Deutschland">
+  <termination name="Deutschland">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-de-60-3m"/>
+  </termination>
+  <termination name="Deutschland – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-de-60-3m"/>
+  </termination>
+  <termination name="Deutschland – Mobilfunknetz – Sonstige">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-de-v2-400-1m"/>
+  </termination>
+  <termination name="Deutschland – Mobilfunknetz – T-Mobile">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-de-v2-400-1m"/>
+  </termination>
+  <termination name="Deutschland – Mobilfunknetz – Vodafone">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-de-v2-400-1m"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost - 0180">
+   <payg price="4 Cent" price-vat="4,6 Cent"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost 1 - 01801">
+   <payg price="5 Cent" price-vat="5,8 Cent"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost 2 - 01802">
+   <payg price="4,5 Cent" price-vat="5,2 Cent"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost 3 - 01803">
+   <payg price="11 Cent" price-vat="12,7 Cent"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost 4 - 01804">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+  </termination>
+  <termination name="Deutschland – Shared Cost 5 - 01805">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DM" name="Dominica">
+  <termination name="Dominica">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-dm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DO" name="Dominikanische Republik">
+  <termination name="Dominikanische Republik">
+   <payg price="6,6 Cent" price-vat="7,6 Cent"/>
+   <subscription price="€29,99" price-vat="€34,49" period="1 Monat" group="" id="package-global-country-landline-do-unlimited-1m"/>
+  </termination>
+  <termination name="Dominikanische Republik – Mobilfunknetz">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-mobile-do-400-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DJ" name="Dschibuti">
+  <termination name="Dschibuti">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="DK" name="Dänemark">
+  <termination name="Dänemark">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-dk-60-3m"/>
+  </termination>
+  <termination name="Dänemark – Geteilte Kosten">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-dk-60-3m"/>
+  </termination>
+  <termination name="Dänemark – Mobilfunknetz">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-dk-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="EC" name="Ecuador">
+  <termination name="Ecuador">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-ec-60-1m"/>
+  </termination>
+  <termination name="Ecuador – Cuenca">
+   <payg price="14,5 Cent" price-vat="16,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-ec-60-1m"/>
+  </termination>
+  <termination name="Ecuador – Guayaquil">
+   <payg price="14,5 Cent" price-vat="16,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-ec-60-1m"/>
+  </termination>
+  <termination name="Ecuador – Mobilfunknetz">
+   <payg price="20,5 Cent" price-vat="23,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ec-60-1m"/>
+  </termination>
+  <termination name="Ecuador – Quito">
+   <payg price="14,5 Cent" price-vat="16,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-ec-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SV" name="El Salvador">
+  <termination name="El Salvador">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€6,99" price-vat="€8,04" period="1 Monat" group="" id="package-global-country-mixed-sv-v2-60-1m"/>
+  </termination>
+  <termination name="El Salvador – Mobilfunknetz">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€6,99" price-vat="€8,04" period="1 Monat" group="" id="package-global-country-mixed-sv-v2-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ER" name="Eritrea">
+  <termination name="Eritrea">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-er-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="EE" name="Estland">
+  <termination name="Estland">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-ee-60-3m"/>
+  </termination>
+  <termination name="Estland – Mobilfunknetz">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ee-60-1m"/>
+  </termination>
+  <termination name="Estland – Privatnummer">
+   <payg price="45,5 Cent" price-vat="52,3 Cent"/>
+  </termination>
+  <termination name="Estland – Toll Free">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FK" name="Falklandinseln">
+  <termination name="Falklandinseln">
+   <payg price="57,00 Cent" price-vat="65,60 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FJ" name="Fidschi">
+  <termination name="Fidschi">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-fj-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FI" name="Finnland">
+  <termination name="Finnland">
+   <payg price="3,5 Cent" price-vat="4 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Finnland – Geschäftsnummer">
+   <payg price="3,5 Cent" price-vat="4 Cent"/>
+  </termination>
+  <termination name="Finnland – Helsinki">
+   <payg price="3,5 Cent" price-vat="4 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Finnland – Mobilfunknetz">
+   <payg price="16,8 Cent" price-vat="19,3 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-fi-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FR" name="Frankreich">
+  <termination name="Frankreich">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-fr-60-3m"/>
+  </termination>
+  <termination name="Frankreich – 0891">
+   <payg price="25,5 Cent" price-vat="29,3 Cent"/>
+  </termination>
+  <termination name="Frankreich – 0892">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+  <termination name="Frankreich – 0893">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+  <termination name="Frankreich – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-fr-60-3m"/>
+  </termination>
+  <termination name="Frankreich – Geteilte Kosten">
+   <payg price="17,5 Cent" price-vat="20,1 Cent"/>
+  </termination>
+  <termination name="Frankreich – Mobilfunknetz">
+   <payg price="16,9 Cent" price-vat="19,4 Cent"/>
+   <subscription price="€17,49" price-vat="€20,11" period="1 Monat" group="" id="package-global-country-mixed-fr-v2-400-1m"/>
+  </termination>
+  <termination name="Frankreich – Paris">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-fr-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GF" name="Französisch-Guayana">
+  <termination name="Französisch-Guayana">
+   <payg price="21,5 Cent" price-vat="24,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-landline-gf-60-1m"/>
+  </termination>
+  <termination name="Französisch-Guayana – Mobilfunknetz">
+   <payg price="25,8 Cent" price-vat="29,7 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-gf-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PF" name="Französisch-Polynesien">
+  <termination name="Französisch-Polynesien">
+   <payg price="25 Cent" price-vat="28,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FO" name="Färöer">
+  <termination name="Färöer">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+  </termination>
+  <termination name="Färöer – Mobilfunknetz">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GA" name="Gabun">
+  <termination name="Gabun">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+  <termination name="Gabun – Mobilfunknetz">
+   <payg price="41 Cent" price-vat="47,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GM" name="Gambia">
+  <termination name="Gambia">
+   <payg price="35 Cent" price-vat="40,3 Cent"/>
+  </termination>
+  <termination name="Gambia – Mobilfunknetz">
+   <payg price="34,8 Cent" price-vat="40 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GE" name="Georgien">
+  <termination name="Georgien">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-ge-120-1m"/>
+  </termination>
+  <termination name="Georgien – Mobilfunknetz">
+   <payg price="16,2 Cent" price-vat="18,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ge-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GH" name="Ghana">
+  <termination name="Ghana">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+   <subscription price="€7,49" price-vat="€8,61" period="1 Monat" group="" id="package-global-country-mixed-gh-v2-60-1m"/>
+  </termination>
+  <termination name="Ghana – Accra">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+   <subscription price="€7,49" price-vat="€8,61" period="1 Monat" group="" id="package-global-country-mixed-gh-v2-60-1m"/>
+  </termination>
+  <termination name="Ghana – Mobilfunknetz">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+   <subscription price="€7,49" price-vat="€8,61" period="1 Monat" group="" id="package-global-country-mixed-gh-v2-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GI" name="Gibraltar">
+  <termination name="Gibraltar">
+   <payg price="7,00 Cent" price-vat="8,1 Cent"/>
+  </termination>
+  <termination name="Gibraltar – Mobilfunknetz">
+   <payg price="26 Cent" price-vat="29,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GD" name="Grenada">
+  <termination name="Grenada">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+  </termination>
+  <termination name="Grenada – Mobilfunknetz">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GR" name="Griechenland">
+  <termination name="Griechenland">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-gr-60-3m"/>
+  </termination>
+  <termination name="Griechenland – Athen">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-gr-60-3m"/>
+  </termination>
+  <termination name="Griechenland – Mobilfunknetz – Cosmote">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gr-60-1m"/>
+  </termination>
+  <termination name="Griechenland – Mobilfunknetz – Q Telecom">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gr-60-1m"/>
+  </termination>
+  <termination name="Griechenland – Mobilfunknetz – Sonstige">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gr-60-1m"/>
+  </termination>
+  <termination name="Griechenland – Mobilfunknetz – Telestet">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gr-60-1m"/>
+  </termination>
+  <termination name="Griechenland – Mobilfunknetz – Vodafone">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gr-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GL" name="Grönland">
+  <termination name="Grönland">
+   <payg price="47 Cent" price-vat="54,1 Cent"/>
+  </termination>
+  <termination name="Grönland – Mobilfunknetz">
+   <payg price="48 Cent" price-vat="55,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GP" name="Guadeloupe">
+  <termination name="Guadeloupe">
+   <payg price="8,2 Cent" price-vat="9,4 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-gp-120-1m"/>
+  </termination>
+  <termination name="Guadeloupe – Mobilfunknetz">
+   <payg price="27 Cent" price-vat="31,1 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-gp-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GU" name="Guam">
+  <termination name="Guam">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GT" name="Guatemala">
+  <termination name="Guatemala">
+   <payg price="10,6 Cent" price-vat="12,2 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-gt-60-1m"/>
+  </termination>
+  <termination name="Guatemala – Mobilfunknetz">
+   <payg price="11,3 Cent" price-vat="13 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-country-mixed-gt-v2-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GN" name="Guinea">
+  <termination name="Guinea">
+   <payg price="35 Cent" price-vat="40,3 Cent"/>
+  </termination>
+  <termination name="Guinea – Mobilfunknetz">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GW" name="Guinea-Bissau">
+  <termination name="Guinea-Bissau – Bissau">
+   <payg price="89 Cent" price-vat="€1,02"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GY" name="Guyana">
+  <termination name="Guyana">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-gy-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="HT" name="Haiti">
+  <termination name="Haiti">
+   <payg price="21,8 Cent" price-vat="25,1 Cent"/>
+  </termination>
+  <termination name="Haiti – Mobilfunknetz">
+   <payg price="21,8 Cent" price-vat="25,1 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="HN" name="Honduras">
+  <termination name="Honduras">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-hn-60-1m"/>
+  </termination>
+  <termination name="Honduras – Mobilfunknetz">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-hn-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="HK" name="Hong Kong S.A.R., China">
+  <termination name="Hong Kong S.A.R., China">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-hk-60-3m"/>
+  </termination>
+  <termination name="Hong Kong S.A.R., China – Mobilfunknetz">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-hk-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SQ" name="INMARSAT">
+  <termination name="INMARSAT">
+   <payg price="€4,00" price-vat="€4,60"/>
+  </termination>
+  <termination name="Inmarsat – B">
+   <payg price="€1,80" price-vat="€2,07"/>
+  </termination>
+  <termination name="Inmarsat – B HSD">
+   <payg price="€4,00" price-vat="€4,60"/>
+  </termination>
+  <termination name="Inmarsat – BGAN">
+   <payg price="€1,80" price-vat="€2,07"/>
+  </termination>
+  <termination name="Inmarsat – BGAN HSD">
+   <payg price="€4,00" price-vat="€4,60"/>
+  </termination>
+  <termination name="Inmarsat – GAN/FLEET/SWIFT HSD">
+   <payg price="€4,00" price-vat="€4,60"/>
+  </termination>
+  <termination name="Inmarsat – M">
+   <payg price="€1,80" price-vat="€2,07"/>
+  </termination>
+  <termination name="Inmarsat – MINI M/GAN/FLEET/SWIFT">
+   <payg price="€1,80" price-vat="€2,07"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IN" name="Indien">
+  <termination name="Indien">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Ahmedabad">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Bangaluru">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Hyderabad">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Madras">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Mobilfunknetz">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+  <termination name="Indien – Neu-Delhi">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€19,99" price-vat="€22,99" period="1 Monat" group="" id="package-global-country-mixed-in-v2-unlimited-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ID" name="Indonesien">
+  <termination name="Indonesien">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-id-800-1m"/>
+  </termination>
+  <termination name="Indonesien – Jakarta">
+   <payg price="3,5 Cent" price-vat="4 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-id-800-1m"/>
+  </termination>
+  <termination name="Indonesien – Mobilfunknetz">
+   <payg price="12,7 Cent" price-vat="14,6 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-id-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VO" name="International Networks (+883)">
+  <termination name="International Networks (+883)">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IZ" name="International Toll Free">
+  <termination name="International Toll Free">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IQ" name="Irak">
+  <termination name="Irak">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-iq-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IR" name="Iran">
+  <termination name="Iran">
+   <payg price="9,3 Cent" price-vat="10,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-ir-60-1m"/>
+  </termination>
+  <termination name="Iran – Mobilfunknetz">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-ir-60-1m"/>
+  </termination>
+  <termination name="Iran – Teheran">
+   <payg price="9,3 Cent" price-vat="10,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-ir-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IE" name="Irland">
+  <termination name="Irland">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-ie-60-3m"/>
+  </termination>
+  <termination name="Irland – Dublin">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-ie-60-3m"/>
+  </termination>
+  <termination name="Irland – Geteilte Kosten">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+  </termination>
+  <termination name="Irland – Mobilfunknetz">
+   <payg price="17,5 Cent" price-vat="20,1 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ie-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IS" name="Island">
+  <termination name="Island">
+   <payg price="2,7 Cent" price-vat="3,1 Cent"/>
+   <subscription price="€4,17" price-vat="€4,80" period="3 Monate" group="" id="package-global-country-landline-is-60-3m"/>
+  </termination>
+  <termination name="Island – Mobilfunknetz">
+   <payg price="24,5 Cent" price-vat="28,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-is-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IL" name="Israel">
+  <termination name="Israel">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-il-60-3m"/>
+  </termination>
+  <termination name="Israel – Jerusalem">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-il-60-3m"/>
+  </termination>
+  <termination name="Israel – Mobilfunknetz">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-il-60-1m"/>
+  </termination>
+  <termination name="Israel – Region Palästina">
+   <payg price="20,8 Cent" price-vat="23,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-il_ps-60-v2-1m"/>
+  </termination>
+  <termination name="Israel – Region Palästina – Mobilfunknetz">
+   <payg price="21,5 Cent" price-vat="24,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-il_ps-60-v2-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="IT" name="Italien">
+  <termination name="Italien">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-it-60-3m"/>
+  </termination>
+  <termination name="Italien – Mobilfunknetz">
+   <payg price="25 Cent" price-vat="28,8 Cent"/>
+   <subscription price="€34,99" price-vat="€40,24" period="1 Monat" group="" id="package-global-country-mixed-it-v2-400-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="JM" name="Jamaika">
+  <termination name="Jamaika">
+   <payg price="10,8 Cent" price-vat="12,4 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-jm-60-1m"/>
+  </termination>
+  <termination name="Jamaika – Mobilfunknetz">
+   <payg price="18,8 Cent" price-vat="21,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mobile-jm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="JP" name="Japan">
+  <termination name="Japan">
+   <payg price="2,3 Cent" price-vat="2,6 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-jp-60-3m"/>
+  </termination>
+  <termination name="Japan – Mobilfunknetz">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-jp-60-1m"/>
+  </termination>
+  <termination name="Japan – VOIP">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-jp-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="YE" name="Jemen">
+  <termination name="Jemen">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ye-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="JO" name="Jordanien">
+  <termination name="Jordanien">
+   <payg price="16,9 Cent" price-vat="19,4 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-jo-60-1m"/>
+  </termination>
+  <termination name="Jordanien – Mobilfunknetz">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-jo-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KY" name="Kaimaninseln">
+  <termination name="Kaimaninseln">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ky-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KH" name="Kambodscha">
+  <termination name="Kambodscha">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-kh-60-1m"/>
+  </termination>
+  <termination name="Kambodscha – Mobilfunknetz">
+   <payg price="22 Cent" price-vat="25,3 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-kh-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CM" name="Kamerun">
+  <termination name="Kamerun">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-landline-cm-60-1m"/>
+  </termination>
+  <termination name="Kamerun – Mobilfunknetz">
+   <payg price="22,8 Cent" price-vat="26,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-cm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CA" name="Kanada">
+  <termination name="Kanada">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-ca-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CV" name="Kap Verde">
+  <termination name="Kap Verde">
+   <payg price="25,5 Cent" price-vat="29,3 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cv-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KZ" name="Kasachstan">
+  <termination name="Kasachstan">
+   <payg price="14,8 Cent" price-vat="17 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-kz-60-1m"/>
+  </termination>
+  <termination name="Kasachstan – Mobilfunknetz">
+   <payg price="16,5 Cent" price-vat="19 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-kz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="QA" name="Katar">
+  <termination name="Katar">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-qa-60-1m"/>
+  </termination>
+  <termination name="Katar – Mobilfunknetz">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-qa-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KE" name="Kenia">
+  <termination name="Kenia">
+   <payg price="20,4 Cent" price-vat="23,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ke-60-1m"/>
+  </termination>
+  <termination name="Kenia – Mobilfunknetz">
+   <payg price="28,5 Cent" price-vat="32,8 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ke-60-1m"/>
+  </termination>
+  <termination name="Kenia – Mombasa">
+   <payg price="18,9 Cent" price-vat="21,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ke-60-1m"/>
+  </termination>
+  <termination name="Kenia – Nairobi">
+   <payg price="18,9 Cent" price-vat="21,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ke-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KG" name="Kirgisistan">
+  <termination name="Kirgisistan">
+   <payg price="11 Cent" price-vat="12,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-kg-60-1m"/>
+  </termination>
+  <termination name="Kirgisistan – Mobilfunknetz">
+   <payg price="11,9 Cent" price-vat="13,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-kg-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KI" name="Kiribati">
+  <termination name="Kiribati">
+   <payg price="63 Cent" price-vat="72,5 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CO" name="Kolumbien">
+  <termination name="Kolumbien">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Armenia">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Barranquilla">
+   <payg price="4,6 Cent" price-vat="5,3 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Bogotá">
+   <payg price="4,6 Cent" price-vat="5,3 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Cali">
+   <payg price="4,6 Cent" price-vat="5,3 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – LEX">
+   <payg price="15 Cent" price-vat="17,3 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Medellin">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+  <termination name="Kolumbien – Mobilfunknetz">
+   <payg price="8,6 Cent" price-vat="9,9 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mobile-co-60-1m"/>
+  </termination>
+  <termination name="Kolumbien – Pereira">
+   <payg price="7,8 Cent" price-vat="9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-landline-co-60-v2-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KM" name="Komoren">
+  <termination name="Komoren">
+   <payg price="47 Cent" price-vat="54,1 Cent"/>
+  </termination>
+  <termination name="Komoren – Mobilfunknetz">
+   <payg price="47 Cent" price-vat="54,1 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CG" name="Kongo">
+  <termination name="Kongo">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cg-60-1m"/>
+  </termination>
+  <termination name="Kongo – Mobilfunknetz">
+   <payg price="29,5 Cent" price-vat="33,90 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cg-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="HR" name="Kroatien">
+  <termination name="Kroatien">
+   <payg price="4,6 Cent" price-vat="5,3 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-hr-120-1m"/>
+  </termination>
+  <termination name="Kroatien – Mobilfunknetz">
+   <payg price="18,6 Cent" price-vat="21,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-hr-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CU" name="Kuba">
+  <termination name="Kuba">
+   <payg price="92 Cent" price-vat="€1,06"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KW" name="Kuwait">
+  <termination name="Kuwait">
+   <payg price="10,7 Cent" price-vat="12,3 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-kw-60-1m"/>
+  </termination>
+  <termination name="Kuwait – Mobilfunknetz">
+   <payg price="10,7 Cent" price-vat="12,3 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-kw-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LA" name="Laos">
+  <termination name="Laos">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-la-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LS" name="Lesotho">
+  <termination name="Lesotho">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-ls-60-1m"/>
+  </termination>
+  <termination name="Lesotho – Mobilfunknetz">
+   <payg price="29,5 Cent" price-vat="33,90 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-ls-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LV" name="Lettland">
+  <termination name="Lettland">
+   <payg price="5,3 Cent" price-vat="6,1 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-lv-120-1m"/>
+  </termination>
+  <termination name="Lettland – Mobilfunknetz">
+   <payg price="15,6 Cent" price-vat="17,9 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-lv-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LB" name="Libanon">
+  <termination name="Libanon">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-lb-60-1m"/>
+  </termination>
+  <termination name="Libanon – Mobilfunknetz">
+   <payg price="20,3 Cent" price-vat="23,3 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-lb-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LR" name="Liberia">
+  <termination name="Liberia">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-lr-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LY" name="Libyen">
+  <termination name="Libyen">
+   <payg price="24,2 Cent" price-vat="27,8 Cent"/>
+  </termination>
+  <termination name="Libyen – Mobilfunknetz">
+   <payg price="26,2 Cent" price-vat="30,10 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LI" name="Liechtenstein">
+  <termination name="Liechtenstein">
+   <payg price="5,5 Cent" price-vat="6,3 Cent"/>
+  </termination>
+  <termination name="Liechtenstein – Mobilfunknetz">
+   <payg price="41 Cent" price-vat="47,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LT" name="Litauen">
+  <termination name="Litauen">
+   <payg price="5,2 Cent" price-vat="6 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-lt-120-1m"/>
+  </termination>
+  <termination name="Litauen – Mobilfunknetz">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-lt-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LU" name="Luxemburg">
+  <termination name="Luxemburg">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-lu-60-3m"/>
+  </termination>
+  <termination name="Luxemburg – Mobilfunknetz">
+   <payg price="20,2 Cent" price-vat="23,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-lu-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MO" name="Macau S.A.R., China">
+  <termination name="Macau S.A.R., China">
+   <payg price="5,5 Cent" price-vat="6,3 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-mo-120-1m"/>
+  </termination>
+  <termination name="Macau S.A.R., China – Mobilfunknetz">
+   <payg price="7,5 Cent" price-vat="8,6 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-mo-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MG" name="Madagaskar">
+  <termination name="Madagaskar">
+   <payg price="32,4 Cent" price-vat="37,3 Cent"/>
+  </termination>
+  <termination name="Madagaskar – Mobilfunknetz">
+   <payg price="32,4 Cent" price-vat="37,3 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MW" name="Malawi">
+  <termination name="Malawi">
+   <payg price="11,1 Cent" price-vat="12,8 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-mw-60-1m"/>
+  </termination>
+  <termination name="Malawi – Mobilfunknetz">
+   <payg price="12,1 Cent" price-vat="13,9 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-mw-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MY" name="Malaysia">
+  <termination name="Malaysia">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-my-60-3m"/>
+  </termination>
+  <termination name="Malaysia – Kuala Lumpur">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-my-60-3m"/>
+  </termination>
+  <termination name="Malaysia – Mobilfunknetz">
+   <payg price="5,1 Cent" price-vat="5,9 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-my-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MV" name="Malediven">
+  <termination name="Malediven">
+   <payg price="50 Cent" price-vat="57,50 Cent"/>
+  </termination>
+  <termination name="Malediven – Mobilfunknetz">
+   <payg price="57,00 Cent" price-vat="65,60 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ML" name="Mali">
+  <termination name="Mali">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+  </termination>
+  <termination name="Mali – Bamako">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MT" name="Malta">
+  <termination name="Malta">
+   <payg price="11,6 Cent" price-vat="13,3 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-mt-60-1m"/>
+  </termination>
+  <termination name="Malta – Mobilfunknetz">
+   <payg price="20 Cent" price-vat="23 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-mt-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MA" name="Marokko">
+  <termination name="Marokko">
+   <payg price="21,3 Cent" price-vat="24,5 Cent"/>
+   <subscription price="€2,99" price-vat="€3,44" period="1 Monat" group="" id="package-global-country-landline-ma-v2-60-1m"/>
+  </termination>
+  <termination name="Marokko – Casablanca">
+   <payg price="21,3 Cent" price-vat="24,5 Cent"/>
+   <subscription price="€2,99" price-vat="€3,44" period="1 Monat" group="" id="package-global-country-landline-ma-v2-60-1m"/>
+  </termination>
+  <termination name="Marokko – Mobilfunknetz">
+   <payg price="29,2 Cent" price-vat="33,6 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-ma-60-1m"/>
+  </termination>
+  <termination name="Marokko – Rabat">
+   <payg price="21,3 Cent" price-vat="24,5 Cent"/>
+   <subscription price="€2,99" price-vat="€3,44" period="1 Monat" group="" id="package-global-country-landline-ma-v2-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MH" name="Marshallinseln">
+  <termination name="Marshallinseln">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-mh-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MQ" name="Martinique">
+  <termination name="Martinique">
+   <payg price="24,5 Cent" price-vat="28,2 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-mq-120-1m"/>
+  </termination>
+  <termination name="Martinique – Mobilfunknetz">
+   <payg price="25 Cent" price-vat="28,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MR" name="Mauretanien">
+  <termination name="Mauretanien">
+   <payg price="30,2 Cent" price-vat="34,7 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-mr-60-1m"/>
+  </termination>
+  <termination name="Mauretanien – Mobilfunknetz">
+   <payg price="49,3 Cent" price-vat="56,7 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-mr-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MU" name="Mauritius">
+  <termination name="Mauritius">
+   <payg price="17,2 Cent" price-vat="19,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-mu-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="YT" name="Mayotte">
+  <termination name="Mayotte">
+   <payg price="47 Cent" price-vat="54,1 Cent"/>
+  </termination>
+  <termination name="Mayotte – Mobilfunknetz">
+   <payg price="47 Cent" price-vat="54,1 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MK" name="Mazedonien">
+  <termination name="Mazedonien">
+   <payg price="18,2 Cent" price-vat="20,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-landline-mk-60-1m"/>
+  </termination>
+  <termination name="Mazedonien – Mobilfunknetz">
+   <payg price="31,5 Cent" price-vat="36,2 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-mk-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MX" name="Mexiko">
+  <termination name="Mexiko">
+   <payg price="8,5 Cent" price-vat="9,8 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-mx-unlimited-1m"/>
+  </termination>
+  <termination name="Mexiko – Guadalajara">
+   <payg price="2,6 Cent" price-vat="3 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-region-landline-mx_cities-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Mexiko – Mexiko-Stadt">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-region-landline-mx_cities-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Mexiko – Mobilfunknetz">
+   <payg price="26,7 Cent" price-vat="30,7 Cent"/>
+   <subscription price="€42,99" price-vat="€49,44" period="1 Monat" group="" id="package-global-country-mixed-mx-unlimited-1m"/>
+  </termination>
+  <termination name="Mexiko – Monterrey">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-region-landline-mx_cities-unlimited-nv-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="FM" name="Mikronesien">
+  <termination name="Mikronesien">
+   <payg price="29,5 Cent" price-vat="33,90 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MC" name="Monaco">
+  <termination name="Monaco">
+   <payg price="3,6 Cent" price-vat="4,1 Cent"/>
+   <subscription price="€4,17" price-vat="€4,80" period="3 Monate" group="" id="package-global-country-landline-mc-60-3m"/>
+  </termination>
+  <termination name="Monaco – Mobile-EX">
+   <payg price="25 Cent" price-vat="28,8 Cent"/>
+  </termination>
+  <termination name="Monaco – Mobilfunknetz">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MN" name="Mongolei">
+  <termination name="Mongolei">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-mn-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ME" name="Montenegro">
+  <termination name="Montenegro">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-me-60-1m"/>
+  </termination>
+  <termination name="Montenegro – Mobilfunknetz">
+   <payg price="23 Cent" price-vat="26,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-me-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MS" name="Montserrat">
+  <termination name="Montserrat">
+   <payg price="22 Cent" price-vat="25,3 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ms-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MZ" name="Mosambik">
+  <termination name="Mosambik">
+   <payg price="14,5 Cent" price-vat="16,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-mz-60-1m"/>
+  </termination>
+  <termination name="Mosambik – Mobilfunknetz">
+   <payg price="31 Cent" price-vat="35,7 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-mz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MM" name="Myanmar">
+  <termination name="Myanmar">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-mm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NA" name="Namibia">
+  <termination name="Namibia">
+   <payg price="17,2 Cent" price-vat="19,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-na-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NR" name="Nauru">
+  <termination name="Nauru">
+   <payg price="81 Cent" price-vat="93,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NP" name="Nepal">
+  <termination name="Nepal">
+   <payg price="28,5 Cent" price-vat="32,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-landline-np-60-1m"/>
+  </termination>
+  <termination name="Nepal – Kathmandu">
+   <payg price="27,5 Cent" price-vat="31,6 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-landline-np-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NC" name="Neukaledonien">
+  <termination name="Neukaledonien">
+   <payg price="29,8 Cent" price-vat="34,3 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-nc-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NZ" name="Neuseeland">
+  <termination name="Neuseeland">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€0,89" price-vat="€1,02" period="1 Monat" group="" id="package-global-country-landline-nz-60-1m"/>
+  </termination>
+  <termination name="Neuseeland – Mobilfunknetz">
+   <payg price="26 Cent" price-vat="29,9 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-nz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NI" name="Nicaragua">
+  <termination name="Nicaragua">
+   <payg price="19,2 Cent" price-vat="22,1 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ni-60-1m"/>
+  </termination>
+  <termination name="Nicaragua – Mobilfunknetz">
+   <payg price="20,3 Cent" price-vat="23,3 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ni-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NL" name="Niederlande">
+  <termination name="Niederlande">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-nl-60-3m"/>
+  </termination>
+  <termination name="Niederlande – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-nl-60-3m"/>
+  </termination>
+  <termination name="Niederlande – Mobilfunknetz">
+   <payg price="22,2 Cent" price-vat="25,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-nl-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AN" name="Niederländische Antillen">
+  <termination name="Niederländische Antillen">
+   <payg price="16,5 Cent" price-vat="19 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-an-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NE" name="Niger">
+  <termination name="Niger">
+   <payg price="18 Cent" price-vat="20,7 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ne-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NG" name="Nigeria">
+  <termination name="Nigeria">
+   <payg price="13 Cent" price-vat="15 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+  <termination name="Nigeria – Lagos">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+  <termination name="Nigeria – Mobilfunknetz – ECONET">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+  <termination name="Nigeria – Mobilfunknetz – Globacom">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+  <termination name="Nigeria – Mobilfunknetz – MTN">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+  <termination name="Nigeria – Mobilfunknetz – Sonstige">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€3,99" price-vat="€4,59" period="1 Monat" group="" id="package-global-country-mixed-ng-v2-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NU" name="Niue">
+  <termination name="Niue">
+   <payg price="90 Cent" price-vat="€1,04"/>
+  </termination>
+ </destination>
+ <destination default="false" country="NO" name="Norwegen">
+  <termination name="Norwegen">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-no-60-3m"/>
+  </termination>
+  <termination name="Norwegen – Geteilte Kosten">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+  </termination>
+  <termination name="Norwegen – Mobilfunknetz">
+   <payg price="17,8 Cent" price-vat="20,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-no-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MP" name="Nördliche Marianen">
+  <termination name="Nördliche Marianen">
+   <payg price="3,6 Cent" price-vat="4,1 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="OM" name="Oman">
+  <termination name="Oman">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-om-60-1m"/>
+  </termination>
+  <termination name="Oman – Mobilfunknetz">
+   <payg price="25,2 Cent" price-vat="29 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-om-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TL" name="Osttimor">
+  <termination name="Osttimor">
+   <payg price="€1,17" price-vat="€1,35"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PK" name="Pakistan">
+  <termination name="Pakistan">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-pk-800-1m"/>
+  </termination>
+  <termination name="Pakistan – Islamabad">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-pk-800-1m"/>
+  </termination>
+  <termination name="Pakistan – Karachi">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-pk-800-1m"/>
+  </termination>
+  <termination name="Pakistan – Lahore">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-pk-800-1m"/>
+  </termination>
+  <termination name="Pakistan – Mobilfunknetz">
+   <payg price="10,2 Cent" price-vat="11,7 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-mixed-pk-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PW" name="Palau">
+  <termination name="Palau">
+   <payg price="35 Cent" price-vat="40,3 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PS" name="Palästinensische Gebiete">
+  <termination name="Palästinensische Gebiete">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-il_ps-60-v2-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PA" name="Panama">
+  <termination name="Panama">
+   <payg price="9 Cent" price-vat="10,4 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-pa-60-1m"/>
+  </termination>
+  <termination name="Panama – Mobilfunknetz">
+   <payg price="16,2 Cent" price-vat="18,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-pa-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PG" name="Papua-Neuguinea">
+  <termination name="Papua-Neuguinea">
+   <payg price="67 Cent" price-vat="77,10 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PY" name="Paraguay">
+  <termination name="Paraguay">
+   <payg price="12,4 Cent" price-vat="14,3 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-py-60-1m"/>
+  </termination>
+  <termination name="Paraguay – Asunción">
+   <payg price="10,1 Cent" price-vat="11,6 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-py-60-1m"/>
+  </termination>
+  <termination name="Paraguay – Mobilfunknetz">
+   <payg price="18,9 Cent" price-vat="21,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-py-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PE" name="Peru">
+  <termination name="Peru">
+   <payg price="6,8 Cent" price-vat="7,8 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-pe-unlimited-1m"/>
+  </termination>
+  <termination name="Peru – Lima">
+   <payg price="2,5 Cent" price-vat="2,9 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-pe-unlimited-1m"/>
+  </termination>
+  <termination name="Peru – Mobilfunknetz">
+   <payg price="25,5 Cent" price-vat="29,3 Cent"/>
+   <subscription price="€29,99" price-vat="€34,49" period="1 Monat" group="" id="package-global-country-mobile-pe-400-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PH" name="Philippinen">
+  <termination name="Philippinen">
+   <payg price="16,1 Cent" price-vat="18,5 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-landline-ph-800-1m"/>
+  </termination>
+  <termination name="Philippinen – Cebu">
+   <payg price="16,1 Cent" price-vat="18,5 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-landline-ph-800-1m"/>
+  </termination>
+  <termination name="Philippinen – Manila">
+   <payg price="16,1 Cent" price-vat="18,5 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-landline-ph-800-1m"/>
+  </termination>
+  <termination name="Philippinen – Mobilfunknetz">
+   <payg price="20,2 Cent" price-vat="23,2 Cent"/>
+   <subscription price="€55,49" price-vat="€63,81" period="1 Monat" group="" id="package-global-country-mixed-ph-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PL" name="Polen">
+  <termination name="Polen">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-pl-60-3m"/>
+  </termination>
+  <termination name="Polen – Danzig">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-pl-60-3m"/>
+  </termination>
+  <termination name="Polen – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-pl-60-3m"/>
+  </termination>
+  <termination name="Polen – Mobilfunknetz">
+   <payg price="20,8 Cent" price-vat="23,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-pl-60-1m"/>
+  </termination>
+  <termination name="Polen – Warschau">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-pl-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PT" name="Portugal">
+  <termination name="Portugal">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-pt-60-3m"/>
+  </termination>
+  <termination name="Portugal – Mobilfunknetz">
+   <payg price="24,9 Cent" price-vat="28,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-pt-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PR" name="Puerto Rico">
+  <termination name="Puerto Rico">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KR" name="Republik Korea">
+  <termination name="Republik Korea">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-kr-60-3m"/>
+  </termination>
+  <termination name="Republik Korea – Mobilfunknetz">
+   <payg price="6,1 Cent" price-vat="7,00 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-kr-120-1m"/>
+  </termination>
+  <termination name="Republik Korea – Seoul">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-kr-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="MD" name="Republik Moldau">
+  <termination name="Republik Moldau">
+   <payg price="13,5 Cent" price-vat="15,5 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-md-60-1m"/>
+  </termination>
+  <termination name="Republik Moldau – Mobilfunknetz">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-md-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="RW" name="Ruanda">
+  <termination name="Ruanda">
+   <payg price="16,5 Cent" price-vat="19 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-rw-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="RO" name="Rumänien">
+  <termination name="Rumänien">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-ro-60-1m"/>
+  </termination>
+  <termination name="Rumänien – Bukarest">
+   <payg price="8,2 Cent" price-vat="9,4 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-ro-60-1m"/>
+  </termination>
+  <termination name="Rumänien – Mobilfunknetz">
+   <payg price="24,5 Cent" price-vat="28,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-ro-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="RU" name="Russische Föderation">
+  <termination name="Russische Föderation">
+   <payg price="4,3 Cent" price-vat="4,9 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-ru-unlimited-1m"/>
+  </termination>
+  <termination name="Russische Föderation – Mobilfunknetz">
+   <payg price="6,9 Cent" price-vat="7,9 Cent"/>
+   <subscription price="€24,99" price-vat="€28,74" period="1 Monat" group="" id="package-global-country-mixed-ru-unlimited-1m"/>
+  </termination>
+  <termination name="Russische Föderation – Moskau">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Russische Föderation – St. Petersburg">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="RE" name="Réunion">
+  <termination name="Réunion">
+   <payg price="13,1 Cent" price-vat="15,1 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-landline-re-60-1m"/>
+  </termination>
+  <termination name="Réunion – Mobilfunknetz">
+   <payg price="26 Cent" price-vat="29,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SB" name="Salomonen">
+  <termination name="Salomonen">
+   <payg price="95 Cent" price-vat="€1,09"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ZM" name="Sambia">
+  <termination name="Sambia">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-zm-60-1m"/>
+  </termination>
+  <termination name="Sambia – Mobilfunknetz">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-zm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="WS" name="Samoa">
+  <termination name="Samoa">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SM" name="San Marino">
+  <termination name="San Marino">
+   <payg price="3,3 Cent" price-vat="3,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SA" name="Saudi-Arabien">
+  <termination name="Saudi-Arabien">
+   <payg price="20,4 Cent" price-vat="23,5 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sa-60-1m"/>
+  </termination>
+  <termination name="Saudi-Arabien – Jeddah">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sa-60-1m"/>
+  </termination>
+  <termination name="Saudi-Arabien – Makkah">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sa-60-1m"/>
+  </termination>
+  <termination name="Saudi-Arabien – Mobilfunknetz">
+   <payg price="21,8 Cent" price-vat="25,1 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sa-60-1m"/>
+  </termination>
+  <termination name="Saudi-Arabien – Riad">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sa-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SE" name="Schweden">
+  <termination name="Schweden">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-se-60-3m"/>
+  </termination>
+  <termination name="Schweden – Geteilte Kosten">
+   <payg price="3,1 Cent" price-vat="3,6 Cent"/>
+  </termination>
+  <termination name="Schweden – Mobilfunknetz">
+   <payg price="23,8 Cent" price-vat="27,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-se-60-1m"/>
+  </termination>
+  <termination name="Schweden – Mobilfunknetz – Telia">
+   <payg price="23,8 Cent" price-vat="27,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-se-60-1m"/>
+  </termination>
+  <termination name="Schweden – Stockholm">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-se-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CH" name="Schweiz">
+  <termination name="Schweiz">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€0,89" price-vat="€1,02" period="1 Monat" group="" id="package-global-country-landline-ch-60-1m"/>
+  </termination>
+  <termination name="Schweiz – Gratistelefon">
+   <payg price="2,1 Cent" price-vat="2,4 Cent"/>
+  </termination>
+  <termination name="Schweiz – Mobilfunknetz">
+   <payg price="30,9 Cent" price-vat="35,5 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-ch-60-1m"/>
+  </termination>
+  <termination name="Schweiz – Shared Cost">
+   <payg price="2,5 Cent" price-vat="2,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SN" name="Senegal">
+  <termination name="Senegal">
+   <payg price="31,2 Cent" price-vat="35,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sn-60-1m"/>
+  </termination>
+  <termination name="Senegal – Mobilfunknetz">
+   <payg price="31,2 Cent" price-vat="35,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sn-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="RS" name="Serbien">
+  <termination name="Serbien">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-rs-60-1m"/>
+  </termination>
+  <termination name="Serbien – Belgrad">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-rs-60-1m"/>
+  </termination>
+  <termination name="Serbien – Mobilfunknetz">
+   <payg price="24,8 Cent" price-vat="28,5 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-rs-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SC" name="Seychellen">
+  <termination name="Seychellen">
+   <payg price="26 Cent" price-vat="29,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sc-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SL" name="Sierra Leone">
+  <termination name="Sierra Leone">
+   <payg price="35 Cent" price-vat="40,3 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ZW" name="Simbabwe">
+  <termination name="Simbabwe">
+   <payg price="16,5 Cent" price-vat="19 Cent"/>
+  </termination>
+  <termination name="Simbabwe – Mobilfunknetz">
+   <payg price="39,90 Cent" price-vat="45,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SG" name="Singapur">
+  <termination name="Singapur">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-sg-60-3m"/>
+  </termination>
+  <termination name="Singapur – Mobilfunknetz">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-sg-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SX" name="Sint Maarten">
+  <termination name="Sint Maarten">
+   <payg price="16,5 Cent" price-vat="19 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SK" name="Slowakei">
+  <termination name="Slowakei">
+   <payg price="5,5 Cent" price-vat="6,3 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-sk-120-1m"/>
+  </termination>
+  <termination name="Slowakei – Mobilfunknetz">
+   <payg price="18 Cent" price-vat="20,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sk-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SI" name="Slowenien">
+  <termination name="Slowenien">
+   <payg price="5,5 Cent" price-vat="6,3 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-si-120-1m"/>
+  </termination>
+  <termination name="Slowenien – Mobile Kosvo">
+   <payg price="40 Cent" price-vat="46 Cent"/>
+  </termination>
+  <termination name="Slowenien – Mobilfunknetz">
+   <payg price="24,2 Cent" price-vat="27,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SO" name="Somalia">
+  <termination name="Somalia">
+   <payg price="58,00 Cent" price-vat="66,7 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ES" name="Spanien">
+  <termination name="Spanien">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-es-60-3m"/>
+  </termination>
+  <termination name="Spanien – Barcelona">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-es-60-3m"/>
+  </termination>
+  <termination name="Spanien – Madrid">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-es-60-3m"/>
+  </termination>
+  <termination name="Spanien – Mobilfunknetz">
+   <payg price="22 Cent" price-vat="25,3 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-es-v2-400-1m"/>
+  </termination>
+  <termination name="Spanien – Mobilfunknetz – Orange">
+   <payg price="22 Cent" price-vat="25,3 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-es-v2-400-1m"/>
+  </termination>
+  <termination name="Spanien – Shared Cost">
+   <payg price="3 Cent" price-vat="3,5 Cent"/>
+  </termination>
+  <termination name="Spanien – Toll Free">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LK" name="Sri Lanka">
+  <termination name="Sri Lanka">
+   <payg price="12,1 Cent" price-vat="13,9 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-lk-60-1m"/>
+  </termination>
+  <termination name="Sri Lanka – Mobilfunknetz">
+   <payg price="13 Cent" price-vat="15 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-lk-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SH" name="St. Helena">
+  <termination name="St. Helena">
+   <payg price="€1,60" price-vat="€1,84"/>
+  </termination>
+ </destination>
+ <destination default="false" country="KN" name="St. Kitts und Nevis">
+  <termination name="St. Kitts und Nevis">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-kn-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="LC" name="St. Lucia">
+  <termination name="St. Lucia">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-lc-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="PM" name="St. Pierre und Miquelon">
+  <termination name="St. Pierre und Miquelon">
+   <payg price="38 Cent" price-vat="43,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-pm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VC" name="St. Vincent und die Grenadinen">
+  <termination name="St. Vincent und die Grenadinen">
+   <payg price="21 Cent" price-vat="24,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-vc-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SD" name="Sudan">
+  <termination name="Sudan">
+   <payg price="21,5 Cent" price-vat="24,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sd-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SR" name="Suriname">
+  <termination name="Suriname">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sr-60-1m"/>
+  </termination>
+  <termination name="Suriname – Mobilfunknetz">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-sr-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SZ" name="Swasiland">
+  <termination name="Swasiland">
+   <payg price="16,2 Cent" price-vat="18,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-sz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SY" name="Syrien">
+  <termination name="Syrien">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-sy-60-1m"/>
+  </termination>
+  <termination name="Syrien – Mobilfunknetz">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-sy-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ST" name="São Tomé und Príncipe">
+  <termination name="São Tomé und Príncipe">
+   <payg price="€1,00" price-vat="€1,15"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ZA" name="Südafrika">
+  <termination name="Südafrika">
+   <payg price="5,8 Cent" price-vat="6,7 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-za-120-1m"/>
+  </termination>
+  <termination name="Südafrika – Johannesburg">
+   <payg price="5,8 Cent" price-vat="6,7 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-za-120-1m"/>
+  </termination>
+  <termination name="Südafrika – Kapstadt">
+   <payg price="5,8 Cent" price-vat="6,7 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-landline-za-120-1m"/>
+  </termination>
+  <termination name="Südafrika – Mobilfunknetz">
+   <payg price="19,5 Cent" price-vat="22,4 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-za-60-1m"/>
+  </termination>
+  <termination name="Südafrika – Special Services">
+   <payg price="28,7 Cent" price-vat="33 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="SS" name="Südsudan">
+  <termination name="Südsudan">
+   <payg price="21,6 Cent" price-vat="24,8 Cent"/>
+  </termination>
+  <termination name="Südsudan – Mobilfunknetz">
+   <payg price="21,6 Cent" price-vat="24,8 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TJ" name="Tadschikistan">
+  <termination name="Tadschikistan">
+   <payg price="15,6 Cent" price-vat="17,9 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-tj-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TW" name="Taiwan">
+  <termination name="Taiwan">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-tw-60-3m"/>
+  </termination>
+  <termination name="Taiwan – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-tw-60-3m"/>
+  </termination>
+  <termination name="Taiwan – Mobilfunknetz">
+   <payg price="8,2 Cent" price-vat="9,4 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-tw-60-1m"/>
+  </termination>
+  <termination name="Taiwan – Taipeh">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-tw-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TZ" name="Tansania">
+  <termination name="Tansania">
+   <payg price="26 Cent" price-vat="29,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-tz-60-1m"/>
+  </termination>
+  <termination name="Tansania – Dar es Salaam">
+   <payg price="21,5 Cent" price-vat="24,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-tz-60-1m"/>
+  </termination>
+  <termination name="Tansania – Mobilfunknetz">
+   <payg price="25 Cent" price-vat="28,8 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-tz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TH" name="Thailand">
+  <termination name="Thailand">
+   <payg price="9,5 Cent" price-vat="10,9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-mixed-th-60-v2-1m"/>
+  </termination>
+  <termination name="Thailand – Bangkok">
+   <payg price="5,2 Cent" price-vat="6 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-mixed-th-60-v2-1m"/>
+  </termination>
+  <termination name="Thailand – Mobilfunknetz">
+   <payg price="9,5 Cent" price-vat="10,9 Cent"/>
+   <subscription price="€1,39" price-vat="€1,60" period="1 Monat" group="" id="package-global-country-mixed-th-60-v2-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TG" name="Togo">
+  <termination name="Togo">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+  <termination name="Togo – Mobilfunknetz">
+   <payg price="33 Cent" price-vat="38 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TK" name="Tokelau">
+  <termination name="Tokelau">
+   <payg price="80,5 Cent" price-vat="92,60 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TO" name="Tonga">
+  <termination name="Tonga">
+   <payg price="35 Cent" price-vat="40,3 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TT" name="Trinidad und Tobago">
+  <termination name="Trinidad und Tobago">
+   <payg price="12,1 Cent" price-vat="13,9 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-tt-60-1m"/>
+  </termination>
+  <termination name="Trinidad und Tobago – Mobilfunknetz">
+   <payg price="25,8 Cent" price-vat="29,7 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-tt-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TD" name="Tschad">
+  <termination name="Tschad">
+   <payg price="26,5 Cent" price-vat="30,5 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-td-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CZ" name="Tschechische Republik">
+  <termination name="Tschechische Republik">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+  <termination name="Tschechische Republik – Mobilfunknetz">
+   <payg price="15,2 Cent" price-vat="17,5 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-cz-60-1m"/>
+  </termination>
+  <termination name="Tschechische Republik – Prag">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€5,99" price-vat="€6,89" period="1 Monat" group="" id="package-global-region-landline-eu-unlimited-nv-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TN" name="Tunesien">
+  <termination name="Tunesien">
+   <payg price="32,2 Cent" price-vat="37 Cent"/>
+  </termination>
+  <termination name="Tunesien – Mobilfunknetz">
+   <payg price="31 Cent" price-vat="35,7 Cent"/>
+  </termination>
+  <termination name="Tunesien – Tunis">
+   <payg price="32,2 Cent" price-vat="37 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TM" name="Turkmenistan">
+  <termination name="Turkmenistan">
+   <payg price="17 Cent" price-vat="19,6 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-tm-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TC" name="Turks- und Caicosinseln">
+  <termination name="Turks- und Caicosinseln">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-landline-tc-60-1m"/>
+  </termination>
+  <termination name="Turks- und Caicosinseln – Mobilfunknetz">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-tc-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TV" name="Tuvalu">
+  <termination name="Tuvalu">
+   <payg price="70 Cent" price-vat="80,5 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="TR" name="Türkei">
+  <termination name="Türkei">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Ankara">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Antalya">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Istanbul">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Izmir">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+   <subscription price="€14,99" price-vat="€17,24" period="1 Monat" group="" id="package-global-country-landline-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Mobilfunknetz – Sonstige">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€34,99" price-vat="€40,24" period="1 Monat" group="" id="package-global-country-mixed-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Mobilfunknetz – Turkcell">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€34,99" price-vat="€40,24" period="1 Monat" group="" id="package-global-country-mixed-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Mobilfunknetz – Vodafone (Telsim)">
+   <payg price="13,9 Cent" price-vat="16 Cent"/>
+   <subscription price="€34,99" price-vat="€40,24" period="1 Monat" group="" id="package-global-country-mixed-tr-unlimited-1m"/>
+  </termination>
+  <termination name="Türkei – Nord-Zypern">
+   <payg price="12,5 Cent" price-vat="14,4 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="UG" name="Uganda">
+  <termination name="Uganda">
+   <payg price="13,6 Cent" price-vat="15,6 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-ug-60-1m"/>
+  </termination>
+  <termination name="Uganda – Mobilfunknetz">
+   <payg price="13,6 Cent" price-vat="15,6 Cent"/>
+   <subscription price="€6,49" price-vat="€7,46" period="1 Monat" group="" id="package-global-country-mixed-ug-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="UA" name="Ukraine">
+  <termination name="Ukraine">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-landline-ua-800-1m"/>
+  </termination>
+  <termination name="Ukraine – Kiew">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-landline-ua-800-1m"/>
+  </termination>
+  <termination name="Ukraine – Lemberg">
+   <payg price="11,5 Cent" price-vat="13,2 Cent"/>
+   <subscription price="€37,49" price-vat="€43,11" period="1 Monat" group="" id="package-global-country-landline-ua-800-1m"/>
+  </termination>
+  <termination name="Ukraine – Mobilfunknetz">
+   <payg price="15,9 Cent" price-vat="18,3 Cent"/>
+   <subscription price="€52,49" price-vat="€60,36" period="1 Monat" group="" id="package-global-country-mixed-ua-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="HU" name="Ungarn">
+  <termination name="Ungarn">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-hu-60-3m"/>
+  </termination>
+  <termination name="Ungarn – Budapest">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-hu-60-3m"/>
+  </termination>
+  <termination name="Ungarn – Mobilfunknetz">
+   <payg price="18,2 Cent" price-vat="20,9 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-hu-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="UN" name="United Nations - Disaster Relief Service">
+  <termination name="United Nations - Disaster Relief Service – Disaster Relief Service">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="UY" name="Uruguay">
+  <termination name="Uruguay">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-uy-60-1m"/>
+  </termination>
+  <termination name="Uruguay – Mobilfunknetz">
+   <payg price="21,5 Cent" price-vat="24,7 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-uy-60-1m"/>
+  </termination>
+  <termination name="Uruguay – Montevideo">
+   <payg price="10,5 Cent" price-vat="12,1 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-landline-uy-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="UZ" name="Usbekistan">
+  <termination name="Usbekistan">
+   <payg price="10,9 Cent" price-vat="12,5 Cent"/>
+   <subscription price="€4,99" price-vat="€5,74" period="1 Monat" group="" id="package-global-country-mixed-uz-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VU" name="Vanuatu">
+  <termination name="Vanuatu">
+   <payg price="67 Cent" price-vat="77,10 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VA" name="Vatikanstadt">
+  <termination name="Vatikanstadt">
+   <payg price="2,8 Cent" price-vat="3,2 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VE" name="Venezuela">
+  <termination name="Venezuela">
+   <payg price="4,5 Cent" price-vat="5,2 Cent"/>
+   <subscription price="€4,17" price-vat="€4,80" period="3 Monate" group="" id="package-global-country-landline-ve-60-3m"/>
+  </termination>
+  <termination name="Venezuela – Caracas">
+   <payg price="2,6 Cent" price-vat="3 Cent"/>
+   <subscription price="€4,17" price-vat="€4,80" period="3 Monate" group="" id="package-global-country-landline-ve-60-3m"/>
+  </termination>
+  <termination name="Venezuela – Mobilfunknetz">
+   <payg price="16,8 Cent" price-vat="19,3 Cent"/>
+   <subscription price="€8,29" price-vat="€9,53" period="1 Monat" group="" id="package-global-country-mixed-ve-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AE" name="Vereinigte Arabische Emirate">
+  <termination name="Vereinigte Arabische Emirate">
+   <payg price="22,3 Cent" price-vat="25,6 Cent"/>
+   <subscription price="€63,49" price-vat="€73,01" period="1 Monat" group="" id="package-global-country-mixed-ae-800-1m"/>
+  </termination>
+  <termination name="Vereinigte Arabische Emirate – Dubai">
+   <payg price="22,3 Cent" price-vat="25,6 Cent"/>
+   <subscription price="€63,49" price-vat="€73,01" period="1 Monat" group="" id="package-global-country-mixed-ae-800-1m"/>
+  </termination>
+  <termination name="Vereinigte Arabische Emirate – Mobilfunknetz">
+   <payg price="22,3 Cent" price-vat="25,6 Cent"/>
+   <subscription price="€63,49" price-vat="€73,01" period="1 Monat" group="" id="package-global-country-mixed-ae-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="true" country="US" name="Vereinigte Staaten">
+  <termination name="Vereinigte Staaten">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+  <termination name="Vereinigte Staaten – Alaska">
+   <payg price="4 Cent" price-vat="4,6 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+  <termination name="Vereinigte Staaten – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+  <termination name="Vereinigte Staaten – Hawaii">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-mixed-us-60-3m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GB" name="Vereinigtes Königreich">
+  <termination name="Vereinigtes Königreich">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-gb-60-3m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-gb-60-3m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Geteilte Kosten – 0844">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Geteilte Kosten – 0845">
+   <payg price="11 Cent" price-vat="12,7 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Geteilte Kosten – 0870">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Geteilte Kosten – 0871">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Kostenpflichtige Sonderrufnummer – Bereich 1">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Kostenpflichtige Sonderrufnummer – Bereich 2">
+   <payg price="58,00 Cent" price-vat="66,7 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Kostenpflichtige Sonderrufnummer – Bereich 3">
+   <payg price="85 Cent" price-vat="97,8 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Kostenpflichtige Sonderrufnummer – Bereich 4">
+   <payg price="€1,45" price-vat="€1,67"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Kostenpflichtige Sonderrufnummer – Bereich 5">
+   <payg price="€1,75" price-vat="€2,01"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – London">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-gb-60-3m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – Hutchison3G">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – O2">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – Orange">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – Sonstige">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – T-Mobile">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Mobilfunknetz – Vodafone">
+   <payg price="20,9 Cent" price-vat="24 Cent"/>
+   <subscription price="€28,99" price-vat="€33,34" period="1 Monat" group="" id="package-global-country-mixed-gb-v2-400-1m"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Shared Cost-0843">
+   <payg price="10 Cent" price-vat="11,5 Cent"/>
+  </termination>
+  <termination name="Vereinigtes Königreich – Shared Cost-0872">
+   <payg price="19 Cent" price-vat="21,9 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="VN" name="Vietnam">
+  <termination name="Vietnam">
+   <payg price="27,5 Cent" price-vat="31,6 Cent"/>
+   <subscription price="€34,49" price-vat="€39,66" period="1 Monat" group="" id="package-global-country-mixed-vn-800-1m"/>
+  </termination>
+  <termination name="Vietnam – Mobilfunknetz">
+   <payg price="27,5 Cent" price-vat="31,6 Cent"/>
+   <subscription price="€34,49" price-vat="€39,66" period="1 Monat" group="" id="package-global-country-mixed-vn-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="WF" name="Wallis und Futuna">
+  <termination name="Wallis und Futuna">
+   <payg price="89 Cent" price-vat="€1,02"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CF" name="Zentralafrikanische Republik">
+  <termination name="Zentralafrikanische Republik">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cf-60-1m"/>
+  </termination>
+  <termination name="Zentralafrikanische Republik – Mobilfunknetz">
+   <payg price="32 Cent" price-vat="36,8 Cent"/>
+   <subscription price="€13,99" price-vat="€16,09" period="1 Monat" group="" id="package-global-country-mixed-cf-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="CY" name="Zypern">
+  <termination name="Zypern">
+   <payg price="5 Cent" price-vat="5,8 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-cy-120-1m"/>
+  </termination>
+  <termination name="Zypern – Mobilfunknetz">
+   <payg price="6,2 Cent" price-vat="7,1 Cent"/>
+   <subscription price="€4,19" price-vat="€4,82" period="1 Monat" group="" id="package-global-country-mixed-cy-120-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="EG" name="Ägypten">
+  <termination name="Ägypten">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-mixed-eg-800-1m"/>
+  </termination>
+  <termination name="Ägypten – Kairo">
+   <payg price="15,5 Cent" price-vat="17,8 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-mixed-eg-800-1m"/>
+  </termination>
+  <termination name="Ägypten – Mobilfunknetz">
+   <payg price="12,9 Cent" price-vat="14,8 Cent"/>
+   <subscription price="€44,99" price-vat="€51,74" period="1 Monat" group="" id="package-global-country-mixed-eg-800-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="GQ" name="Äquatorialguinea">
+  <termination name="Äquatorialguinea">
+   <payg price="24 Cent" price-vat="27,6 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-gq-60-1m"/>
+  </termination>
+ </destination>
+ <destination default="false" country="ET" name="Äthiopien">
+  <termination name="Äthiopien">
+   <payg price="39 Cent" price-vat="44,9 Cent"/>
+  </termination>
+  <termination name="Äthiopien – Mobilfunknetz">
+   <payg price="30 Cent" price-vat="34,5 Cent"/>
+  </termination>
+ </destination>
+ <destination default="false" country="AT" name="Österreich">
+  <termination name="Österreich">
+   <payg price="1,9 Cent" price-vat="2,2 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-at-60-3m"/>
+  </termination>
+  <termination name="Österreich – Corporate Network">
+   <payg price="2,1 Cent" price-vat="2,4 Cent"/>
+  </termination>
+  <termination name="Österreich – Gebührenfrei">
+   <payg price="0 Cent" price-vat="0 Cent"/>
+   <subscription price="€2,67" price-vat="€3,07" period="3 Monate" group="" id="package-global-country-landline-at-60-3m"/>
+  </termination>
+  <termination name="Österreich – Mobilfunknetz">
+   <payg price="22,8 Cent" price-vat="26,2 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-at-60-1m"/>
+  </termination>
+  <termination name="Österreich – Mobilfunknetz – Telering">
+   <payg price="27 Cent" price-vat="31,1 Cent"/>
+   <subscription price="€9,99" price-vat="€11,49" period="1 Monat" group="" id="package-global-country-mixed-at-60-1m"/>
+  </termination>
+ </destination>
+</pricelist>
