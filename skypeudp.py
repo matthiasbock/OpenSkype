@@ -1,20 +1,36 @@
+# $Id$
 
-#
-# UDP capture analysis
-#
+# Skype's UDP Protocol
 
-possible_message_types = ...
+import dpkt
 
-# PCAP: open capture
+class SkypeUDP(dpkt.Packet):
+	__hdr__ =	(
+			('seq', 'H', 0xdead),
+			('type', 'B', 0),
+			)
 
-# parse UDP packets
+SKYPEUDP_PAYLOAD	= 0x2
+SKYPEUDP_RESEND		= 0x3
+SKYPEUDP_CRCERROR	= 0x7
 
-if packet type is UDP.
-	msg_type = data[2]
-	if msg_type in possible_message_types:
-		if msg_type == 0x02 # payload
-			parse_payload(data[3:])
+class Payload(dpkt.Packet):
+	__hdr__ =	(
+			('crc', '4s', '\x00' * 4),
+			)
 
-# example output:
-# 172.16.72.131:2051 > 212.70.204.209:23410 / Skype SoF id=0x7f46 func=0x2 / Skype Enc / Skype Cmd cmd=27L r
+	def decrypt():
+		return "not supported yet"
+
+class Resend(dpkt.Packet):
+	__hdr__ =	(
+			('no', 'B', '\x01'),
+			('errcode', '4s', '\x00' * 4),
+			)
+
+class CrcError(dpkt.Packet):
+	__hdr__ =	(
+			('yourip', '4s', '\x00' * 4),
+			('errcode', '4s', '\x00' * 4),
+			)
 

@@ -36,7 +36,7 @@ from ctypes   import CDLL, c_uint8, c_uint32, c_char_p, c_void_p, c_char
 from ctypes   import POINTER, pointer, Structure
 
 # Set LD_LIBRARY_PATH appropriately if this fails for you:
-dll = CDLL ("skype_rc4.so")
+dll = CDLL ("./skype_rc4.so")
 
 class RC4_Context (Structure) :
     """ RC4_Context used internally by the Skype_RC4_Expand_IV (which
@@ -343,3 +343,4 @@ if __name__ == '__main__' :
     p = pcap.pcapObject ()
     p.open_offline ('SkypeIRC.cap')
     p.loop (419, cb)
+
