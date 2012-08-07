@@ -128,6 +128,13 @@ def skype_crc (s, seed = 0xFFFFFFFF) :
     return (crc32 (s, seed ^ 0xFFFFFFFF) & 0xFFFFFFFF) ^ 0xFFFFFFFF
 # end def emulated_crc
 
+def Seed(src, dst, topic):
+	seed = skype_crc (''.join (reversed (src)))
+	seed = skype_crc (''.join (reversed (dst)), seed)
+	seed = skype_crc (''.join (reversed (topic)), seed)
+	seed = skype_crc ('\0\0', seed)
+	return seed
+
 class Skype_Decryptor (object) :
     def __init__ (self, initial_data = None, iv = None) :
         """ Initialize from initial tcp packet or from given iv """
@@ -218,26 +225,23 @@ class Skype_Decryptor (object) :
                 dst = ip [16:20]
 
 
-        seed = skype_crc (''.join (reversed (src)))
-        seed = skype_crc (''.join (reversed (dst)), seed)
-        seed = skype_crc (''.join (reversed (skid)), seed)
-        seed = skype_crc ('\0\0', seed)
-        #print "seed: %08x" % seed
+	seed = Seed(src, dst, skid)
+#        print "seed: %08x" % seed
 
         iv   = unpack ('!L', ip [skypo:skypo+4])   [0] & 0xFFFFFFFF
         crc  = unpack ('!L', ip [skypo+4:skypo+8]) [0] & 0xFFFFFFFF
-        print "expect CRC: %08x" % crc
+  #      print "expect CRC: %08x" % crc
 
         seed = (seed ^ iv) & 0xFFFFFFFF
         #print "seed ^ iv: %08x" % seed
 
         self.rc4 = RC4_Context ()
         Skype_RC4_Expand_IV (seed, self.rc4)
-        #print dumphex (ip [skypo+8:])
-        d = RC4_crypt (ip [skypo+8:], self.rc4)
-        print dumphex (d)
-        print "got    CRC: %08x\n" % (skype_crc (d) & 0xFFFFFFFF)
-        return d
+#        print dumphex (ip [skypo+8:])
+        plaintext = RC4_crypt (ip [skypo+8:], self.rc4)
+#        print dumphex (plaintext)
+        print "got    CRC: %08x\n" % (skype_crc (plaintext) & 0xFFFFFFFF)
+        return plaintext
     # end def decrypt_udp
 
 # end class Skype_Decryptor

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from FluxCapacitor import Skype_Decryptor
+from FluxCapacitor import Seed, Skype_RC4_Expand_IV, Skype_Decryptor, skype_crc
 
 #
 # input a packet, starting with IP,
@@ -15,8 +15,8 @@ from FluxCapacitor import Skype_Decryptor
 #	'ac1048831862425008032053'
 #	'001a219c7f4e02118ac037fc'
 #	'95755e5eb9817a8efa81'.decode('hex')
-#Flux_Capacitor = Skype_Decryptor ()
-#d = Flux_Capacitor.decrypt_udp (sky, '\0\0\0\0')
+FluxCapacitor = Skype_Decryptor()
+#d = FluxCapacitor.decrypt_udp (sky, '\0\0\0\0')
 
 
 
@@ -26,6 +26,10 @@ from dpkt.ip import *
 from dpkt.udp import *
 from skypeudp import *
 
+LocalSkypePort = 35990   # 18555
+ExternalIP = '\x00' * 4
+#ExternalIP = ''.join([chr(int(n)) for n in '86.128.245.115'.split('.')])
+
 def print_address(ip):
 	n = []
 	for i in range(4):
@@ -33,31 +37,57 @@ def print_address(ip):
 	return '.'.join(n)
 
 def longhex(l):
-	return ''.join([hex(ord(l[i]))[2:] for i in range(4)])
+	return ''.join([hex(ord(l[i]))[2:].zfill(2) for i in range(len(l))])
 
+counter = 1
 def iterate(pktlen, data, timestamp):
+	global counter
+	global ExternalIP
 	pkt = Ethernet(data)
 	if pkt.type == ETH_TYPE_IP:
 		ip = pkt.data
 		if ip.p == IP_PROTO_UDP:
 			udp = ip.data
-			if udp.sport == 18555 or udp.dport == 18555:
-				print 'Skype-UDP from '+print_address(ip.src)+' to '+print_address(ip.dst)+': ',
+			if udp.sport == LocalSkypePort or udp.dport == LocalSkypePort:
 				header = SkypeUDP(udp.data)
+				topic = hex(header.topic >> 8)[2:].zfill(2) + hex(header.topic & 0xFF)[2:].zfill(2) + hex(header.type >> 4)[2:]
 				t = header.type & 0x0F
-				if t == SKYPEUDP_PAYLOAD:
+				print '#'+str(counter)+': Skype-UDP (topic '+topic+') from '+print_address(ip.src)+' to '+print_address(ip.dst)+': ',
+				if t == SKYPEUDP_TYPE_PAYLOAD:
 					payload = Payload(header.data)
-					print 'payload: '+str(len(payload.data))+' bytes'
-				elif t == SKYPEUDP_CRCERROR:
+
+#					seed = Seed(ip.src, ip.dst, [chr(header.topic[i]) for i in range(2)])
+#					print seed
+					plaintext = FluxCapacitor.decrypt_udp(str(ip), src=ExternalIP)
+#					crc = skype_crc (plaintext)
+#					okay = str(crc == payload.crc)
+#					print 'payload: iv='+longhex(payload.iv)+', CRC='+longhex(payload.crc)+' ('+okay+'), +'+str(len(payload.data))+' bytes. decrypted message:'
+
+					print 'payload: iv='+longhex(payload.iv)+', CRC='+longhex(payload.crc)+', +'+str(len(payload.data))+' bytes. decrypted message:'
+					if len(plaintext) < 15:
+						print '\t'+longhex(plaintext)
+					else:
+						print '\t'+longhex(plaintext[:15])+'...'
+				elif t == SKYPEUDP_TYPE_CRCERROR:
 					error = CrcError(header.data)
-					print 'crc error, your IP address: '+print_address(error.yourip)+', error code '+longhex(error.errcode)+', payload: '+str(len(error.data))+' bytes'
-				elif t == SKYPEUDP_RESEND:
+					ExternalIP = error.yourip
+					print 'crc error, your IP address: '+print_address(error.yourip)+', error code '+longhex(error.seed)
+				elif t == SKYPEUDP_TYPE_RESEND:
 					resend = Resend(header.data)
-					print 'resend, retry no. '+str(resend.no)+', error code '+longhex(resend.errcode)
+					print 'resend, retry no. '+str(resend.number)+', seed='+longhex(resend.seed)+', iv='+longhex(resend.iv)+', CRC='+longhex(resend.crc)+', +'+str(len(resend.data))+' bytes. decrypted message:'
+#					print '\t'+longhex(plaintext[:7])+'...'
 				else:
 					print 'unknown ('+hex(t)+'), '+str(len(header.data))+' bytes follow'
+	counter += 1
+
+import sys
+
+try:
+	fname = sys.argv[1]
+except:
+	fname = 'SkypeIRC.cap'
 
 p = pcapObject()
-p.open_offline ('on-off 2012-08-07.pcap')
-p.loop (0, iterate)
+p.open_offline (fname)
+p.loop (220, iterate)
 
