@@ -10,13 +10,13 @@ class SkypeUDP(dpkt.Packet):
 			('type', 'B', 0),
 			)
 
-SKYPEUDP_TYPE_PAYLOAD		= 0x2
+SKYPEUDP_TYPE_OBJECTLIST	= 0x2
 SKYPEUDP_TYPE_RESEND		= 0x3
 SKYPEUDP_TYPE_CRCERR		= 0x5
 SKYPEUDP_TYPE_CRCERR_RESEND	= 0x7
 SKYPEUDP_TYPE_AUDIO		= 0xd
 SKYPEUDP_TYPE_FRAGMENT		= 0xf
-SKYPEUDP_TYPES_RECOGNIZED = [	SKYPEUDP_TYPE_PAYLOAD,
+SKYPEUDP_TYPES_RECOGNIZED = [	SKYPEUDP_TYPE_OBJECTLIST,
 				SKYPEUDP_TYPE_RESEND,
 				SKYPEUDP_TYPE_CRCERR,
 				SKYPEUDP_TYPE_CRCERR_RESEND,
@@ -24,11 +24,16 @@ SKYPEUDP_TYPES_RECOGNIZED = [	SKYPEUDP_TYPE_PAYLOAD,
 				SKYPEUDP_TYPE_FRAGMENT
 				]
 
-class Payload(dpkt.Packet):
+# Object List starts with : 0x41 1 byte number of elements
+
+class ObjectListFrame(dpkt.Packet):
 	__hdr__ =	(
 			('iv', '4s', '\x00' * 4),
 			('crc', '4s', '\x00' * 4),
 			)
+
+#	def decrypt(...
+
 
 class Resend(dpkt.Packet):
 	__hdr__ =	(

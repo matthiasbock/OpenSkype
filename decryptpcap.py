@@ -6,7 +6,7 @@ from dpkt.ethernet import *
 from dpkt.ip import *
 from dpkt.udp import *
 from skypeudp import *
-from objects import ObjectList
+#from objects import ObjectListFrame
 from utils import *
 
 #from ports import *
@@ -35,17 +35,19 @@ def iterate(pktlen, data, timestamp):
 				print '-'*100
 				print '#'+str(counter).ljust(4)+':\tSkype-UDP (objectid '+objectid+') from '+print_address(ip.src)+':'+str(udp.sport).ljust(5)+' to '+print_address(ip.dst)+':'+str(udp.dport).ljust(5)
 
-				if t == SKYPEUDP_TYPE_PAYLOAD:
-					payload = Payload(header.data)
+				if t == SKYPEUDP_TYPE_OBJECTLIST:
+					frame = ObjectListFrame(header.data)
 
-					print '\tPAYLOAD: iv='+str2hex(payload.iv)+', CRC='+str2hex(payload.crc)+', +'+str(len(payload.data))+' bytes.'
+					print '\tOBJECTLIST: iv='+str2hex(frame.iv)+', CRC='+str2hex(frame.crc)+', +'+str(len(frame.data))+' bytes.'
 
-					plaintext = rc4.decrypt(payload.data, ip.src, ip.dst, header.objectid, payload.iv, payload.crc)	# decrypt
-#					if plaintext != None:
-#						plaintext = str2hex(plaintext)
+					plaintext = rc4.decrypt(frame.data, ip.src, ip.dst, header.objectid, frame.iv, frame.crc)	# decrypt
+					if plaintext != None:
+						plaintext = str2hex(plaintext)
 #						open('begin-'+plaintext[2:4], 'a').write(plaintext+'\n')
-					objlist = ObjectList(plaintext)
-					print '\tobject list of length '+str(objlist.length)+'. '+str(objlist.extra)+' extra bytes.'
+						open('plaintexts', 'a').write(plaintext+'\n')
+
+#					listheader = ObjectListHeader(plaintext)
+#					print '\treceived object list with id '+str(listheader.objectid)+'. '+str(listheader.objectcount)+' objects.'
 
 				elif t == SKYPEUDP_TYPE_CRCERR:
 					nat = CrcError(header.data)
@@ -69,9 +71,10 @@ def iterate(pktlen, data, timestamp):
 					print '\tRESEND, retry no. '+str(resend.number)+', ivseed='+str2hex(resend.ivseed)+', unknown='+str2hex(resend.unknown)+', CRC='+str2hex(resend.crc)+', +'+str(len(resend.data))+' bytes.'
 
 					plaintext = rc4.bruteforce(resend.data, crc=str2hex(resend.crc), start=str2long(resend.ivseed) & 0xFFFF0000)
-					objlist = ObjectList(plaintext)
-					print '\tobject list of length '+str(objlist.length)+'. '+str(objlist.extra)+' extra bytes.'
-
+					if plaintext != None:
+						plaintext = str2hex(plaintext)
+#						open('begin-'+plaintext[2:4], 'a').write(plaintext+'\n')
+						open('plaintexts', 'a').write(plaintext+'\n')
 
 				elif t == SKYPEUDP_TYPE_AUDIO:
 					print '\tAUDIO STREAM: '+str(len(header.data))+' bytes.'
