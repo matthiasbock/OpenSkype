@@ -39,23 +39,23 @@ def iterate(pktlen, data, timestamp):
 
 					plaintext = rc4.decrypt(payload.data, ip.src, ip.dst, header.topic, payload.iv, payload.crc)	# decrypt
 
-					print '\tPAYLOAD (iv='+str2hex(payload.iv)+', CRC='+str2hex(payload.crc)+', +'+str(len(payload.data))+' bytes.'
+					print '\tPAYLOAD: iv='+str2hex(payload.iv)+', CRC='+str2hex(payload.crc)+', +'+str(len(payload.data))+' bytes.'
 
-				elif t == SKYPEUDP_TYPE_NAT_INFO:
-					nat = NAT_Info(header.data)
+				elif t == SKYPEUDP_TYPE_CRCERR:
+					nat = CrcError(header.data)
 
 					if ip.dst[0:2] == chr(192)+chr(168) or ip.dst[0:2] == rc4.ExternalIP[0:2]:	# error received, not sent
 						rc4.updateIP(nat.yourip)
 
-					print 'NAT present, your IP address: '+print_address(nat.yourip)+', error code? '+str2hex(nat.seed)
+					print '\tCRC error: your IP address: '+print_address(nat.yourip)+', a public address?='+print_address(nat.seed)
 
 				elif t == SKYPEUDP_TYPE_NAT_REPEAT:
-					nat = NAT_Info(header.data)
+					nat = CrcError(header.data)
 
 					if ip.dst[0:2] == chr(192)+chr(168) or ip.dst[0:2] == rc4.ExternalIP[0:2]:	# error received, not sent
 						rc4.updateIP(nat.yourip)
 					
-					print 'NAT present - please repeat, your IP address: '+print_address(nat.yourip)+', error code?='+str2hex(nat.seed)
+					print '\tCRC error: please repeat; your IP address: '+print_address(nat.yourip)+', a public address?='+print_address(nat.seed)
 
 				elif t == SKYPEUDP_TYPE_RESEND:
 					resend = Resend(header.data)
@@ -67,8 +67,8 @@ def iterate(pktlen, data, timestamp):
 				elif t == SKYPEUDP_TYPE_AUDIO:
 					print 'AUDIO STREAM: '+str(len(header.data))+' bytes.'
 
-				elif t == SKYPEUDP_TYPE_UNKNOWN:
-					print 'Unknown: '+str(len(header.data))+' bytes.'
+				elif t == SKYPEUDP_TYPE_FRAGMENT:
+					print '\tFragment: '+str(len(header.data))+' bytes.'
 
 				else:
 					print 'UNKNOWN ('+hex(t)+'), '+str(len(header.data))+' bytes follow'
@@ -84,5 +84,5 @@ except:
 
 p = pcapObject()
 p.open_offline (fname)
-p.loop (70, iterate)
+p.loop (0, iterate)
 
