@@ -125,14 +125,14 @@ def skype_crc (s, seed = 0xFFFFFFFF) :
         >>> x
         3115716450L
     """
-    return (crc32 (s, seed ^ 0xFFFFFFFF) & 0xFFFFFFFF) ^ 0xFFFFFFFF
+    return crc32 (s, seed ^ 0xFFFFFFFF) ^ 0xFFFFFFFF
 # end def emulated_crc
 
-def Seed(src, dst, topic):
-	seed = skype_crc (''.join (reversed (src)))
+def Seed(src, dst, topic, seed = 0xFFFFFFFF):
+	seed = skype_crc (''.join (reversed (src)), seed)
 	seed = skype_crc (''.join (reversed (dst)), seed)
 	seed = skype_crc (''.join (reversed (topic)), seed)
-	seed = skype_crc ('\0\0', seed)
+	seed = skype_crc ('\x00\x00', seed)
 	return seed
 
 class Skype_Decryptor (object) :
