@@ -33,8 +33,8 @@ class Rambo:
 
 
 
-bruteforce = Rambo(cipher_hex='ca5f4abe629bebf39df2152facca17', crc='b0a81c91') # PAYLOAD
-#bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND
+#bruteforce = Rambo(cipher_hex='ca5f4abe629bebf39df2152facca17', crc='b0a81c91') # PAYLOAD
+bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND
 
-bruteforce.crack() #start=0x768df200) # finalseed of the PAYLOAD
+bruteforce.crack(start=0x88888888) #start=0x768df200) # finalseed of the PAYLOAD
 
