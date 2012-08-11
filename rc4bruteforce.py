@@ -13,6 +13,7 @@ class Rambo:
 	def crack(self, start=0x00000000L):
 		finalseed = start
 
+		last_print = 0
 		crc_correct = False
 		while not crc_correct:
 
@@ -23,6 +24,9 @@ class Rambo:
 			crc_correct = crc == self.crc
 			if not crc_correct:
 				finalseed += 1
+				if finalseed-last_print > 1000:
+					print long2hex(finalseed)
+					last_print = finalseed
 
 		print long2hex(finalseed)+' - cracked'
 
