@@ -13,32 +13,25 @@ class RC4_Engine:
 	def updateIP(self, ip):
 		self.ExternalIP		= ip
 
-	def decrypt(self, cipher, src, dst, topic, iv, crc):
+	def decrypt(self, cipher, src, dst, objectid, iv, crc):
 		if self.print_cipher:
 			print '\tcipher:\n\t\t'+str2hex(cipher)
 
 		test_sources =	[
 				src,
 				'\x00\x00\x00\x00',
-				'\xFF\xFF\xFF\xFF',
-				'\xec\x1e\x28\xd4',
-				'\x8d\x14\x3f\x1c',
-				chr(141)+chr(20)+chr(63)+chr(28),
-				chr(111)+chr(221)+chr(77)+chr(155),
+				chr(93)+chr(219)+chr(186)+chr(69),
+#				'\xFF\xFF\xFF\xFF',
 				]
 
-		for j in range(2):
-			for i in range(255):
-				test_sources.append(chr(192)+chr(168)+chr(j+1)+chr(i+1))
+#		for j in range(2):
+#			for i in range(255):
+#				test_sources.append(chr(192)+chr(168)+chr(j+1)+chr(i+1))
 
 		test_dests =	[
 				dst,
 				'\x00\x00\x00\x00',
-				'\xFF\xFF\xFF\xFF',
-				'\xec\x1e\x28\xd4',
-				'\x8d\x14\x3f\x1c',
-				chr(141)+chr(20)+chr(63)+chr(28),
-				chr(111)+chr(221)+chr(77)+chr(155),
+#				'\xFF\xFF\xFF\xFF',
 				]
 
 #		for j in range(2):
@@ -52,7 +45,7 @@ class RC4_Engine:
 				if self.print_seeding:
 					print '\tsrc ip: '+print_address(src)+'\tdst ip: '+print_address(dst),
 
-				seed = Seed(src, dst, topic)
+				seed = Seed(src, dst, objectid)
 				if self.print_seeding:
 					print '\tseed: '+long2hex(seed),
 				seed = seed ^ str2long(iv)			# XOR
@@ -79,4 +72,11 @@ class RC4_Engine:
 			print '\tdecryption failed'
 			return None
 		return plaintext
+
+	def bruteforce(self, cipher, crc, start):
+		from rc4bruteforce import Rambo
+
+		bruteforce = Rambo(cipher_hex = str2hex(cipher), crc = crc)
+
+		return bruteforce.crack(start = start)
 

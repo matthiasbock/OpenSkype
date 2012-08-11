@@ -6,7 +6,7 @@ import dpkt
 
 class SkypeUDP(dpkt.Packet):
 	__hdr__ =	(
-			('topic', '2s', '\x00' * 2),
+			('objectid', '2s', '\x00' * 2),
 			('type', 'B', 0),
 			)
 
@@ -33,15 +33,15 @@ class Payload(dpkt.Packet):
 class Resend(dpkt.Packet):
 	__hdr__ =	(
 			('number', 'B', '\x01'),
-			('seed', '4s', '\x00' * 4),
-			('iv', '4s', '\x00' * 4),
+			('ivseed', '4s', '\x00' * 4),
+			('unknown', '4s', '\x00' * 4),
 			('crc', '4s', '\x00' * 4),
 			)
 
 class CrcError(dpkt.Packet):
 	__hdr__ =	(
 			('yourip', '4s', '\x00' * 4),
-			('seed', '4s', '\x00' * 4),
+			('ivseed', '4s', '\x00' * 4),
 			)
 
 

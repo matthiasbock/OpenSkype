@@ -25,7 +25,7 @@ class Rambo:
 			if not crc_correct:
 				if finalseed < stop:
 					finalseed += 1
-					if finalseed-last_write > 100000:
+					if finalseed-last_write > 10000:
 						open('currentfinalseed','w').write(long2hex(finalseed))
 						print long2hex(finalseed)
 						last_write = finalseed
@@ -38,17 +38,21 @@ class Rambo:
 			print long2hex(finalseed)+' - cracked'
 			print '\tcrc:\t'+crc
 			print '\tplaintext:\n\t\t'+str2hex(plaintext)
-			open('finalseed','w').write(long2hex(finalseed))
+#			open('finalseed','w').write(long2hex(finalseed))
+			return plaintext
 
 if __name__ == '__main__':
 
 	#bruteforce = Rambo(cipher_hex='ca5f4abe629bebf39df2152facca17', crc='b0a81c91') # PAYLOAD; correct finalseed=0x768df200
-	bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND; false positive @ 0x202ec8b5
+#	bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND; false positive @ 0x202ec8b5
+	bruteforce = Rambo(cipher_hex = '2f81fcdca0200813e4bfbaf96216', crc = '3913b8a9')
 
-	if sys.argv[1] == '0':
-		bruteforce.crack(start=0x0796769c, stop=0x20000000)
-	elif sys.argv[1] == '1':
-		bruteforce.crack(start=0x24628a18, stop=0x40000000)
-	else:
-		bruteforce.crack(start=0xec1e9911)
+#	if sys.argv[1] == '0':
+#		bruteforce.crack(start=0x0796769c, stop=0x20000000)
+#	elif sys.argv[1] == '1':
+#		bruteforce.crack(start=0x24628a18, stop=0x40000000)
+#	else:
+#		bruteforce.crack(start=0xec1e9911)
+
+	bruteforce.crack(start = 0x66900000)
 
