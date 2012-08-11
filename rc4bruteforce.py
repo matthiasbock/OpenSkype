@@ -4,37 +4,47 @@ from FluxCapacitor import Seed, Skype_RC4_Expand_IV, skype_crc, RC4_Context, RC4
 from utils import *
 import sys
 
-
 class Rambo:
 	def __init__(self, cipher_hex, crc):
 		self.cipher = hexstr2bytestr(cipher_hex)
 		self.crc = crc
 
-	def crack(self, start=0x00000000L):
+	def crack(self, start=0x00000000, stop=0xFFFFFFFF):
 		finalseed = start
 
 		last_write = 0
 		crc_correct = False
-		while not crc_correct:
+		give_up = False
 
+		while (not crc_correct) and (not give_up):
 			rc4context = RC4_Context()
 			Skype_RC4_Expand_IV(finalseed, rc4context)
 			plaintext = RC4_crypt(self.cipher, rc4context)
 			crc = long2hex(skype_crc(plaintext))
 			crc_correct = crc == self.crc
 			if not crc_correct:
-				finalseed += 1
-				if finalseed-last_write > 100000:
+				if finalseed < stop:
+					finalseed += 1
+					if finalseed-last_write > 100000:
+						open('currentfinalseed','w').write(long2hex(finalseed))
+						print long2hex(finalseed)
+						last_write = finalseed
+				else:
 					open('currentfinalseed','w').write(long2hex(finalseed))
-					last_write = finalseed
+					print 'tried all keys without success. giving up ...'
+					give_up = True
+				
+		if not give_up:
+			print long2hex(finalseed)+' - cracked'
+			open('finalseed','w').write(long2hex(finalseed))
 
-		print long2hex(finalseed)+' - cracked'
-		open('finalseed','w').write(long2hex(finalseed))
+if __name__ == '__main__':
 
+	#bruteforce = Rambo(cipher_hex='ca5f4abe629bebf39df2152facca17', crc='b0a81c91') # PAYLOAD; correct finalseed=0x768df200
+	bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND
 
-
-#bruteforce = Rambo(cipher_hex='ca5f4abe629bebf39df2152facca17', crc='b0a81c91') # PAYLOAD
-bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND
-
-bruteforce.crack() #start=0x768df200) # finalseed of the PAYLOAD
+	if sys.argv[1] == '0':
+		bruteforce.crack(start=0x032bc695, stop=0x20000000)
+	else:
+		bruteforce.crack(start=0x20000000, stop=0x40000000)
 
