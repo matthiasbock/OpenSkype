@@ -46,7 +46,9 @@ if __name__ == '__main__':
 	bruteforce = Rambo(cipher_hex='dccb580bc50d5f944fbf65f5671dd2', crc='b0a81c91') # RESEND; false positive @ 0x202ec8b5
 
 	if sys.argv[1] == '0':
-		bruteforce.crack(start=0x0362b53a, stop=0x20000000)
+		bruteforce.crack(start=0x0796769c, stop=0x20000000)
+	elif sys.argv[1] == '1':
+		bruteforce.crack(start=0x24628a18, stop=0x40000000)
 	else:
-		bruteforce.crack(start=0x202ec8b6, stop=0x40000000)
+		bruteforce.crack(start=0xec1e9911)
 
