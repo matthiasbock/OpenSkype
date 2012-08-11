@@ -10,6 +10,9 @@ class RC4_Engine:
 		self.print_seeding	= False
 		self.print_plaintext	= True
 
+	def updateIP(self, ip):
+		self.ExternalIP		= ip
+
 	def decrypt(self, cipher, src, dst, topic, iv, crc):
 		if self.print_cipher:
 			print '\tcipher:\n\t\t'+str2hex(cipher)
@@ -74,3 +77,6 @@ class RC4_Engine:
 
 		if not correct:
 			print '\tdecryption failed'
+			return None
+		return plaintext
+

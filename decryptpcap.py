@@ -41,6 +41,10 @@ def iterate(pktlen, data, timestamp):
 
 					print '\tPAYLOAD: iv='+str2hex(payload.iv)+', CRC='+str2hex(payload.crc)+', +'+str(len(payload.data))+' bytes.'
 
+					if plaintext != None:
+						plaintext = str2hex(plaintext)
+						open('begin-'+plaintext[0:2], 'a').write(plaintext+'\n')
+
 				elif t == SKYPEUDP_TYPE_CRCERR:
 					nat = CrcError(header.data)
 
@@ -49,7 +53,7 @@ def iterate(pktlen, data, timestamp):
 
 					print '\tCRC error: your IP address: '+print_address(nat.yourip)+', a public address?='+print_address(nat.seed)
 
-				elif t == SKYPEUDP_TYPE_NAT_REPEAT:
+				elif t == SKYPEUDP_TYPE_CRCERR_RESEND:
 					nat = CrcError(header.data)
 
 					if ip.dst[0:2] == chr(192)+chr(168) or ip.dst[0:2] == rc4.ExternalIP[0:2]:	# error received, not sent
