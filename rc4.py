@@ -19,9 +19,8 @@ class RC4_Engine:
 
 		test_sources =	[
 				src,
+				self.ExternalIP,
 				'\x00\x00\x00\x00',
-				chr(93)+chr(219)+chr(186)+chr(69),
-#				'\xFF\xFF\xFF\xFF',
 				]
 
 #		for j in range(2):
@@ -30,8 +29,8 @@ class RC4_Engine:
 
 		test_dests =	[
 				dst,
+				self.ExternalIP,
 				'\x00\x00\x00\x00',
-#				'\xFF\xFF\xFF\xFF',
 				]
 
 #		for j in range(2):
@@ -66,6 +65,7 @@ class RC4_Engine:
 				break
 
 		if self.print_plaintext and calc_crc == pkt_crc:
+			print '\tdecryption succeed with src='+print_address(src)+', dst='+print_address(dst)
 			print '\tplaintext:\n\t\t'+str2hex(plaintext)
 
 		if not correct:

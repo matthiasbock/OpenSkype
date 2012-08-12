@@ -25,3 +25,13 @@ def hexstr2bytestr(h):
 		result += chr(int(h[i*2]+h[i*2+1], 16))
 	return result
 
+def int2bin(i):
+	mask = 0x1
+	s = ''
+	while mask <= i:
+		if i & mask > 0:
+			s = '1' + s
+		else:
+			s = '0' + s
+		mask *= 2
+	return s
