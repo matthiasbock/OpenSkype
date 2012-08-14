@@ -12,6 +12,10 @@ from utils import *
 #from ports import *
 kazaa = 1214
 
+#-----------------------------------------------------------------
+# SkypeUDP dissection - section
+#-----------------------------------------------------------------
+
 print_PAYLOAD		= True
 print_RESEND		= True
 print_CRCERR		= True
@@ -106,5 +110,26 @@ except:
 
 p = pcapObject()
 p.open_offline (fname)
-p.loop (0, iterate)
+p.loop(0, iterate)
+
+
+#-----------------------------------------------------------------
+# SkypeTCP dissection - section
+#-----------------------------------------------------------------
+
+from tcpstreams import TCPStreams, FollowTCPStream, TCPHeader, TCPData
+
+stream = FollowTCPStream(p, TCPStreams(p).filter(dstport=33033) )
+
+def outgoing(pktlen, pkt, timestamp):
+	tcp = TCPHeader(pkt)
+	data = TCPData(pkt)
+	...
+
+def incoming(pktlen, pkt, timestamp):
+	tcp = TCPHeader(pkt)
+	data = TCPData(pkt)
+	...
+	
+stream.loop(0, outgoing, incoming)
 
