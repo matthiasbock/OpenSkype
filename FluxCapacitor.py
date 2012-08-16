@@ -277,18 +277,23 @@ if __name__ == '__main__' :
         # FIXME: We really want to follow the tcp stream in both
         # directions here and decrypt that. Not done for now.
         if count == 273 :
-            sky = get_tcp_payload (data)
-            decryptor = Skype_Decryptor (sky)
-            # display that the first bytes are really as expected from
-            # Silver Needle in the Skype:
-            # After this we need to restart, this won't be necessary if
-            # we didn't decrypt the first 14 bytes again.
-            print dumphex (decryptor.decrypt_tcp (sky [4:14], True))
-            decryptor.restart = True
+		print
+		sky = get_tcp_payload (data)
+		print 'tcp payload: '+dumphex(sky)
+		decryptor = Skype_Decryptor (sky)
+		print '4 bytes seed: '+dumphex(sky[:4])
+		# display that the first bytes are really as expected from
+		# Silver Needle in the Skype:
+		# After this we need to restart, this won't be necessary if
+		# we didn't decrypt the first 14 bytes again.
+		print 'decrypt 10 bytes: '+dumphex(decryptor.decrypt_tcp (sky [4:14], True))
+		decryptor.restart = True
 
-            # Got more to decrypt?
-            if len (sky) > 14 :
-                d = decryptor.decrypt_tcp (sky [14:])
+		# Got more to decrypt?
+		if len (sky) > 14 :
+			d = decryptor.decrypt_tcp (sky [14:])
+
+		print
         elif count == 274 and 0 :
             sky = get_tcp_payload (data)
             d = decryptor.decrypt_tcp (sky)
