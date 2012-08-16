@@ -34,8 +34,8 @@ class ObjectHeader(dpkt.Packet):
 			self.id = self.data[:2]
 			self.data = self.data[2:]
 
-CONTENT_TYPE_CONTAINER	= 0x41
-CONTENT_TYPE_DATA	= 0x42
+#CONTENT_TYPE_CONTAINER	= 0x41
+#CONTENT_TYPE_DATA	= 0x42
 
 class ObjectContent(dpkt.Packet):
 	__hdr__ =	(

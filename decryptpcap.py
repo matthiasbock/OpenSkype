@@ -24,6 +24,8 @@ print_ERROR		= True
 print_AUDIO		= True
 print_FRAGMENT		= True
 
+myObjects = {}
+
 counter = 1
 rc4 = RC4_Engine()
 
@@ -53,7 +55,9 @@ def iterate(pktlen, data, timestamp):
 						if plaintext != None:
 							h = ObjectHeader(plaintext)
 							h.parse()
-							print '\tobject content:\n\t\t'+str2hex(h.data)
+							myObjects[header.objectid] = h.data
+							print myObjects
+#							print '\tobject content:\n\t\t'+str2hex(h.data)
 
 				elif t == SKYPEUDP_TYPE_RESEND:
 
@@ -100,8 +104,7 @@ def iterate(pktlen, data, timestamp):
 
 						plaintext = rc4.decrypt(frag.data, ip.src, ip.dst, header.objectid, frag.iv, frag.crc)	# decrypt
 
-						# FragmentAssembler ...
-
+---
 						if plaintext != None:
 							h = ObjectHeader(plaintext)
 							h.parse()
