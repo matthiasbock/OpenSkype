@@ -36,8 +36,8 @@ class Rambo:
 				
 		if not give_up:
 			print long2hex(finalseed)+' - cracked'
-			print '\tcrc:\t'+crc
-			print '\tplaintext:\n\t\t'+str2hex(plaintext)
+#			print '\tcrc:\t'+crc
+#			print '\tplaintext:\n\t\t'+str2hex(plaintext)
 #			open('finalseed','w').write(long2hex(finalseed))
 			return plaintext
 

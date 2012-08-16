@@ -66,7 +66,7 @@ class RC4_Engine:
 
 		if self.print_plaintext and calc_crc == pkt_crc:
 			print '\tdecryption succeed with src='+print_address(src)+', dst='+print_address(dst)
-			print '\tplaintext:\n\t\t'+str2hex(plaintext)
+#			print '\tplaintext:\n\t\t'+str2hex(plaintext)
 
 		if not correct:
 			print '\tdecryption failed'

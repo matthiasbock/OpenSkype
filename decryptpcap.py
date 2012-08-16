@@ -52,12 +52,12 @@ def iterate(pktlen, data, timestamp):
 					if print_PAYLOAD:
 						print '\tPAYLOAD: iv='+str2hex(frame.iv)+', CRC='+str2hex(frame.crc)+', +'+str(len(frame.data))+' bytes.'
 						plaintext = rc4.decrypt(frame.data, ip.src, ip.dst, header.objectid, frame.iv, frame.crc)	# decrypt
+
 						if plaintext != None:
 							h = ObjectHeader(plaintext)
 							h.parse()
 							myObjects[header.objectid] = h.data
-							print myObjects
-#							print '\tobject content:\n\t\t'+str2hex(h.data)
+							print '\tobject content:\n\t\t'+str2hex(myObjects[header.objectid])
 
 				elif t == SKYPEUDP_TYPE_RESEND:
 
@@ -66,6 +66,12 @@ def iterate(pktlen, data, timestamp):
 					if print_RESEND:
 						print '\tRESEND, retry no. '+str(resend.number)+', ivseed='+str2hex(resend.ivseed)+', unknown='+str2hex(resend.unknown)+', CRC='+str2hex(resend.crc)+', +'+str(len(resend.data))+' bytes.'
 						plaintext = rc4.bruteforce(resend.data, crc=str2hex(resend.crc), start=str2long(resend.ivseed) & 0xFFFF0000)
+
+						if plaintext != None:
+							h = ObjectHeader(plaintext)
+							h.parse()
+							myObjects[header.objectid] = h.data
+							print '\tobject content:\n\t\t'+str2hex(myObjects[header.objectid])
 
 				elif t == SKYPEUDP_TYPE_CONFIRM:
 
@@ -104,11 +110,15 @@ def iterate(pktlen, data, timestamp):
 
 						plaintext = rc4.decrypt(frag.data, ip.src, ip.dst, header.objectid, frag.iv, frag.crc)	# decrypt
 
----
 						if plaintext != None:
 							h = ObjectHeader(plaintext)
 							h.parse()
-							print '\tobject content:\n\t\t'+str2hex(h.data)
+#							print '\tobject content:\n\t\t'+str2hex(h.data)
+							if not (header.objectid in myObjects.keys()):
+								myObjects[header.objectid] = ''
+							myObjects[header.objectid] += h.data
+							if last:
+								print '\treassembled content:\n\t\t'+str2hex(myObjects[header.objectid])
 
 				else:
 					print 'UNKNOWN ('+hex(t)+'), '+str(len(header.data))+' bytes follow'
