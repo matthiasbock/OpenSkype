@@ -8,7 +8,7 @@ class RC4_Engine:
 		self.ExternalIP		= '\x00\x00\x00\x00'
 		self.print_cipher	= False
 		self.print_seeding	= False
-		self.print_plaintext	= True
+		self.print_plaintext	= False
 
 	def updateIP(self, ip):
 		self.ExternalIP		= ip
@@ -59,7 +59,7 @@ class RC4_Engine:
 
 				correct = calc_crc == pkt_crc
 				if correct:
-					print '\tcrc correct'
+#					print '\tcrc correct'
 					break
 			if correct:
 				break

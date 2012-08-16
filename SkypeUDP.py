@@ -35,14 +35,14 @@ class SkypeUDP(dpkt.Packet):
 
 SKYPEUDP_TYPE_PAYLOAD		= 0x2
 SKYPEUDP_TYPE_RESEND		= 0x3
-SKYPEUDP_TYPE_CRCERR		= 0x5
-SKYPEUDP_TYPE_CRCERR_RESEND	= 0x7
+SKYPEUDP_TYPE_CONFIRM		= 0x5
+SKYPEUDP_TYPE_ERROR		= 0x7
 SKYPEUDP_TYPE_AUDIO		= 0xd
 SKYPEUDP_TYPE_FRAGMENT		= 0xf
 SKYPEUDP_TYPES_RECOGNIZED = [	SKYPEUDP_TYPE_PAYLOAD,
 				SKYPEUDP_TYPE_RESEND,
-				SKYPEUDP_TYPE_CRCERR,
-				SKYPEUDP_TYPE_CRCERR_RESEND,
+				SKYPEUDP_TYPE_CONFIRM,
+				SKYPEUDP_TYPE_ERROR,
 				SKYPEUDP_TYPE_AUDIO,
 				SKYPEUDP_TYPE_FRAGMENT,
 				]
@@ -63,7 +63,13 @@ class Resend(dpkt.Packet):
 			('crc', '4s', '\x00' * 4),
 			)
 
-class CrcError(dpkt.Packet):
+class Confirm(dpkt.Packet):
+	__hdr__ =	(
+			('yourip', '4s', '\x00' * 4),
+			('unknown', '4s', '\x00' * 4),
+			)
+
+class Error(dpkt.Packet):
 	__hdr__ =	(
 			('yourip', '4s', '\x00' * 4),
 			('ivseed', '4s', '\x00' * 4),
