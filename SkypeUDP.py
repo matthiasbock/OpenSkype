@@ -1,6 +1,8 @@
-# $Id$
+#!/usr/bin/python
 
+#
 # Skype's UDP Protocol
+#
 
 import dpkt
 
