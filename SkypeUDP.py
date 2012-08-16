@@ -47,14 +47,11 @@ SKYPEUDP_TYPES_RECOGNIZED = [	SKYPEUDP_TYPE_PAYLOAD,
 
 # Object List starts with : 0x41 1 byte number of elements
 
-class ObjectListFrame(dpkt.Packet):
+class Payload(dpkt.Packet):
 	__hdr__ =	(
 			('iv', '4s', '\x00' * 4),
 			('crc', '4s', '\x00' * 4),
 			)
-
-#	def decrypt(...
-
 
 class Resend(dpkt.Packet):
 	__hdr__ =	(

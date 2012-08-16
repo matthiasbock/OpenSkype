@@ -44,7 +44,7 @@ def iterate(pktlen, data, timestamp):
 
 				if t == SKYPEUDP_TYPE_PAYLOAD:
 
-					frame = ObjectListFrame(header.data)
+					frame = Payload(header.data)
 
 					if print_PAYLOAD:
 						print '\tPAYLOAD: iv='+str2hex(frame.iv)+', CRC='+str2hex(frame.crc)+', +'+str(len(frame.data))+' bytes.'
