@@ -33,13 +33,13 @@ def outgoing(pktlen, pkt, timestamp):
 	eth = Ethernet(pkt)
 	ip = IP(str(eth.data))
 	tcp = TCP(str(ip.data))
-	print ' -> '+str2hex(tcp.data)
+	print str(len(tcp.data))+' bytes -> '+str2hex(tcp.data)
 
 def incoming(pktlen, pkt, timestamp):
 	eth = Ethernet(pkt)
 	ip = IP(str(eth.data))
 	tcp = TCP(str(ip.data))
-	print ' <- '+str2hex(tcp.data)
+	print str(len(tcp.data))+' bytes <- '+str2hex(tcp.data)
 	
 stream.loop(0, outgoing, incoming)
 
