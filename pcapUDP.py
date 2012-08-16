@@ -1,20 +1,19 @@
 #!/usr/bin/python
 
-from rc4 import RC4_Engine
 from pcap import pcapObject
 from dpkt.ethernet import *
 from dpkt.ip import *
 from dpkt.udp import *
-from SkypeUDP import *
-from SkypeObjects import *
-#from objects import ObjectListFrame
 from utils import *
 
-#from ports import *
+from SkypeUDP import *
+from SkypeObjects import *
+from rc4 import RC4_Engine
+
 kazaa = 1214
 
 #-----------------------------------------------------------------
-# SkypeUDP dissection - section
+# SkypeUDP dissection
 #-----------------------------------------------------------------
 
 print_PAYLOAD		= True
@@ -135,28 +134,4 @@ except:
 p = pcapObject()
 p.open_offline (fname)
 p.loop(0, iterate)
-
-
-#-----------------------------------------------------------------
-# SkypeTCP dissection - section
-#-----------------------------------------------------------------
-
-import sys
-sys.exit(0)
-
-from tcpstreams import TCPStreams, FollowTCPStream, TCPHeader, TCPData
-
-stream = FollowTCPStream(p, TCPStreams(p).filter(dstport=33033) )
-
-def outgoing(pktlen, pkt, timestamp):
-	tcp = TCPHeader(pkt)
-	data = TCPData(pkt)
-#	...
-
-def incoming(pktlen, pkt, timestamp):
-	tcp = TCPHeader(pkt)
-	data = TCPData(pkt)
-#	...
-	
-stream.loop(0, outgoing, incoming)
 
