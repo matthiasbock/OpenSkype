@@ -7,80 +7,70 @@
 # requires python-libpcap
 #
 
-#from pcap import pcapObject
+from pcap import pcapObject
 import dpkt
-from ethernet import Ethernet
-from ip import IP, IP_PROTO_TCP
-from tcp import TCP
+from dpkt.ethernet import Ethernet, ETH_TYPE_IP
+from dpkt.ip import IP, IP_PROTO_TCP
+from dpkt.tcp import TCP
 
 class TCPStreams:
-	def __init__(self, pcap_obj):
+	def __init__(self, filename):
 
 		# create an array of tcp streams: source IP:port, destination IP:port
 
+		self.filename = filename
 		self.streams = []
-		p.reset()
+
+		p = pcapObject()
+		p.open_offline(self.filename)
 		def iterate(pktlen, pkt, timestamp):
 			eth = Ethernet(pkt)
-			if eth.type == IP:
-				ip = IP(eth.data)
-				if ip.proto == IP_PROTO_TCP:
-					tcp = TCP(ip.data)
-					f = {	'src': ip.src, 'srcport': tcp.srcport,
-						'dst': ip.dst, 'dstport': tcp.dstport   )
+			if eth.type == ETH_TYPE_IP:
+				ip = IP(str(eth.data))
+				if ip.p == IP_PROTO_TCP:
+					tcp = TCP(str(ip.data))
+					f = {	'src': ip.src, 'sport': tcp.sport,
+						'dst': ip.dst, 'dport': tcp.dport   }
 					if not f in self.streams:
 						self.streams.append(f)
 		p.loop(0, iterate)
 
-	def filter(self, dstport=None):
-
-		# delete all array entries, that do not match the criteria
-
+	def filter(self, dport=None):
+		result = []
 		for f in self.streams:
-			if f['dstport'] != dstport:
-				self.streams.drop(f)
+			if f['dport'] == dport:
+				result.append(f)
+		return result
 
 	def __array__(self):
 		return self.streams
 
 class FollowTCPStream:
-	def __init__(self, pcap_obj, streamlist):
-		self.pcap_obj = pcap_obj
-		self.streamlist = streamlist
+	def __init__(self, filename, stream):
+		self.filename = filename
+		self.stream = stream
 
-	def loop(self, last_packet=0, outgoing, incoming):
-		self.pcap_obj.reset()
+	def loop(self, last_packet=0, outgoing=None, incoming=None):
+		p = pcapObject()
+		p.open_offline(self.filename)
 		def iterate(pktlen, pkt, timestamp):
 			eth = Ethernet(pkt)
-			if eth.type == IP:
-				ip = IP(eth.data)
-				if ip.proto == IP_PROTO_TCP:
-					tcp = TCP(ip.data)
-					matches = False
-					for stream in self.streamlist:
-						if (ip.src == stream['src'] and tcp.srcport == stream['srcport']
-						and ip.dst == stream['dst'] and tcp.dstport == stream['dstport'])
-							outgoing(len(p.data), p.data, p.timestamp)
-							break
-						if (ip.src == stream['dst'] and tcp.srcport == stream['dstport']
-						and ip.dst == stream['src'] and tcp.dstport == stream['srcport']):
-							incoming(len(p.data), p.data, p.timestamp)
-							break
-		self.pcap_obj.loop(last_packet, iterate)
+			if eth.type == ETH_TYPE_IP:
+				ip = IP(str(eth.data))
+				if ip.p == IP_PROTO_TCP:
+					tcp = TCP(str(ip.data))
+					if len(tcp.data) > 0:
+						if (outgoing is not None
+						and ip.src == self.stream['src'] and tcp.sport == self.stream['sport']
+						and ip.dst == self.stream['dst'] and tcp.dport == self.stream['dport']):
+							outgoing(pktlen, pkt, timestamp)
+						if (incoming is not None
+						and ip.src == self.stream['dst'] and tcp.sport == self.stream['dport']
+						and ip.dst == self.stream['src'] and tcp.dport == self.stream['sport']):
+							incoming(pktlen, pkt, timestamp)
+		p.loop(last_packet, iterate)
 
-def TCPHeader(pkt):
-        assert (data [12:14] == '\x08\x00') # IP
-        assert (ord (data [14]) & 0xf0 == 0x40) # IPv4
-        assert (data [23] == '\x06') # TCP
-	...
-	return pkt[...]
-
-def TCPData(pkt):
-        assert (data [12:14] == '\x08\x00') # IP
-        assert (ord (data [14]) & 0xf0 == 0x40) # IPv4
-        assert (data [23] == '\x06') # TCP
-        hl  = 4 * (ord (data [14]) & 0xf) + 14
-        tcp = data [hl:]
-        thl = (ord (tcp [12]) & 0xf0) >> 2
-        return tcp [thl:]
+# Ethernet Header:	14 bytes
+# IP Header:		20 bytes
+# TCP Header:		32 bytes
 

@@ -1,14 +1,17 @@
 #!/usr/bin/python
 
+import sys
+
 from pcap import pcapObject
+
 from dpkt.ethernet import *
 from dpkt.ip import *
 from dpkt.udp import *
-from utils import *
 
 from SkypeUDP import *
 from SkypeObjects import *
 from rc4 import RC4_Engine
+from utils import *
 
 kazaa = 1214
 
@@ -123,8 +126,6 @@ def iterate(pktlen, data, timestamp):
 					print 'UNKNOWN ('+hex(t)+'), '+str(len(header.data))+' bytes follow'
 				print
 	counter += 1
-
-import sys
 
 try:
 	fname = sys.argv[1]
