@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
 #
-# Skype uses arithmetic compression:
-# the Huffman algorithm
+# Skype uses arithmetic coding for compression
+#
+# http://en.wikipedia.org/wiki/Arithmetic_coding
+# http://en.wikipedia.org/wiki/Huffman_coding
 #
 # Hint: the picture, presented in "Silver needle in the Skype",
 # does not represent the frequency dictionary of "ACAB"
