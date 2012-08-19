@@ -4,11 +4,11 @@ from FluxCapacitor import Seed, Skype_RC4_Expand_IV, skype_crc, RC4_Context, RC4
 from utils import *
 
 class RC4_Engine:
-	def __init__(self):
+	def __init__(self, debug=False):
 		self.ExternalIP		= '\x00\x00\x00\x00'
-		self.print_cipher	= False
-		self.print_seeding	= False
-		self.print_plaintext	= False
+		self.print_cipher	= debug
+		self.print_seeding	= debug
+		self.print_plaintext	= debug
 
 	def updateIP(self, ip):
 		self.ExternalIP		= ip
@@ -59,7 +59,8 @@ class RC4_Engine:
 
 				correct = calc_crc == pkt_crc
 				if correct:
-#					print '\tcrc correct'
+					if self.print_plaintext:
+						print '\tcrc correct'
 					break
 			if correct:
 				break
@@ -69,7 +70,8 @@ class RC4_Engine:
 #			print '\tplaintext:\n\t\t'+str2hex(plaintext)
 
 		if not correct:
-			print '\tdecryption failed'
+			if self.print_plaintext:
+				print '\tdecryption failed'
 			return None
 		return plaintext
 

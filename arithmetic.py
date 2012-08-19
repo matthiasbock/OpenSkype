@@ -6,8 +6,9 @@
 # http://en.wikipedia.org/wiki/Arithmetic_coding
 # http://en.wikipedia.org/wiki/Huffman_coding
 #
-# Hint: the picture, presented in "Silver needle in the Skype",
-# does not represent the frequency dictionary of "ACAB"
+# Note: the picture, presented in "Silver needle in the Skype",
+# does not represent the frequency dictionary of "ACAB",
+# it should read "ACABCACA" or something like that
 #
 
 def getfrequencies(s, debug=False):
