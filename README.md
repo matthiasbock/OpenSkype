@@ -23,7 +23,7 @@ You can find our mailing list on Google Groups:
 
 https://groups.google.com/forum/?hl=en&fromgroups#!forum/openskype
 
-The license of this project is GNU GPLv2 and Creative Commons Attribution Share-Alike.
+License: GNU GPLv2 or Creative Commons Attribution Share-Alike; in web services: GNU Affero GPL
 
 Exception: the C code by O'Neil, which is for academic research and educational purposes only.
 
