@@ -1,3 +1,6 @@
+pcap
+wireshark
+
 *.pyc
 *.o
 *.so
