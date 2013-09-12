@@ -1,0 +1,1404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC | Crandall | First Monday</title>
+	
+	<meta name="description" content="Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC">
+			<meta name="keywords" content="Internet censorship; Internet surveillance; China">
+	
+	
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+
+	<meta name="DC.Contributor.Sponsor" xml:lang="en" content="MacArthur Foundation; National Science Foundation">
+	<meta name="DC.Coverage" xml:lang="en" content="Encrypted keyword blacklists">
+	<meta name="DC.Coverage.spatial" xml:lang="en" content="China, globally">
+	<meta name="DC.Coverage.temporal" xml:lang="en" content="2011-2012">
+	<meta name="DC.Creator.PersonalName" content="Jedidiah R. Crandall">
+	<meta name="DC.Creator.PersonalName" content="Masashi Crete-Nishihata">
+	<meta name="DC.Creator.PersonalName" content="Jeffrey Knockel">
+	<meta name="DC.Creator.PersonalName" content="Sarah McKune">
+	<meta name="DC.Creator.PersonalName" content="Adam Senft">
+	<meta name="DC.Creator.PersonalName" content="Diana Tseng">
+	<meta name="DC.Creator.PersonalName" content="Greg Wiseman">
+	<meta name="DC.Date.created" scheme="ISO8601" content="2013-06-30">
+	<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2013-03-19">
+	<meta name="DC.Date.issued" scheme="ISO8601" content="2013-07-01">
+	<meta name="DC.Date.modified" scheme="ISO8601" content="2013-07-01">
+	<meta name="DC.Description" xml:lang="en" content="In this paper, we present an analysis of over one year and a half of data from tracking the censorship and surveillance keyword lists of two instant messaging programs used in China. Through reverse engineering of TOM-Skype and Sina UC, we were able to obtain the URLs and encryption keys for various versions of these two programs and have been downloading the keyword blacklists daily. This paper examines the social and political contexts behind the contents of these lists, and analyzes those times when the list has been updated, including correlations with current events.">
+	<meta name="DC.Format" scheme="IMT" content="text/html">
+	<meta name="DC.Identifier" content="4628">
+						<meta name="DC.Identifier.URI" content="http://firstmonday.org/ojs/index.php/fm/article/view/4628">
+	<meta name="DC.Language" scheme="ISO639-1" content="en">
+	<meta name="DC.Rights" content="Authors submitting a paper to First Monday automatically agree to confer a limited license to First Monday if and when the manuscript is accepted for publication. This license allows First Monday to publish a manuscript in a given issue. Authors have a choice of: 1. Dedicating the article to the public domain. This allows anyone to make any use of the article at any time, including commercial use. A good way to do this is to use the Creative Commons Public Domain Dedication Web form; see  http://creativecommons.org/license/publicdomain-2?lang=en . 2. Retaining some rights while allowing some use. For example, authors may decide to disallow commercial use without permission. Authors may also decide whether to allow users to make modifications (e.g. translations, adaptations) without permission. A good way to make these choices is to use a Creative Commons license. * Go to  http://creativecommons.org/license/ . * Choose and select a license. * What to do next — you can then e–mail the license html code to yourself. Do this, and then forward that e–mail to First Monday’s editors. Put your name in the subject line of the e–mail with your name and article title in the e–mail. Background information about Creative Commons licenses can be found at  http://creativecommons.org/about/licenses/ . 3. Retaining full rights, including translation and reproduction rights. Authors may use the statement: © Author 2008 All Rights Reserved. Authors may choose to use their own wording to reserve copyright. If you choose to retain full copyright, please add your copyright statement to the end of the article. Authors submitting a paper to First Monday do so in the understanding that Internet publishing is both an opportunity and challenge. In this environment, authors and publishers do not always have the means to protect against unauthorized copying or editing of copyright–protected works.">
+	<meta name="DC.Source" content="First Monday">
+	<meta name="DC.Source.ISSN" content="13960466">
+	<meta name="DC.Source.Issue" content="7">	<meta name="DC.Source.URI" content="http://firstmonday.org/ojs/index.php/fm">
+	<meta name="DC.Source.Volume" content="18">						<meta name="DC.Subject" xml:lang="en" content="Internet censorship">
+								<meta name="DC.Subject" xml:lang="en" content="Internet surveillance">
+								<meta name="DC.Subject" xml:lang="en" content="China">
+				<meta name="DC.Title" content="Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC">
+		<meta name="DC.Type" content="Text.Serial.Journal">
+	<meta name="DC.Type.articleType" content="Articles">
+		<meta name="gs_meta_revision" content="1.1">
+	<meta name="citation_journal_title" content="First Monday">
+	<meta name="citation_issn" content="13960466">
+        <meta name="citation_author" content="Jedidiah R. Crandall">
+        <meta name="citation_author_institution" content="University of New Mexico">
+        <meta name="citation_author" content="Masashi Crete-Nishihata">
+        <meta name="citation_author_institution" content="The Citizen Lab, Munk School of Global Affairs, University of Toronto">
+        <meta name="citation_author" content="Jeffrey Knockel">
+        <meta name="citation_author_institution" content="University of New Mexico">
+        <meta name="citation_author" content="Sarah McKune">
+        <meta name="citation_author_institution" content="The Citizen Lab, Munk School of Global Affairs, University of Toronto">
+        <meta name="citation_author" content="Adam Senft">
+        <meta name="citation_author_institution" content="The Citizen Lab, Munk School of Global Affairs, University of Toronto">
+        <meta name="citation_author" content="Diana Tseng">
+        <meta name="citation_author_institution" content="The Citizen Lab, Munk School of Global Affairs, University of Toronto">
+        <meta name="citation_author" content="Greg Wiseman">
+        <meta name="citation_author_institution" content="The Citizen Lab, Munk School of Global Affairs, University of Toronto">
+<meta name="citation_title" content="Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC">
+
+	<meta name="citation_date" content="2013/06/30">
+
+	<meta name="citation_volume" content="18">
+	<meta name="citation_issue" content="7">
+
+						<meta name="citation_abstract_html_url" content="http://firstmonday.org/ojs/index.php/fm/article/view/4628">
+	<meta name="citation_language" content="en">
+						<meta name="citation_keywords" xml:lang="en" content="Internet censorship">
+								<meta name="citation_keywords" xml:lang="en" content="Internet surveillance">
+								<meta name="citation_keywords" xml:lang="en" content="China">
+									<meta name="citation_fulltext_html_url" content="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727">
+				
+
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/pkp.css" type="text/css">
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/common.css" type="text/css">
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/common(1).css" type="text/css">
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/compiled.css" type="text/css">
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/articleView.css" type="text/css">
+			<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/rtEmbedded.css" type="text/css">
+	
+	
+	
+	<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/sidebar.css" type="text/css">		<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/rightSidebar.css" type="text/css">	
+			<link rel="stylesheet" href="./Chat program censorship and surveillance in China_files/journalStyleSheet.css" type="text/css">
+	
+	<!-- Base Jquery -->
+	<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/jsapi"></script><style type="text/css"></style>
+	<script type="text/javascript">
+		// Provide a local fallback if the CDN cannot be reached
+		if (typeof google == 'undefined') {
+			document.write(unescape("%3Cscript src='http://firstmonday.org/ojs/lib/pkp/js/lib/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='http://firstmonday.org/ojs/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js' type='text/javascript'%3E%3C/script%3E"));
+		} else {
+			google.load("jquery", "1.4.4");
+			google.load("jqueryui", "1.8.6");
+		}
+	</script><script src="./Chat program censorship and surveillance in China_files/jquery.min.js" type="text/javascript"></script><script src="./Chat program censorship and surveillance in China_files/jquery-ui.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			fontSize("#sizer", "body", 9, 16, 32, "/ojs"); // Initialize the font sizer
+		});
+	</script>
+
+	<!-- Compiled scripts -->
+			
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/jquery.tag-it.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/fontController.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/general.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/jqueryValidatorI18n.js"></script>
+
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/Helper.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/ObjectProxy.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/Handler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/LinkActionRequest.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/Feature.js"></script>
+
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/SiteHandler.js"></script><!-- Included only for namespace definition -->
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/UrlInDivHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/AutocompleteHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/ExtrasOnDemandHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/FormHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/ClientFormHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/GridHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/LinkActionHandler.js"></script>
+
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/SearchFormHandler.js"></script>
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/LuceneAutocompleteHandler.js"></script>
+
+<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/jquery.pkp.js"></script>	
+	
+	<link rel="alternate" type="application/atom+xml" title="First Monday (atom+xml)" href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/atom">
+	<link rel="alternate" type="application/rdf+xml" title="First Monday (rdf+xml)" href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/rss">
+	<link rel="alternate" type="application/rss+xml" title="First Monday (rss+xml)" href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/rss2">
+	<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/relatedItems.js"></script>
+	<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/inlinePdf.js"></script>
+	<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/pdfobject.js"></script>
+
+</head>
+<body bgcolor="#ffffff" link="#bb7777" vlink="#7777bb" alink="#ffee99" text="#000000">
+
+<div id="container"><div id="fade" class="black_overlay"></div>
+
+<div id="header">
+<div id="headerTitle">
+<h1>
+	<img src="./Chat program censorship and surveillance in China_files/pageHeaderTitleImage_en_US.gif" width="252" height="102" alt="Page Header">
+</h1>
+</div>
+</div>
+
+<div id="body">
+
+	<div id="sidebar">
+							<div id="rightSidebar">
+				<div class="block" id="sidebarDevelopedBy">
+	<a class="blockTitle" href="http://pkp.sfu.ca/ojs/" id="developedBy">Open Journal Systems</a>
+</div><div class="block" id="sidebarHelp">
+	<a class="blockTitle" href="javascript:openHelp('http://firstmonday.org/ojs/index.php/fm/help')">Journal Help</a>
+</div><div class="block" id="sidebarUser">
+			<span class="blockTitle">User</span>
+	
+						<form method="post" action="http://firstmonday.org/ojs/index.php/fm/login/signIn">
+				<table>
+					<tbody><tr>
+						<td><label for="sidebar-username">Username</label></td>
+						<td><input type="text" id="sidebar-username" name="username" value="" size="12" maxlength="32" class="textField"></td>
+					</tr>
+					<tr>
+						<td><label for="sidebar-password">Password</label></td>
+						<td><input type="password" id="sidebar-password" name="password" value="" size="12" maxlength="32" class="textField"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" id="remember" name="remember" value="1"> <label for="remember">Remember me</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Login" class="button"></td>
+					</tr>
+				</tbody></table>
+			</form>
+			</div><div class="block" id="sidebarNavigation">
+	<span class="blockTitle">Journal Content</span>
+
+	<span class="blockSubtitle">Search</span>
+	<form id="simpleSearchForm" method="post" action="http://firstmonday.org/ojs/index.php/fm/search/search">
+		<table id="simpleSearchInput">
+			<tbody><tr>
+				<td>
+													<input type="text" id="simpleQuery" name="simpleQuery" size="15" maxlength="255" value="" class="textField">
+								</td>
+			</tr>
+			<tr>
+				<td><select id="searchField" name="searchField" size="1" class="selectMenu">
+					<option label="All" value="query">All</option>
+<option label="Authors" value="authors">Authors</option>
+<option label="Title" value="title">Title</option>
+<option label="Abstract" value="abstract">Abstract</option>
+<option label="Index terms" value="indexTerms">Index terms</option>
+<option label="Full Text" value="galleyFullText">Full Text</option>
+
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Search" class="button"></td>
+			</tr>
+		</tbody></table>
+	</form>
+
+	<br>
+
+		<span class="blockSubtitle">Browse</span>
+	<ul>
+		<li><a href="http://firstmonday.org/ojs/index.php/fm/issue/archive">By Issue</a></li>
+		<li><a href="http://firstmonday.org/ojs/index.php/fm/search/authors">By Author</a></li>
+		<li><a href="http://firstmonday.org/ojs/index.php/fm/search/titles">By Title</a></li>
+		
+					<li><a href="http://firstmonday.org/ojs/index.php/index">Other Journals</a></li>
+						</ul>
+	</div>
+<div class="block" id="sidebarFontSize" style="margin-bottom: 4px;">
+	<span class="blockTitle">Font Size</span>
+	<div id="sizer"><a href="javascript:void(0);" class="pkp_controllers_fontController_smallFont" title="Make font size smaller">Make font size smaller</a> <a href="javascript:void(0);" class="pkp_controllers_fontController_defaultFont" title="Make font size default">Make font size default</a> <a href="javascript:void(0);" class="pkp_controllers_fontController_largeFont" title="Make font size larger">Make font size larger</a> </div>
+</div>
+<br><div class="block" id="sidebarWebFeed">
+	<span class="blockTitle">Current Issue</span>
+	<a href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/atom">
+	<img src="./Chat program censorship and surveillance in China_files/atom10_logo.gif" alt="Atom logo" border="0"></a>
+	<br>
+	<a href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/rss2">
+	<img src="./Chat program censorship and surveillance in China_files/rss20_logo.gif" alt="RSS2 logo" border="0"></a>
+	<br>
+	<a href="http://firstmonday.org/ojs/index.php/fm/gateway/plugin/WebFeedGatewayPlugin/rss">
+	<img src="./Chat program censorship and surveillance in China_files/rss10_logo.gif" alt="RSS1 logo" border="0"></a>
+</div>
+
+<div class="block" id="sidebarRTArticleTools">
+
+	<span class="blockTitle">Article Tools</span>
+			<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/abstract.png" class="articleToolIcon"> <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628" target="_parent">Abstract</a><br>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/printArticle.png" class="articleToolIcon"> <a href="javascript:openRTWindow('http://firstmonday.org/ojs/index.php/fm/rt/printerFriendly/4628/3727');">Print this article</a>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/metadata.png" class="articleToolIcon"> <a href="javascript:openRTWindow('http://firstmonday.org/ojs/index.php/fm/rt/metadata/4628/3727');">Indexing metadata</a><br>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/citeArticle.png" class="articleToolIcon"> <a href="javascript:openRTWindow('http://firstmonday.org/ojs/index.php/fm/rt/captureCite/4628/3727');">How to cite item</a><br>
+		</div>
+				<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/suppFiles.png" class="articleToolIcon"> <a href="javascript:openRTWindow('http://firstmonday.org/ojs/index.php/fm/rt/suppFiles/4628/3727');">Supplementary files</a><br>
+		</div>
+						<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/emailArticle.png" class="articleToolIcon">
+			Email this article <span style="font-size: 0.8em">(Login required)</span>		</div>
+				<div class="articleToolItem">
+			<img src="./Chat program censorship and surveillance in China_files/emailArticle.png" class="articleToolIcon">
+			Email the author <span style="font-size: 0.8em">(Login required)</span>		</div>
+		</div>
+
+<div class="block" id="sidebarRTAuthorBios">
+	<span class="blockTitle">
+					About The Authors
+			</span>
+		<div id="authorBio">
+	<p>
+		<em>Jedidiah R. Crandall</em><br>
+						University of New Mexico			</p>
+
+	<p>Department of Computer Science</p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Masashi Crete-Nishihata</em><br>
+						The Citizen Lab, Munk School of Global Affairs, University of Toronto			</p>
+
+	<p></p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Jeffrey Knockel</em><br>
+						University of New Mexico			</p>
+
+	<p>Department of Computer Science</p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Sarah McKune</em><br>
+						The Citizen Lab, Munk School of Global Affairs, University of Toronto			</p>
+
+	<p></p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Adam Senft</em><br>
+						The Citizen Lab, Munk School of Global Affairs, University of Toronto			</p>
+
+	<p></p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Diana Tseng</em><br>
+						The Citizen Lab, Munk School of Global Affairs, University of Toronto			</p>
+
+	<p></p>
+	</div>
+	<div class="separator"></div>
+		<div id="authorBio">
+	<p>
+		<em>Greg Wiseman</em><br>
+						The Citizen Lab, Munk School of Global Affairs, University of Toronto			</p>
+
+	<p></p>
+	</div>
+	
+	</div>
+			</div>
+			</div>
+
+<div id="main">
+
+<div id="navbar">
+	<ul class="menu">
+		<li id="home"><a href="http://firstmonday.org/ojs/index.php/fm/index">Home</a></li>
+		<li id="about"><a href="http://firstmonday.org/ojs/index.php/fm/about">About</a></li>
+
+					<li id="login"><a href="http://firstmonday.org/ojs/index.php/fm/login">Login</a></li>
+							<li id="register"><a href="http://firstmonday.org/ojs/index.php/fm/user/register">Register</a></li>
+												<li id="search"><a href="http://firstmonday.org/ojs/index.php/fm/search">Search</a></li>
+		
+					<li id="current"><a href="http://firstmonday.org/ojs/index.php/fm/issue/current">Current</a></li>
+			<li id="archives"><a href="http://firstmonday.org/ojs/index.php/fm/issue/archive">Archives</a></li>
+		
+					<li id="announcements"><a href="http://firstmonday.org/ojs/index.php/fm/announcement">Announcements</a></li>
+				
+
+									<li class="navItem" id="navItem-0"><a href="http://firstmonday.org/ojs/index.php/fm/about/submissions#onlineSubmissions">SUBMISSIONS</a></li>
+						</ul>
+</div>
+
+<div id="breadcrumb">
+	<a href="http://firstmonday.org/ojs/index.php/fm/index" target="_parent">Home</a> &gt;
+	<a href="http://firstmonday.org/ojs/index.php/fm/issue/view/397" target="_parent">Volume 18, Number 7 - 1 July 2013</a> &gt;	<a href="./Chat program censorship and surveillance in China_files/Chat program censorship and surveillance in China.html" class="current" target="_parent">Crandall</a>
+</div>
+
+<div id="content">
+
+			
+
+
+<title>Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC</title>
+
+
+<blockquote><img src="./Chat program censorship and surveillance in China_files/36574" border="1" alt="First Monday" align="bottom"><br></blockquote>
+<hr>
+<blockquote>
+
+<center><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#author"><img src="./Chat program censorship and surveillance in China_files/36545" alt="Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC by Jedidiah R. Crandall, Masashi
+Crete-Nishihata, Jeffrey Knockel, Sarah McKune, Adam Senft, Diana Tseng, and Greg Wiseman" border="1"></a></center>
+
+<br><hr><br>
+
+<p><img src="./Chat program censorship and surveillance in China_files/36572" alt="Abstract"><br>In this paper, we present an analysis of over one year and a half of data from tracking the censorship and surveillance keyword lists of two instant messaging programs used in China. Through reverse engineering of TOM–Skype and Sina UC, we were able to obtain the URLs and encryption keys for various versions of these two programs and have been downloading the keyword blacklists daily. This paper examines the social and political contexts behind the contents of these lists, and analyzes those times when the list has been updated, including correlations with current events.</p>
+
+<p><strong>Contents</strong></p>
+<p><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p1">1. Introduction</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p2">2. Background</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p3">3. Methodology</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p4">4. Results</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p5">5. Keyword analysis</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p6">6. Keyword list changes</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p7">7. Correlation between current events and keyword list updates</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p8">8. Discussion</a><br>
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p9">9. Conclusion</a></p>
+
+<p>&nbsp;</p><hr><p>&nbsp;</p>
+<p><strong><a name="p1"></a>1. Introduction</strong></p>
+
+<p>While the existence of Internet censorship and surveillance in China is well known, questions remain concerning how such information controls are implemented in practice domestically. Key questions for the study of state–sponsored Internet censorship include: how do censors determine which content to control? How are such determinations effectuated? With what speed? Do certain priorities apply when deciding what content should be subject to censorship and surveillance? Do censors care mostly about content that might cause organized movements such as protests? Do they always immediately censor current events that are sensitive, or are only certain current events targeted? These types of questions are difficult to answer, not only due to lack of transparency in China’s censorship apparatus, but also because censorship measurements can be biased and surveillance is often not possible to measure. In many cases, measuring what is censored entails guessing terms that might be censorship keywords and then testing those terms, leading to results that are limited to the intersection between what censors are targeting and what those measuring the censorship expect to be censored. Surveillance is typically undetectable through testing, because content such as blog posts or chat messages are posted regardless of whether surveillance is actually triggered.</p>
+
+<p>Affecting these inquiries is the role played in China’s information control regime by private companies providing Internet services. China’s complex regulatory system delegates much of the implementation of censorship and surveillance online to the private sector. Chinese Internet companies, including those that maintain blogs, instant messaging (IM) programs, message boards, news Web sites, and social media platforms, are held responsible for sensitive content, prompting them to take proactive measures to control user dissemination of such content. Such industry enforcement of government censorship and surveillance policies is extensive, particularly given that Chinese companies have developed a number of online services for the domestic market (<em>e.g.</em>, social networking, IM, media sharing) that provide alternatives to popular international platforms (<em>e.g.</em>, Twitter, Facebook, YouTube, etc.).</p>
+
+<p>In this study we examine the implementation of censorship and surveillance in two IM clients maintained by two different Chinese companies. For a period of more than a year and a half, we downloaded and decrypted the censorship and surveillance keyword <a name="1aa"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#1">1</a>] lists used by the client software of two IM programs
+used in China: TOM–Skype and Sina UC. We obtained the keyword list URLs and encryption keys by reverse engineering the software binaries of the clients. In the TOM–Skype client, keyword lists are used to trigger censorship and/or surveillance of user chats, while in Sina UC the keyword lists trigger only censorship. This data affords a rare opportunity to analyze the contents of, and updates to, complete and unbiased keyword lists used for both censorship and surveillance. In this paper we discuss our efforts to translate and categorize these lists, and develop visualizations to help understand the relationships between keywords, categories, and current events. The dataset provides a candid view of a censorship and surveillance implementation within two Chinese companies, allowing us to observe many apparent mistakes, corrections, and shifts of focus (<em>e.g.</em>, from censorship to surveillance). These anomalies and systematic changes can help to shed light on company processes for implementing censorship and surveillance and how such processes may be affected by evolving government policies on information control.</p>
+
+<p>While our dataset provides a unique window into how two Chinese companies implement information controls, our study is limited to the application of such controls in only two IM clients, providing a view of a narrow segment of a much broader communications environment through which users in China exchange information. The dataset offers insights into China’s information control regime but also raises further questions on how industry enforcement works in practice in China, the social and political implications of these IM clients’ censorship and surveillance operations, and how surveillance and censorship features of these IM clients compare to those of other Internet services in China. We conclude this paper with discussion of these questions and outline areas for future research.</p>
+
+<p><em>1.1. Main findings and implications</em></p>
+
+<p><u>Variance in keyword lists between clients</u></p>
+
+<p>Comparing the keyword lists of the two clients reveals very little overlap. The full dataset of 88 combined lists contains 4,256 unique keywords, of which only 138 terms (3.2 percent) were shared in common between TOM–Skype and Sina UC. This lack of overlap suggests that no common keyword list was provided to these companies by government authorities. Previous studies have similarly found little consistency in the implementation of censorship in Chinese blog services (MacKinnon, 2009) and search engines localized for the Chinese market (Villeneuve, 2008a). These inconsistencies suggest that companies may be given general guidelines from authorities on what types of content to target, but have some degree of flexibility on how to implement these directives. The prevalence and efficiency of censorship in a Chinese service may therefore be contingent on how the company manages its internal information control processes.  See Link (2002) for more discussion about the role between the Chinese government and the companies that actually implement the censorship.</p>
+
+<p><u>Highly targeted and overly broad keyword content</u></p>
+
+<p>Keywords targeted a variety of content including issues related to Chinese politics, human rights, sensitive events, pornography, gambling, and illegal drugs. Some keywords were highly targeted such as instructions and locations related to Jasmine Rallies (pro–democracy protests which took place across China in early 2011 after the Arab Spring), names of dissidents, and neologisms used by Chinese users to discuss sensitive
+issues. The targeted nature of these keywords raises concerns regarding the ultimate impact of censorship and surveillance on users discussing such sensitive issues and social mobilizations.</p>
+
+<p>In addition to these highly targeted keywords, both TOM–Skype and Sina UC lists included extremely generic terms. For example, TOM–Skype lists included “Chinese people” (“华人”), and “Internet” (“互联网”), which raises implications of overbroad surveillance of users.</p>
+
+<p><u>Keyword list changes affecting censorship and surveillance functions</u></p>
+
+<p>Significant changes to keyword lists in both clients affected the implementation of censorship and surveillance functions.</p>
+
+<p>The most recent update to the censorship lists for TOM–Skype versions 5.0–5.1 (on 27 April 2011) and 5.5–6.1 (on 18 December 2011) reduced these lists to a single keyword, effectively eliminating censorship on these versions of the client. However, versions 5.1–6.1 still maintain active surveillance–only lists and earlier versions of the client (3.6–4.2) retain active censorship lists, which means that the latest versions of TOM–Skype analyzed in our study focus on keyword surveillance.</p>
+
+<p>Similarly, on 17 September 2012, four of the five Sina UC lists were reduced to a single keyword. The remaining keyword list is used to censor the username a user may select, meaning that censorship of incoming and outgoing messages appears to be effectively eliminated in Sina UC. It is possible, however, that Sina UC has implemented surveillance features on the server side that we are unable to detect (this possibility is further discussed in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p8">Section 8</a>).</p>
+
+<p><u>Surveillance and censorship in reaction to sensitive events</u></p>
+
+<p>Censorship and surveillance can be triggered or modified in response to events happening on the ground. Authorities may restrict or monitor information during key moments when the information may have the greatest impact, such as during elections, periods of civil unrest, and sensitive political anniversaries.</p>
+
+<p>We identified current events referenced in the dataset that occurred within our data collection timeframe and correlated keyword list updates with the timeline of the events. Across the selected cases we observed inconsistent patterns. In some cases keyword updates were implemented within a single day of a sensitive event. In other cases, updates were applied weeks or months after the event took place, potentially indicating the censors only responded after an issue developed sufficient political salience. In some cases, seemingly important and sensitive political events that were clearly of concern to the Chinese government either did not appear in any testing lists or were only represented with a small number of terms.</p>
+
+<p>All of the raw data, processed data, and visualizations from this study are available at <a href="https://china-chats.net/">https://china-chats.net</a>.</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p2"></a>2. Background</strong></p>
+
+<p>In this section we provide an overview of legal, regulatory, and policy frameworks for information control in China, and review related work.</p>
+
+<p><em>2.1. Legal, regulatory and policy frameworks</em></p>
+
+<p>The government–mandated information control apparatus in China is a multifaceted structure, incorporating technical, legal, regulatory and policy measures for censorship and surveillance, and involving industry in enforcement of content controls and proactive “maintenance” in the online environment (OpenNet Initiative, 2012). As summarized in a speech delivered before the Standing Committee of the National People’s Congress on 29 April 2010 by Wang Chen, then director of the Information Office of the State Council and the International Communication Office of the Communist Party of China (CPC):</p>
+
+<table align="center" width="60%"><tbody><tr><td>We are following the overall thinking of combining Internet content management with industry management and security supervision; combining prior review and approval with supervision afterwards; combining technological blocking with public opinion guidance; combining hierarchical management with local management; combining government management with industry self–regulation; and combining online monitoring with off–line management. We have set up a pilot management system that integrates legal regulation, administrative supervision, industry self–regulation, and technological safeguards. (Chen, 2010)</td></tr></tbody></table>
+
+<p>This combined approach closely weds government policy prerogatives with industry–based enforcement, as Chinese companies operating in the online space are subject to a multitude of evolving control requirements and penalties. While much has been written about Internet censorship and surveillance in China, and important research efforts are ongoing, we summarize here some of the key information control developments
+and requirements applicable to companies operating in China, such as TOM Online and Sina
+Corporation, which offer the IM programs analyzed in this study.</p>
+
+<p>Government policies, and the legal and regulatory measures in place to effectuate them, have attempted to tap the economic potential of the Internet while also managing what are viewed as its potentially destabilizing effects in society, preventing threats to government control. As Wang Chen described in 2010, on the one hand, the Internet is an “important engine that drives economic development,” provides the government
+with a means of better serving its citizens, and a vehicle for “positive propaganda” and public opinion guidance. On the other hand, the Internet must be managed through strict rules and regulations in order to deter users from accessing or propagating content deemed inappropriate. While praising the effectiveness of China’s system so far, Wang called for a stronger legal system to “clarify the criteria for identifying harmful information” as well as the perfection of “our system to monitor harmful information on the Internet.” Several weeks later (8 June 2010), the Information Office of the State Council issued a white paper
+entitled “The Internet in China” (China Information Office of the State Council, 2010) considered the first government–issued Internet policy paper, which outlined similar priorities <a name="2a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#2">2</a>] (MacKinnon, 2010).</p>
+
+<p>As many of the numerous online services and platforms provided to the Chinese public are offered by industry rather than government entities, the Chinese government has promulgated a complex framework of laws and regulations with which industry must comply, effectively extending the reach of the government at various levels into the companies themselves. The legal and regulatory framework governs the administration of different online services, including electronic messaging services (China Ministry of Information Industry, 2000a) Internet information services (State Council of the People’s Republic of China, 2000), electronic bulletin services (China Ministry of Information Industry, 2000b), news publications (China State Council Information Office and Ministry of Information Industry, 2005), audio and video programming services (China State Administration of Radio Film and Television, 2007), and microblogs <a name="3a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#3">3</a>] (Beijing Municipal Government, 2011). These and other laws provide broad categories of “inappropriate content” that is illegal to “produce, reproduce, release, or disseminate” <a name="4a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#4">4</a>] (State Council of the People’s Republic of China, 2000; Beijing Municipal Government, 2011). Moreover, authorities have moved to enforce real name registration on microblogs and other online services. The 2011 Central Provisions on the Administration of Micro–blog Development require “any organization or individual that registers a micro–blog account and produces, reproduces, publishes, or disseminates information content ... [to] use real identity information” [Article 9] (Beijing Municipal Government, 2011). Microblog companies are likewise expected to verify their users’ identities [Article 9]. And in December 2012, the National People’s Congress adopted the Decision Concerning Strengthening Network Information Protection, which stipulates that “network service providers that handle website access services for users ... or provide information publication services to users, shall, when concluding agreements with users or affirming the provision of service, require users to provide real identity information” [Article 6] (National People’s Congress Standing Committee, 2012; <em>Global Times</em>, 2012).</p>
+
+<p>In practice, all Internet companies are held responsible for the content they host and expected to establish entire departments devoted to surveillance and censorship of their users (MacKinnon, 2010; 2009). While authorities provide overall direction on the scope of that activity, companies are tasked with practical enforcement, including maintaining keyword lists (Reporters Without Borders, 2007; MacKinnon, 2009). News Web sites, for example, receive directives from “local departments in charge of news propaganda” or “public security departments” to remove articles with objectionable content (Feng, 2010). Company censors are then required to adjust their list of “filter words” to account for the recently deleted content. Search engines similarly maintain lists of keywords and Web addresses that cannot appear in result pages (Human Rights Watch, 2006). In 2009, documents leaked by an employee of Baidu, China’s leading search engine, provided a glimpse into the company’s censorship and monitoring policies. The documents contained guidelines on identifying information for censorship and lists of filtered keywords and URLs (<em>China Digital Times</em>, 2009). Among those terms and subjects identified for censorship were words concerning collective assembly and social mobilization (<em>e.g.</em>, “demonstration”), government repression (<em>e.g.</em>, “The use of force to suppress”), specific events and people (<em>e.g.</em>, “9.12 events”), and various other terms (<em>e.g.</em>, “AIDS,” “land”).</p>
+
+<p>Both TOM Online <a name="5a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#5">5</a>] and Sina Corporation <a name="6a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#6">6</a>] summarized PRC government controls relevant to their operations in filings with the U.S. Securities and Exchange Commission, which offer some insight into the labyrinthine information control requirements that Internet companies in China must navigate. For example, Sina Corp.’s annual report for 2011 — the most recent of the filings available that explain the uncertainties and risks of Internet–related business in China — illustrates the following circumstances of relevance (SINA Corporation, 2011):</p>
+
+<ul><li><p>Companies must obtain appropriate licensing from government authorities to conduct operations. Licenses are required to provide “basic” or “value–added” telecommunications services, the latter of which are defined as “telecommunications and information services provided through public networks.” Additional licensing requirements apply to provision of Internet content services, which vary according to the content at issue. (pp. 38–39) Specific approvals are also required to provide BBS services, namely, “electronic bulletin boards, electronic forums, message boards and chat rooms.” (p. 39) Some licenses are subject to annual inspection. See also Jiang (2012).</p>
+
+<p>Numerous government authorities are involved in regulation of the Internet industry. These include national authorities — such as the Ministry of Industry and Information Technology, the State Administration of Radio, Film and Television, the State Administration for Industry and Commerce, the State Council Information Office, the State Security Bureau, the General Administration of Press and Publication, the Ministry of Education, the Ministry of Culture, the Ministry of Health, and the Ministry of Public Security — as well as provincial and local authorities such as the Beijing Administration for Industry and Commerce and local public security bureaus. (pp. 38, 45–46)</p></li>
+
+<li><p>Companies must comply with extensive laws and regulations governing the provision of various Internet services. The filing details the numerous measures relevant to Sina’s services (pp. 39–46), including 13 laws and regulations specific to information security and censorship. “According to these laws and regulations, it is mandatory for Internet companies in the PRC to complete security filing procedures and regularly update information security and censorship systems for their websites with the local public security bureau.” (p. 45)</p></li>
+
+<li><p>Companies must actively guard against disclosure of “state secrets.” “[T]he newly amended Law on Preservation of State Secrets which became effective on October 1, 2010 provides that whenever an Internet service provider detects any leakage of state secrets in the distribution of online information, it should stop the distribution of such information and report to the authorities of state security and public security. Internet service providers are required to delete any content on its website that may lead to disclosure of state secrets. Failure to do so on a timely and adequate basis may subject us to liabilities and penalties.” (p. 16)</p>
+
+<p>Article 28 of the State Secrets Law “requires Internet and other public information networking operators and service providers to: 1) cooperate with investigation and prosecution of violations; 2) maintain and disclose records and reports to security authorities; and 3) take active steps to stop transmission of information considered to be state secrets” (Human Rights in China, 2010; Standing Committee of the 11th National People’s Congress, 2010). Yet “state secrets” may be broadly interpreted, as well as retroactively classified. Thus, companies have significant incentive to patrol for sensitive topics on the basis of these requirements in order to avoid potential liabilities.</p></li>
+
+<li><p>Companies that maintain news Web sites or Internet portals must rely on continued cooperation with state–owned media for certain types of content. “[T]he PRC government has the ability to restrict or prevent state–owned media from cooperating with us in providing certain content to us, which will result in a significant decrease of the amount of content we can publish on our websites. We may lose users if the PRC government chooses to restrict or prevent state–owned media from cooperating with
+us, in which case our revenues will be impacted negatively.” (p. 21; see also pp. 39–40) Such reliance provides government authorities with additional leverage in controlling industry.</p></li></ul>
+
+<p>Facilitating company compliance with government mandates are “self–discipline” drives and the presence of Party branches and committees internal to the companies. For example, the Internet Society of China issued the Public Pledge on Self–Discipline for the Chinese Internet Industry in 2002, which obliges “voluntary” signatories to refrain “from producing, posting, or disseminating pernicious information that may jeopardize state security and disrupt social stability, contravene laws and regulations and spread superstition and obscenity ...” and to “monitor the information publicized by users on websites according to law and remove the harmful information promptly” (Internet Society of China, 2002; Human Rights Watch, 2006). At the same time, the CPC maintains a heavy presence within Internet companies, organizing its members and establishing Party Committees within these entities (Kennedy, 2013; Kessler, 2013). Sina, Baidu, social network Kaixin, and at least six other Internet companies are reported to have formed internal Party organizations (Kessler, 2013). And in November 2012, a new CPC “Capital Internet Society Committee” was established to expand Party presence and strengthen the Party’s governing capacity and development work in the Internet industry in Beijing, including among smaller Internet companies (Xinhua, 2012b; Kennedy, 2013).</p>
+
+<p>With such extensive involvement of industry, however, and the evolving nature of the online environment, application of information controls — how censorship and surveillance within the industry are actually implemented — appears to vary according to the circumstances of the platform or company at issue, activities of users, and the fluctuating policy priorities of local and central authorities. For example, Sina
+noted it had encountered certain difficulties in fully complying with microblog real–name registration requirements: “Although we have made significant efforts to comply with the verification requirements, for reasons including existing user behavior, the nature of the microblogging product and the lack of clarity on specific implementation procedures, we have not been able to verify the identities of all of the users who post content publicly on Weibo” (SINA Corporation, 2011, p. 18). Additionally, in January 2013, a Sina Weibo manager responded to user criticism regarding Weibo censorship of references to the <em>Southern Weekly</em> incident by publicly expressing frustration over the Propaganda Department’s censorship requirements and attempting to explain the company’s considered trade–offs in the monitoring process (Lam, 2013). Continuously changing legal requirements and vaguely defined content categories, necessitating individual company interpretation, may result in additional variations in censorship practices across platforms and providers.</p>
+
+<p>Moreover, such amorphous application of information controls may lend itself to unanticipated abuses, as evidenced in recent reporting examining China’s “black PR” industry and documenting instances of corruption surrounding practices of keyword blocking and content deletion (Custer, 2013).</p>
+
+<p><em>2.2. Related work</em></p>
+
+<p>China’s system for national level Internet filtering has been the focus of a number of technical studies (Zittrain and Edelman, 2003; Park and Crandall, 2010; Xu, <em>et al.</em>, 2011; Winter and Lindskog, 2012). Research on China’s HTTP keyword filtering system includes Clayton, <em>et al.</em> (2006) and later Crandall, <em>et al.</em> (2007) who used latent semantic analysis to reverse engineer censored keywords clustered around sensitive topics.</p>
+
+<p>In comparison to research on China’s national filtering system, studies of censorship of Chinese domestic products and services are limited. Previous literature reveals inconsistencies between companies in what content is targeted for censorship and mechanisms used to implement that censorship. Recent studies on Chinese social media also show how censorship of Chinese microblogs dynamically adapts to sensitive topics and point to possible focuses for censorship.</p>
+
+<p>MacKinnon (2009) examined how 15 different Chinese blog service providers filter and delete posts and found that the extent of censorship implemented and the methods used varied significantly. Based on these findings, MacKinnon concluded that censorship of user generated content in China is highly decentralized, and companies and private individuals responsible for maintaining the services can have significant impact on how censorship is implemented. Villeneuve (2008b) tested keyword censorship in search engines for the Chinese market developed by Google, Microsoft, Yahoo! and Chinese company Baidu. He found little overlap in the keywords censored by the four search engines, suggesting there was no comprehensive system (such as an official list) in place for implementing censorship and that search engine providers have flexibility in carrying out government censorship requirements.</p>
+
+<p>Studies on Chinese social media are beginning to emerge, but have been limited relative to research on social media generally due to the difficulty of computationally processing Chinese text. Examples of current work include the WeiboScope platform (<a href="http://research.jmsc.hku.hk/social/obs.py/sinaweibo/">http://research.jmsc.hku.hk/social/obs.py/sinaweibo/</a>) maintained by the University of Hong Kong, which tracks trends across the Sina Weibo microblogging platform. Other studies have focused on the dynamic nature of Weibo filtering. Bamman, <em>et al.</em> (2012) conducted statistical analysis of deleted Weibo posts and found that posts with sensitive words and from certain geographic locations (<em>e.g.</em>, Tibet and Qinghai) have a higher deletion rate. Zhu, <em>et al.</em> (2013) measured censorship on Weibo and found that retroactive post deletions occur within minutes and the censors use many automated tools. King, <em>et al.</em> (2013), collected posts from 1,382 Chinese social media Web sites and, through statistical and content analysis comparing censored and uncensored posts, demonstrated that censorship focused on content that represented, reinforced, or encouraged social mobilization.</p>
+
+<p>As with other domestic services, Chinese IM programs are subject to censorship regulations, and anecdotal reports from the media and Chinese blogger community have raised suspicions of surveillance on IM programs and the use of chat logs in arrests and prosecutions (Kennedy, 2012; Global Voices Advocacy, 2009). Leaks of keyword lists and past work has confirmed censorship and surveillance capabilities for some Chinese IM programs. In 2004, a keyword list used to trigger censorship in QQ Chat was retrieved through a string dump of QQ Chat’s dynamically linked libraries, which was made possible due to a lack of encryption (Qiang, 2004). TOM–Skype was addressed in a 2006 Human Rights Watch report that analyzed the client’s censorship features. This work was followed by Villeneuve (2008a), who confirmed surveillance features in the TOM–Skype client by obtaining chat logs uploaded by TOM–Skype through an insecure publicly accessible Web server hosted in China, and performing cluster and content analysis on the user and content filter logs. Knockel, <em>et al.</em> (2011) reverse engineered multiple versions of the TOM–Skype client, decrypted censorship and surveillance keyword lists for each client, and reported on list updates over the period of one month. They subsequently reverse engineered the Sina UC chat client, obtained the URL and encryption keys for downloading censorships lists used by the client, and provided a high–level comparison of the Sina UC lists with the TOM–Skype lists (Aase, <em>et al.</em>, 2012).</p>
+
+<p>This work builds on previous research by analyzing a dataset of TOM–Skype and Sina UC keyword lists over a period of 21 months, translating keywords into English, categorizing the keywords into finer–grained content categories, and correlating list updates with current events. In past cases when complete censorship lists were obtained, such as the QQ chat and blog keywords in the appendices of the 2006 Human Rights
+Watch report, the lists were taken from one snapshot in time; however, our dataset includes all changes to the lists per day for over one and a half years. The following sections detail our methodology and results.</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p3"></a>3. Methodology</strong></p>
+
+<p>We chose TOM–Skype <a name="7a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#7">7</a>] and Sina UC for analysis because these two IM programs implement censorship (and surveillance in the case of TOM–Skype) inside the client software. These are, however, not the most popular IM programs in use in China. The market is dominated by Tencent’s QQ Chat, which leads with 190.3 million unique daily users and 75 percent market share (eMarketer, 2012). In comparison, according to 2011 reports, TOM–Skype has 2.1 million unique daily users, ranking it the tenth most used IM program in China. Sina UC currently holds only 1.1 percent of the market and in 2011 rankings does not appear in the top ten most used
+IM programs in China (Xing, 2010; eMarketer, 2012).</p>
+
+<p>We analyzed each TOM–Skype and Sina UC client for censorship and surveillance behavior. Using packet sniffing, we discovered from which URL each client downloads its keyword lists and, for each client that sends surveillance messages, to which URL it uploads those messages. To decrypt the keyword lists and surveillance messages, we used a variety of reverse engineering techniques as appropriate for each client, which we describe below.</p>
+
+<p><em>3.1. Sina UC censorship</em></p>
+
+<p>Sina UC has no built–in measures to resist reverse engineering, and reverse engineering the cryptography used for its keyword lists was the easiest of all the clients in this study. We used the traditional technique of searching for cryptographic constants used by well–known cryptographic algorithms inside the program. We found constants used by the Blowfish algorithm’s key scheduler, which allowed us to find the function implementing the key scheduler by looking at what functions referenced those constants. Once we found the key scheduler function, we set a breakpoint on it, ran Sina UC, and witnessed the Blowfish key passed to the scheduler.</p>
+
+<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p32"></a>
+<p><em>3.2. TOM–Skype censorship</em></p>
+
+<p>We reverse engineered TOM–Skype 3.6–4.2 and TOM–Skype Mobile’s keyword list’s cryptography by employing a chosen ciphertext attack. These clients make a DNS query for the address of the server used to download the keyword lists. By redirecting a client’s query to instead point to our own Web server, we were able to completely control the ciphertext that the client downloads.</p>
+
+<p>The initial ciphertext that we sent to the client was identical to that which TOM–Skype provided. We knew from previous work (Villeneuve, 2008a) that “fuck” was censored, and so by deleting half of the list at a time, we were able to use binary search to determine which line corresponded to the keyword “fuck.” From there, we made perturbations to the ciphertext until we were able to infer the following algorithm:</p>
+
+<table align="center" width="60%"><tbody><tr><td><strong>Algorithm 1:</strong> Decrypting TOM–Skype 3.6–3.8 keyfiles<br>&nbsp;<br>
+1: <strong>procedure</strong> DECRYPT(<sub><img src="./Chat program censorship and surveillance in China_files/36548" width="92" height="23" alt="C_{{0..n}},P_{{1..n}}" class="math"></sub>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2: <strong>for</strong> <sub><img src="./Chat program censorship and surveillance in China_files/36546" width="72" height="22" alt="i\leftarrow 1,n" class="math"></sub> <strong>do</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: <sub><img src="./Chat program censorship and surveillance in China_files/36547" width="299" height="25" alt="P_{i}=(C_{i}\oplus\textnormal{0x68})-C_{{i-1}}\;\;(\textrm{mod}\textnormal{0xff})" class="math"></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;4: <strong>end for</strong><br>
+5: <strong>end procedure</strong></td></tr></tbody></table>
+
+<p>We found that TOM-Skype 5.0–5.1’s keyword lists were downloaded from and decrypted in Content–Filter.exe, a separate process from Skype.exe. They are encrypted using a 256–bit key that was originally known to have been used in TOM–Skype 2.5 (Desclaux and Kortchinsky, 2006b). The key appears to have been intended to be 32 ASCII–encoded characters, but the 32 characters were UTF16LE–encoded, and so only the first 16 characters fit into the 256–bit key, where 16 of the bytes are null bytes.</p>
+
+<p>Reverse engineering the cryptography for TOM–Skype 5.5–6.1’s keyword lists was challenging. These lists were downloaded and decrypted inside Skype.exe itself, not a separate process as with TOM–Skype 5.0–5.1. The ordinary Skype client is known to contain sophisticated anti–debugging measures that resist traditional reverse engineering techniques (Desclaux and Kortchinsky, 2006a), and we found that TOM–Skype inherits these measures.</p>
+
+<p>We circumvented these measures by using DLL injection, a technique for running arbitrary code inside of another process’s address space. We used this technique to hook API functions, which allows us to substitute an API function’s behavior with behavior of our own. We first hooked the API function that the client uses to download the keyword lists, which allowed us to obtain information about the thread used to download and decrypt the lists. We then hooked into the API function used to create threads and, when it created a thread matching the criteria that we previously discovered, we had it suspend that thread after creation. From there, we attached with a debugger, suspended all other threads to avoid anti–debugging measures, and resumed our thread of interest. We were then able to analyze the behavior of that thread using traditional reverse engineering techniques.</p>
+
+<p><em>3.3. TOM–Skype surveillance</em></p>
+
+<p>We were able to reverse engineer the cryptography used for surveillance messages in TOM–Skype 5.1 using traditional techniques, since the surveillance was done in ContentFilter.exe, a separate process from Skype.exe that does not contain the same anti–debugging measures. Although TOM-Skype 4.0–4.2 and 5.5–6.1 perform surveillance inside of Skype.exe, we found that they used the same cryptography for surveillance as 5.1.</p>
+
+<p>Reverse engineering the cryptography used for surveillance messages in TOM–Skype 3.6–3.8 was more challenging, since they perform surveillance inside of Skype.exe. However, we used a similar DLL injection strategy as we used to reverse engineer TOM–Skype 5.5–6.1’s keyword list cryptography. We knew from looking at other versions of TOM–Skype that they reseed the random number generator before sending surveillance messages, and so we hooked an API function normally used to create the seed to instead suspend the thread. Then, as before, we were able to attach with a debugger, suspending all other threads except the thread of interest, and reverse engineer that thread avoiding Skype’s anti–debugging measures.</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p4"></a>4. Results</strong></p>
+
+<p>In the following sections we detail how the censorship and surveillance mechanisms of the collected keyword lists operate and provide analysis of keyword content and list updates.</p>
+
+<p><em>4.1. Censorship and surveillance mechanisms</em></p>
+
+<p>A number of different lists were collected for both the TOM–Skype and Sina UC clients. For TOM–Skype, different versions of the client use different lists, and in later versions of the client, use separate lists for censorship and/or surveillance. All versions of the Sina UC client use the same set of lists, with the lists serving different purposes as shown in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab1">Table 1</a>.</p>
+
+<p>The TOM–Skype client contains built–in lists of keywords and downloads new lists via HTTP. The client uses one of these two lists to censor incoming or outgoing text chat; however, the various versions of the clients differ in their built–in lists, the source of the list updates they download, and whether they censor incoming and/or outgoing chat messages or perform surveillance. Most versions of the client, upon censoring an incoming or outgoing chat message, will send a log of the message content and sender information to TOM–Skype servers via HTTP.</p>
+
+<p>The Sina UC client censors incoming and outgoing messages as well as usernames. While the client does not perform surveillance itself, it is possible that server–side surveillance is performed (see <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p8">Section 8</a> for further discussion). The client contains five built–in lists that are updated through HTTP. Each of the lists serves a different purpose. One list censors incoming and outgoing text chat and usernames (replacing the username with an ID number); one list censors only usernames; and a third list censors incoming and outgoing text chat. The remaining two lists have unknown purpose.</p>
+
+<p>Clients used a variety of cryptographic algorithms to encrypt keyword lists and surveillance messages, ranging from well–known algorithms to an <em>“ad hoc”</em> algorithm (detailed in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p32">Section 3.2</a>) that does not provide much security (see Tables <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab2">2</a> and <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab3">3</a>).</p>
+
+<p>We found that all versions of TOM–Skype analyzed except 5.0 perform surveillance, and that versions differ in what information they send in their surveillance logs. Most clients include the sender of the triggering message, the triggering message in its entirety, the date and time, and a 0 or 1 to indicate if that message was outgoing or incoming, respectively. TOM–Skype 5.1 sends the least comprehensive surveillance logs that do not include the sender, whereas TOM–Skype versions 5.5–6.1 send the most comprehensive surveillance logs, including the recipient of the message in addition to the sender (see <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab4">Table 4</a>).</p>
+
+<p>&nbsp;</p>
+<a name="tab1"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="2"><strong>Table 1: Lists used by the TOM–Skype and Sina UC clients.</strong></td></tr>
+
+<tr align="center"><td><strong>List/URL</strong></td><td><strong>Function</strong></td></tr>
+
+<tr><td>TOM–Skype 3.6–3.8<br>skypetools.tom.com/agent/newkeyfile/keyfile</td><td>Incoming/outgoing message censorship
+and surveillance</td></tr>
+
+<tr><td>TOM–Skype 4.0–4.2<br>a[1-8].skype.tom.com/installer/agent/keyfile</td><td>Incoming/outgoing message censorship
+and surveillance</td></tr>
+
+<tr><td>TOM–Skype 5.0–5.1<br>skypetools.tom.com/agent/keyfile</td><td>Incoming message censorship and surveillance</td></tr>
+
+<tr><td>TOM–Skype 5.1 Surveillance–only<br>skypetools.tom.com/agent/keyfile_u</td><td>Incoming message surveillance</td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1<br>a[1-8].skype.tom.com/installer/agent/keyfile5.5/keyfile</td><td>Incoming/outgoing message censorship and surveillance</td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1 Surveillance–only<br>a[1-8].skype.tom.com/installer/agent/keyfile5.5/keyfile_u</td><td>Incoming/outgoing message surveillance</td></tr>
+
+<tr><td>TOM–Skype Mobile<br>skypetools.tom.com/agent/newkeyfile/keyfile_a</td><td>Incoming/outgoing message censorship and surveillance</td></tr>
+
+<tr><td>Sina UC List 1<br>im.sina.com.cn/fetch_keyword.php?ver=8.3.4.22616</td><td>Incoming/outgoing message and username censorship</td></tr>
+
+<tr><td>Sina UC List 2</td><td>Username censorship</td></tr>
+
+<tr><td>Sina UC List 3</td><td>Unknown</td></tr>
+
+<tr><td>Sina UC List 4</td><td>Incoming/outgoing message censorship</td></tr>
+
+<tr><td>Sina UC List 5</td><td>Unknown</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<a name="tab2"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="3"><strong>Table 2: List of cryptographic algorithms and keys used by the TOM–Skype and Sina UC clients.</strong></td></tr>
+
+<tr align="center"><td><strong>Lists</strong></td><td><strong>Cryptography</strong></td><td><strong>Cryptographic key</strong></td></tr>
+
+<tr><td>TOM–Skype 3.6–3.8<br>TOM–Skype 4.0–4.2</td><td align="center"><em>Ad hoc</em> XOR algorithm</td><td>&nbsp;</td></tr>
+
+<tr><td>TOM–Skype 5.0–5.1<br>TOM–Skype 5.1 Surveillance only</td><td align="center">AES+ECB</td><td align="center"><p style="font-family:courier; font-size:12pt">0\0s\0r\0 \0T\0M\0#\0R\0<br>W\0F\0D\0,\0a\04\03\0 \0</p></td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1<br>TOM–Skype 5.5–6.1<br>Surveillance–only</td><td align="center">DES+ECB</td><td align="center"><p style="font-family:courier; font-size:12pt">\x7a\xdd\xe7\xdc\x23\x25\x53\x75</p></td></tr>
+
+<tr><td>TOM–Skype Mobile</td><td align="center"><em>Ad hoc</em> XOR algorithm</td><td>&nbsp;</td></tr>
+
+<tr><td>Sina UC Lists 1–5</td><td align="center">Blowfish+ECB</td><td align="center"><p style="font-family:courier; font-size:12pt">H177UC09VI67KASI</p></td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<a name="tab3"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="3"><strong>Table 3: List of cryptographic algorithms and keys used for surveillance by TOM–Skype clients.</strong></td></tr>
+
+<tr align="center"><td><strong>Clients</strong></td><td><strong>Cryptography</strong></td><td><strong>Cryptographic key</strong></td></tr>
+
+<tr><td>TOM–Skype 3.6–4.2</td><td>DES+ECB (using only first 6 of 8 bytes
+of each plaintext block)</td><td align="center"><p style="font-family:courier; font-size:12pt">32bnx23l</p></td></tr>
+
+<tr><td>TOM–Skype 5.0</td><td>No surveillance</td><td align="center"><p style="font-family:courier; font-size:12pt">32bnx23l</p></td></tr>
+
+<tr><td>TOM–Skype 5.1–6.1<br>TOM–Skype Mobile<br>Surveillance–only</td><td>DES+ECB (using only first 6 of 8 bytes
+of each plaintext block)</td><td align="center"><p style="font-family:courier; font-size:12pt">X7sRUjL\0</p></td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<a name="tab4"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="2"><strong>Table 4: Surveillance message triggered when JaneDoe receives “fuck you” from JohnDoe.</strong></td></tr>
+
+<tr align="center"><td><strong>Clients</strong></td><td><strong>Example surveillance message</strong></td></tr>
+
+<tr><td>TOM–Skype 3.6–4.2</td><td><p style="font-family:courier; font-size:12pt">JohnDoe fuck you 12/31/2011 6:00:00 PM 1</p></td></tr>
+
+<tr><td>TOM–Skype 5.0</td><td>No surveillance</td></tr>
+
+<tr><td>TOM–Skype 5.1</td><td><p style="font-family:courier; font-size:12pt">fuck you 12/31/2011 6:00:00 PM 1</p></td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1</td><td><p style="font-family:courier; font-size:12pt">JohnDoe fuck you 12/31/2011 6:00:00 PM 1<br>JaneDoe</p></td></tr>
+
+<tr><td>TOM–Skype Mobile</td><td><p style="font-family:courier; font-size:12pt">JohnDoe fuck you 2011-12-31 18:00:00 1</p></td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p5"></a>5. Keyword analysis</strong></p>
+
+<p>Collection of the keyword lists began on 24 April 2011 (TOM–Skype)/8 August 2011 (Sina UC) and ended on 31 January 2013, with the latest changes occurring on 20 December 2012 (TOM–Skype)/11 October 2012 (Sina UC). In total, the dataset consists of 88 lists, which combined contain 4,256 unique keywords. The lists range in size from 1 to 1,421 unique keywords.</p> 
+
+<p>Of the 4,256 keywords, 3,070 keywords (72 percent) contain only Chinese characters (specifically, characters in the CJK range of Unicode), 518 (12 percent) contain only ASCII characters and 645 (15 percent) have a combination of both. Five words were in Cyrillic, six keywords contain Unicode Roman numeral characters and 10 keywords comprise Unicode fullwidth Latin characters (see <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab5">Table 5</a>).</p>
+
+<p>&nbsp;</p>
+<a name="tab5"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="3"><strong>Table 5: Breakdown of character types in the keyword lists.</strong></td></tr>
+
+<tr align="center"><td><strong>Character type(s)</strong></td><td><strong>Number of keywords</strong></td><td><strong>Examples</strong></td></tr>
+
+<tr><td>CJK only (may include ASCII
+spaces)</td><td align="center">3069 (72%)</td><td align="center"><p style="font-family:courier; font-size:12pt">遛似</p></td></tr>
+
+<tr><td>ASCII only</td><td align="center">518 (12%)<br>(Note: over 52% of these are URLs or URL–like strings)</td><td align="center"><p style="font-family:courier; font-size:12pt">six 4</p></td></tr>
+
+<tr><td>ASCII and CJK</td><td align="center">645 (15%)</td><td align="center"><p style="font-family:courier; font-size:12pt">six月four日</p></td></tr>
+
+<tr><td>Cyrillic</td><td align="center">5</td><td align="center"><p style="font-family:courier; font-size:12pt">Восемь–Девять–Шесть–Четыре</p></td></tr>
+
+<tr><td>Unicode roman numerals</td><td align="center">6</td><td align="center"><p style="font-family:courier; font-size:12pt">Ⅷ Ⅸ Ⅵ Ⅳ</p></td></tr>
+
+<tr><td>Unicode full–width Latin</td><td align="center">10</td><td align="center"><p style="font-family:courier; font-size:12pt">ｑｑｑｑｑ</p></td></tr>
+
+<tr><td>Other</td><td align="center">3</td><td align="center"><p style="font-family:courier; font-size:12pt">six—four (em dash)<br>⑥④<br>⑥㈣</p></td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>Each keyword was translated from Chinese to English by a fluent Chinese speaker and accompanied with descriptions of the political and social context behind the keyword. Based on these contextual descriptions, we coded the keywords into 61 content categories grouped under six broad themes: Political (content related to the Chinese government or political issues, <em>e.g.</em>, human rights, freedom of expression, ethnic groups, religious movements, etc.); Social (content perceived as socially sensitive or undesirable, <em>e.g.</em>, pornography, gambling, illicit weapons and drugs, etc.); People (names of individuals, <em>e.g.</em>, government officials, political dissidents); Events (scheduled events, recurring events, current events); Technology (<em>e.g.</em>, general technical terms, Web sites, spyware, URLs, etc.) and Miscellaneous (<em>e.g.</em>, terms without clear context).</p>
+
+<p>Overall we found very little overlap in keywords between the clients: 138 keywords (3.2 percent) distributed across 29 categories and all six themes were shared in common between TOM–Skype and Sina UC lists, represented primarily in the categories of CPC member/Government official (21 keywords), Prurient interests (19), Dissident/Activist (18), Religion (15), and Tiananmen Square (13) (see <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig1">Figure 1</a>).</p>
+
+<p>&nbsp;</p>
+<a name="fig1"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36549" alt="Themes by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 1:</strong> Themes by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.1. Political</em></p>
+
+<p>Within the “political” theme a wide range of issues are covered, including CPC politics, Chinese democracy movement, corruption scandals, ethnic groups, and religious movements. While there is little overlap in unique keywords between the clients, the keyword lists show common concern for the category issues. <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig2">Figure 2</a> shows a breakdown of political categories and <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig3">Figure 3</a> presents a finer–grained breakdown of subcategories showing the breadth of issues referenced in the lists.</p>
+
+<p>&nbsp;</p>
+<a name="fig2"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36550" alt="Political categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 2:</strong> Political categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<a name="fig3"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36551" alt="Political sub-categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 3:</strong> Political sub–categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.2. People</em></p>
+
+<p>Within the “people” theme the most prominent category references members of the CPC. Second to that are of names of individual activists or political dissidents. Between the TOM–Skype and Sina UC lists combined there are 179 keywords with the names of individual activists or political dissidents (<em>e.g.</em>, Ai Weiwei, Chen Guangcheng, Wu’erkaixi). This theme also references relatives of CPC members, and perpetrators and victims of violent crimes. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig4">Figure 4</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig4"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36552" alt="People categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 4:</strong> People categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.3. Events</em></p>
+
+<p>In general, TOM–Skype lists contained more references to specific events, with the exception of the 190 words in Sina UC lists relating to the 4 June 1989 Tiananmen Square massacre. TOM–Skype lists included keywords relating to all 21 events we identified, while Sina UC lists referred to only eight of these events. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig5">Figure 5</a>. The response of both clients to events as manifested in the keyword lists will be discussed in detail in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p6">Section 6</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig5"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36553" alt="Event categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 5:</strong> Event categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.4. Social</em></p>
+
+<p>Keywords in the “social” theme were primarily in two categories: Illicit goods and services, which included the trafficking of illicit materials like narcotics, weapons and counterfeit goods; and Prurient interest, which generally referred to pornography and prostitution. Illicit goods and services is the largest single category in
+the dataset with 677 total keywords; Prurient interest is the second largest category with 663 total keywords. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig6">Figure 6</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig6"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36554" alt="Social categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 6:</strong> Social categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.5. Technology</em></p>
+
+<p>The largest proportion of keywords in the “technology” category were URLs in Sina UC lists. The inclusion of URLs on censorship lists was likely a mechanism of preventing the spread of malicious links or spam. Next most common were generic technical terms, which also appeared most frequently in the Sina UC lists. Many of these were very general, including “Administrator” (“管理员”) and “System notification” (“系统通矤”) on Sina list 2, which may be a means of preventing users from creating usernames that allow them to impersonate Sina administrative accounts. Also in this category were the names of prominent Web sites, including “Chinese language Wikipedia” (“中文维基百科”) and “Google Blogger” (“谷歌博客”). See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig7">Figure 7</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig7"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36555" alt="Technology categories by client"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 7:</strong> Technology categories by client.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>5.6. Targeted and broad keywords</em></p>
+
+<p>Many of the keywords are highly targeted. For example, the TOM–Skype lists contain the keyword “Corning West and Da Zhi Street intersection, Century Lianhua gate” (“西大直街康宁路路口世纪联华”), the address of a planned Jasmine rally.</p>
+
+<p>Other keywords are extremely generic. For example, the TOM–Skype 5.1 surveillance lists include “Han People” (“汉人”) (the majority ethnic group in China), “Chinese person” (“华人”) , “world wide web” (“万维”), and “Internet” (“互联网”). The inclusion of these common terms likely causes the messages of a large number of users to be surveilled. In addition, these keywords appear too broad to be useful for routine surveillance, and suggest that either TOM–Skype is overzealous in its efforts to enforce government–mandated surveillance or is using additional criteria to identify messages or users to be surveilled (Villeneuve, 2008a).</p>
+
+<p>Sina UC List 2 contains a number of generic keywords such as “system” (“系统”) and “chat” (“聊天”). This list is used for censoring usernames, and it is possible these keywords exist to prevent users from impersonating system administrators or functions of the client.</p>
+
+<p><em>5.7. Adaptation to neologisms</em></p>
+
+<p>The keywords also indicate that censors adapt to the use of neologisms among Chinese Internet users, who frequently use creative language and homophones to evade censorship (Qiang, 2012). As Chinese dialects are tonal languages, Internet users often use similar words with variations in tone or different characters represented by the same tone to impart the meaning of a character that is otherwise censored. Users will also take advantage of visual similarities between different characters to imply the meaning of a banned character or word. The variation in neologisms seen in the keyword lists demonstrates that censors are highly aware of and adaptive to the techniques that users employ to attempt to evade censorship and surveillance.</p>
+
+<p>For example, keyword lists included the name of disgraced politician “Bo Xilai” (“薄熙来”), as well as “博西莱” (“Bo Xilai” with the same pronunciation and tones, but different characters), and “B〇稀莱” (“BO Xilai” with character variation of two kinds). Similarly, numerous homonyms for “Jasmine” (茉莉花) appeared on the various TOM–Skype lists. In some cases the censored words included combinations of Chinese characters with English words, numbers and symbols. The breadth of these combinations is seen in keywords related to the 4 June 1989 Tiananmen Square massacre, a highly sensitive topic that is the subject of intense censorship. The censored lists contain many terms referring to June Fourth, such as variations of six–four expressed in Chinese (六四, six四); Roman numbers (VI IV), equations (6.2+2, 32x2), symbols (⑥④), and dates (May 35th (五月三十五), March 96th (三月九十六号)).</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p6"></a>6. Keyword list changes</strong></p>
+
+<p>Lists from both clients underwent significant fluctuations over the course of the study, in some cases increasing rapidly in size and shrinking to a single keyword within a short time frame. The result of these changes is that the censorship and surveillance mechanisms in the clients are significantly altered. In addition, there were a number of anomalies observed in the results that are difficult to explain but that may reflect technical misconfiguration on the part of TOM–Skype or Sina UC administrators.</p>
+
+<p><em>6.1. TOM–Skype keyword list changes</em></p>
+
+<p>In May 2011, the TOM–Skype 5.1 Surveillance–only list rapidly increased in size to 1,421 unique keywords, only to decrease the next day back to 399 keywords. The censorship lists for versions 5.0–5.1 decreased to a single keyword (at one point containing a string of seemingly random characters) in April 2011, while the censorship lists for versions 5.5–6.1 increased from one keyword “Rong Shoujing” (“荣守京”) to that same keyword 1,134 times and back to that single keyword a day later.</p>
+
+<p>On 20 September 2012, an update to the TOM–Skype 5.5–6.1 Surveillance–only list was sent to clients with a number of added keywords relating to the island dispute with Japan. However, these keywords used an encryption scheme from TOM–Skype 3.6 that was no longer in use, which rendered these keywords unusable for triggering surveillance. These keywords were added again the next day with the same incorrect encryption scheme. It is possible that TOM–Skype administrators noticed that surveillance for these keywords was not functioning and attempted to add them again, but without success. As of 31 January 2013, these keywords are still incorrectly encrypted, despite newer keywords having been added to the list with the correct encryption.</p>
+
+<p>The censorship keyword lists for the recent versions of the client have also been reduced to a single keyword, meaning that these clients are now effectively only performing surveillance. TOM–Skype versions 3.6–4.2, which, unlike the recent versions, do not have a separate surveillance–only list, still have censorship keyword lists containing hundreds of keywords that were last updated in March 2012. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig8">Figure 8</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig8"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36556" alt="TOM-Skype sources"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 8:</strong> TOM–Skype sources. A higher resolution version of this figure is available at <a href="https://china-chats.net/sources/#TOM-Skype">https://china-chats.net/sources/#TOM-Skype</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>6.2. Sina UC keyword list changes</em></p>
+
+<p>The Sina UC lists similarly underwent a number of changes for unknown purposes that represent a shift in the functionality of censorship in the client. Over the course of seven months in 2012, Sina UC List 3 shifted from 50 keywords to 880 before eventually being reduced to a single keyword. List 1 shrank to a single keyword in September 2012. List 4 went from 380 to 21 to 855 keywords over the span of three months, before also shrinking to a single keyword. List 5, like lists 1, 3 and 4, was reduced to a single keyword in September 2012. The single keyword was different on each of these four lists, ranging from a reference to Tiananmen Square to keywords in the prurient interest category. It is conceivable that a single keyword was used because the censorship functions of the client require a non–zero list to function. List 2, which censors usernames, is the only list with multiple keywords remaining (476 keywords as of 11 October 2012). As a result, most client–side messaging censorship has been eliminated in the client. We discuss the possible implications of this change below in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#p8">Section 8</a>. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig9">Figure 9</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig9"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36557" alt="Sina sources"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 9:</strong> Sina sources. A higher resolution version of this figure is available at <a href="https://china-chats.net/sources/#Sina-UC">https://china-chats.net/sources/#Sina-UC</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p><em>6.3. Jaccard similarity between initial and current lists</em></p>
+
+<p>Calculating the Jaccard similarity coefficient (the size of the intersection of two sets divided by the size of their union) between the set of words in the most recent versions of lists and the first versions reveals that in most cases, the current lists are significantly different from what they started as. The exceptions to this are Sina UC List 2, which has a similarity coefficient of 0.76, and TOM–Skype 5.5–6.1, whose first and last lists contain the same single word (discussed above). All other lists have a coefficient of 0.09 or lower. Coefficients (excluding sources with only one version of a list) are shown in <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#tab6">Table 6</a>.</p>
+
+<p>&nbsp;</p>
+<a name="tab6"></a>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2"><tbody><tr align="center" bgcolor="#99CCFF"><td colspan="2"><strong>Table 6: Jaccard similarity between first and last lists.</strong></td></tr>
+
+<tr align="center"><td><strong>Source</strong></td><td><strong>Jaccard similarity</strong></td></tr>
+
+<tr><td>TOM–Skype 3.6–3.8</td><td align="center">0.03</td></tr>
+
+<tr><td>TOM–Skype 4.0–4.2</td><td align="center">0.09</td></tr>
+
+<tr><td>TOM–Skype 5.0–5.1</td><td align="center">0</td></tr>
+
+<tr><td>TOM–Skype 5.1 Surveillance–only</td><td align="center">0</td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1 Surveillance-only</td><td align="center">0.09</td></tr>
+
+<tr><td>TOM–Skype 5.5–6.1</td><td align="center"><strong>1.0</strong></td></tr>
+
+<tr><td>Sina UC List 1</td><td align="center">0.005</td></tr>
+
+<tr><td>Sina UC List 2</td><td align="center"><strong>0.76</strong></td></tr>
+
+<tr><td>Sina UC List 3</td><td align="center">0</td></tr>
+
+<tr><td>Sina UC List 4</td><td align="center">0</td></tr>
+
+<tr><td>Sina UC List 5</td><td align="center">0</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p7"></a>7. Correlation between current events and keyword list updates</strong></p>
+
+<p>One of the unique aspects of this dataset is that it provides visibility into how the censorship and surveillance keyword lists change over time. Analyzing these changes provides insight into how these two companies respond to dynamic political and social events through updates to the keyword lists.</p>
+
+<p>Events referenced in the keyword lists include the following types: past events (<em>e.g.</em>, 16th National Congress of the Communist Party of China), national holidays and anniversaries (<em>e.g.</em>, 4 June 1989 Tiananmen Square massacre, National Day of the People’s Republic of China), scheduled events (<em>e.g.</em>, 18th National Congress of the Communist Party of China) and current events (defined as events that occurred within our data collection period).</p>
+
+<p>TOM-Skype lists include substantially more event–related keywords (including current and recurrent events). Sina UC lists have very little focus on current events but a greater number of keywords related to recurrent events. For example, the Sina UC lists include 190 keywords (10.5 percent) related to the 4 June 1989 Tiananmen Square massacre, whereas TOM–Skype included 95 such keywords (3.7 percent).</p>
+
+<p>In order to track how the two companies implemented keyword changes in response to current events, we identified six events referenced in the dataset that occurred within our data collection timeframe. Keywords related to only two of these events appeared on both Sina UC and TOM–Skype lists.</p>
+
+<p>Across the selected cases we observed inconsistent patterns in how changes were made around event timelines. In some cases keyword updates were implemented within a single day of a sensitive event. In others, keywords were added weeks or months after the event took place, potentially indicating the censors only responded after an issue developed sufficient political salience. In some cases, seemingly important and sensitive political events that were clearly of concern to the Chinese government either did not appear in any testing lists or were only represented with a small number of terms.</p>
+
+<p>The following sections provide analysis of the context behind each event and correlate the event timelines with keyword updates or lack thereof.</p>
+
+<p><em>7.1. Jasmine rallies</em></p>
+
+<p>Following the uprisings in the Middle East and North Africa in 2010 and early 2011, calls to gather for “Jasmine rallies” circulated online beginning on 20 February 2011, with locations of planned rallies in a number of major cities throughout China (Jacobs, 2011). While none of the planned events developed into protests, the event scheduled in Beijing gathered widespread attention after video of U.S. Ambassador to China Jon Huntsman, apparently in the area of the designated rendezvous point, was circulated. Later calls would suggest participants “stroll” near designated locations in a number of cities so as not to attract police attention. These gatherings, while reportedly sparsely attended, were met with a significant police presence and saw numerous reports of arrests and police violence against journalists. Notably, prominent artist AiWeiwei was
+arrested on 3 April following several Tweets he made discussing the “Jasmine Revolution” (Richburg, 2011).</p>
+
+<p>As our data collection period began in April 2011, two months after the first rallies, we cannot identify when related keywords were first added to the lists. A large number of keywords relating to the Jasmine rallies were already present on the first lists gathered for both of the clients. In total, 132 keywords were on the TOM–Skype lists, four were on the Sina UC list and two were present on both lists. Keywords on the lists include “Next Sunday Jasmine” (“下周日茉莉”), “Western Thai Square on the 20th” (“西临天泰广场20日”) and “Jasmine revolution written backwards” (“命革花莉茉”). Lists from both clients contained “Hold a microphone to indicate liberty” (“拿着麦克风表示自由”), an instruction for rally participants.</p>
+
+<p>Between April and May 2011, there is a notable change in the presence of Jasmine–related words on the TOM–Skype lists. On 25 April, 69 keywords were removed from the censorship list for TOM–Skype 5.0–5.1, and on 16 May, 75 keywords were added to the TOM–Skype 5.1 Surveillance–only list. This update
+followed a general pattern of the keyword lists for the recent versions of the TOM–Skype client transitioning to surveillance only. It is possible that this change happened in response to the Jasmine rallies as a strategy for monitoring mobilization and discussion of sensitive events.</p>
+
+<p><em>7.2. Bo Xilai scandal</em></p>
+
+<p>On 14 November 2011, Neil Heywood, a British businessperson based in China, was found dead in his hotel room in Chongqing province (BBC News, 2012). Heywood had long ties with the family of Bo Xilai, then the high–profile leader of the Chongqing branch of the CPC and at one time touted to be in line to join the Politburo Standing Committee, the CPC’s top leadership committee. Heywood’s death would later be deemed a homicide related to a soured business deal involving Gu Kailai, Bo’s wife, who would eventually be convicted of murder. In February 2012, Chongqing police chief Wang Lijun met with U.S. consular officials in Chengdu, reportedly to provide information on Heywood’s murder and potentially to seek asylum and protection from Bo. Wang would later be sentenced to 15 years in prison for corruption. Additionally, leaked reports from the CPC indicated that Bo had been conducting surveillance of high–level party officials, including tapping the phone of president Hu Jintao. On 18 March 2012, Bo was dismissed from his position as Chongqing party chief, and in September 2012 he was expelled from the CPC. The ouster of such a high–ranking politician marked one of China’s biggest political crises in decades and threatened to disrupt the carefully planned leadership transition taking place in November 2012. Leaked instructions from government authorities on the topic called for media to refer only to state–sanctioned sources when covering the story (<em>China Digital Times</em>, 2012g).</p>
+
+<p>A total of 62 keywords relating to Bo Xilai and the Heywood murder scandal appear on the lists, predominantly on TOM–Skype. Some of these terms were already present on the first TOM–Skype and Sina UC lists collected during our data collection period, which predated the Heywood murder scandal. This is not unexpected, as Bo was already a prominent and often controversial figure seen as a rising star within the CPC. On 21 March 2013, 50 keywords were added, including numerous homophones and variations on the name “Bo Xilai,” such as B〇稀莱(Bo xī lái), 泊稀莱(Po xī lái), 己厚天下(“not thick, the word below,” a reference to “Bo” literally meaning ”thin”), and “bullshitliar.” On 29 March 2012, nine additional
+keywords were added to the same list, including terms calling for collective action in support of Bo, such as “To support Bo [Xilai] go to Chongqing People’s Square“ (“挺薄去重庆人民广场”) and “March 17 — Chongqing People’s Grand Hall” (“3月17日重庆人民大礼堂”).</p>
+
+<p>Although a number of events related to the Bo scandal occurred in late 2011 and early 2012, the additions to the keyword lists followed shortly after Bo’s 16 March 2012 dismissal as Chongqing party chief. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig15">Figure 15</a> in the <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#appa">Appendix</a>.</p>
+
+<p><em>7.3. Ferrari crash</em></p>
+
+<p>On 18 March 2012, Ling Gu, the son of high–ranking CPC official Ling Jihua, was killed in a car crash outside of Beijing (Ansfield, 2012). Ling, as well as two women in the car who were injured, were reported to be naked, and photographs of the crumpled Ferrari would begin circulating online. The incident was politically sensitive for a number of reasons: Ling Jihua, a close political ally of leader Hu Jintao, was expected to be promoted during the November 2012 leadership transition. Further, the son of two government officials driving a luxury car touched on widespread public criticism over government corruption and inappropriate behavior of the family members of government officials. Ling Jihua would later be demoted from his position at the General Office of the CPC Central Committee.</p>
+
+<p>Within a day of the crash, reports emerged that searches for “Ferrari” (“法拉利”), “Master Ling” (“剨公子”), and other related terms had been blocked on Sina Weibo and search engines Baidu and Soso (Dao, 2012). While Chinese state media initially published stories covering the crash, by 20 March a <em>Global Times</em> article about the incident had been removed.</p>
+
+<p>TOM–Skype lists were updated within a few days of the event. On 21 March 2012, 24 keywords related to the incident were added to the TOM–Skype 5.5–6.1 Surveillance–only list, including several variations on “Beijing Ferrari car accident” (“北京法拉利车祸”). Eight days later, an additional three keywords were added to this list, while three of the previous keywords were removed. Notably, none of the terms added referenced the names of Ling Jihua or Ling Gu specifically. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig10">Figure 10</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig10"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36558" alt="Ferrari crash timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 10:</strong> Ferrari crash timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/67#timeline">https://china-chats.net/categories/67#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+
+<tbody><tr align="center"><td>a</td><td align="center">2012–03–18</td><td>Media reports Ling Gu, son of CPCs Ling Jihua, killed in car crash</td></tr>
+
+<tr align="center"><td>b</td><td align="center">2012–03–19</td><td>Reports that searches for “Ferrari” (“法拉利”) blocked on Sina Weibo</td></tr>
+
+<tr align="center"><td>c</td><td align="center">2012–03–2</td><td>Global times deletes article on Ferrari crash</td></tr>
+
+<tr align="center"><td>d</td><td align="center">2012–03–21</td><td>24 keywords added to TOM–Skype list</td></tr>
+
+<tr align="center"><td>e</td><td align="center">2012–03–29</td><td>Versions of three “quoted” keywords swapped for unquoted</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p><em>7.4. Church of Almighty God arrests</em></p>
+
+<p>On 19 December 2012, Chinese state media reported on the arrest of 500 individuals associated with the religious group Church of Almighty God, on allegations they had spread rumors that the world would end on 21 December in accordance with the last day of the Mayan calendar (Jacobs, 2012).</p>
+
+<p>Reports from <em>China Digital Times</em> on 10 December 2012 indicate that official instructions were issued to media outlets to guard against the creation and spread of rumors relating to the 21 December prediction, and requesting media to “discontinue reporting on recent public conversion assemblies and other illegal activities orchestrated by the Almighty God cult” (<em>China Digital Times</em>, 2012e). On 19 December, the day media reports of the arrests emerged, four keywords were added to the TOM–Skype 5.5–6.1 Surveillance–only list which related to the religious group, followed the next day by the addition of four more keywords. The keywords included “red dragon gospel” (“大红龙福音”), which refers to the group’s term for the CPC, and “God in Henan” (“真神在河南”), referring to the province where the group was founded. These 19 and 20 December keyword additions were the last instance of TOM–Skype list updates we observed, and as of 31 January 2013, remain on the list. Other keywords relating to religious organizations or practices are also present on both lists, most notably 99 keywords relating to Falun Gong. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig11">Figure 11</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig11"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36559" alt="Church of Almighty God arrests timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 11:</strong> Church of Almighty God arrests timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/126#timeline">https://china-chats.net/categories/126#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr align="center"><td>a</td><td align="center">2012–12–19</td><td>Media reports that Church of Almigthy God followers arrested</td></tr>
+<tr align="center"><td>b</td><td align="center">2012–12–20</td><td>Four keywords added to TOM–Skype</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p><em>7.5. Wenzhou train crash</em></p>
+
+<p>On 23 July 2011, two high–speed trains travelling near the city of Wenzhou collided, killing 40 people. The government response to the accident was met with widespread criticism, including allegations that sections of the damaged trains were ordered to be buried as a means of hiding evidence (Osnos, 2012). Zhang Dejiang, vice premier in charge of transportation (and later Bo Xilai’s replacement as party chief of Chongqing) received criticism for his handling of the rescue operations.</p>
+
+<p>Zhang Dejiang’s name (张德江) was a consistent presence on many of the TOM–Skype lists that predated the train crash and subsequent controversy. There were no additions of new keywords following the Wenzhou train crash until 21 March 2012, eight months after the incident. A number of terms, all linking Zhang and the train crash, were added eight days after Zhang replaced Bo Xilai as party chief in Chongqing. It is notable that the additions on 21 March included nine terms referring to Zhang’s role in the Wenzhou train crash, including “Vice Premier Zhang — train” (“张副总动鋪”) and “Dejiang buried train crash” (“德江动车埋”).</p>
+
+<p>It is unclear why it took eight months for these terms to be added to the TOM–Skype lists. It is possible that the controversy achieved additional political salience after Zhang’s promotion to Chongqing party chief. A number of other terms relating to Zhang were also added on 21 March 2012, including “Dejiang SARS” (“德江SARS”), referring to Zhang’s position as party secretary of Guangdong province where the SARS crisis broke out in 2003, and “Dejiang Nanducase” (“德江南都案”), referring to a prior controversy involving Zhang and a corruption case at a Chinese newspaper. Thus, we see that upon being promoted, a number of terms relating to Zhang were added that reference prior controversies. However, the train crash itself was a highly sensitive event, coverage of which government officials tried to limit. Reports leaked online days after the crash indicate that government authorities issued instructions to print and online media to limit publication of stories about the incident (<em>China Digital Times</em>, 2011). See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig12">Figure 12</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig12"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36560" alt="Wenzhou train crash timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 12:</strong> Wenzhou train crash timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/33#timeline">https://china-chats.net/categories/33#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr align="center"><td>a</td><td align="center">2011–07–23</td><td>Train crash in Wenzhou, Zhejiang kills 40</td></tr>
+<tr align="center"><td>b</td><td align="center">2012–03–15</td><td>Zhang Dejiang becomes party leader in Chongqing</td></tr>
+<tr align="center"><td>c</td><td align="center">2012–03–21</td><td>Nine keywords added to TOM–Skype</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p><em>7.6. Tibetan self–immolations</em></p>
+
+<p>Over the course of 2011–2012 an unprecedented wave of self–immolation protests took place in Tibetan areas of China. The self–immolation of 20–year old monk Phuntsog on 16 March 2011 marked the beginning of this wave and the first instance of this controversial form of protest in the Tibetan community since February 2009. Since March 2011, 119 Tibetans have self–immolated as a form of protest against CPC policies around Tibet and Tibetan culture, undermining CPC assertions that Tibetans favor and benefit from Chinese government policies. Of the 119 Tibetans who have self–immolated, 100 were confirmed dead following their protest (International Campaign for Tibet, 2013). This series of self–immolations has been met with aggressive crackdowns by the Chinese government.</p>
+
+<p>In Sina UC lists, “self–immolation” (“自焚”) is the only keyword related to the issue, and has been present in Sina UC List 2 since our data collection began. Two months after the self–immolation of Phuntsog, the keyword “self–immolation” (“自焚”) was added to the TOM–Skype 5.1 Surveillance–only list; it was subsequently removed 17 May 2011.</p>
+
+<p>For TOM–Skype, no further self–immolation related keywords were added until 21 March 2012. Between 16 March 2011, and 21 March 2012, 29 Tibetans self–immolated. However, the keywords added to TOM–Skype on 21 March focus on only one incident, the self–immolation of a 30–year–old monk named Jamyang Palden. On 14 March 2012, Jamyang Palden self–immolated, marking the 27th immolation in Tibetan areas of China since February 2009 and the first in Rebkong (in Tibetan)/Tongren (in Chinese) county. The incident was followed by demonstrations of Tibetan monks and lay persons against Chinese rule. Later on the same day, approximately 4,000 students engaged in protests over Tibetan language rights across three counties in the Qinghai province: Rebkong (in Tibetan)/Tongren (in Chinese), Tsekhog (in Tibetan)/Zeku (in Chinese), and Kangtsa (in Tibetan)/Gangcha (in Chinese) (Radio Free Asia, 2012a). In the Tsekhog protests, students demanded equality for all nationalities and freedom of language, and called for the end of Chinese military barracks in the area. The protest’s specific reference to the Chinese military presence was reported as the first known reference to be made in a protest since the post–2009 self–immolations and subsequent government response began (Save Tibet, 2012). Additionally, on 16 March, 1,000 Tibetans demonstrated in Gepasumdo county (Tongre in Chinese), Qinghai province demanding the release of 50 monks who had been detained the previous day for raising the Tibetan flag and engaging in peaceful protest (Radio Free Asia, 2012b).</p>
+
+<p>On March 21, 2012, nine keywords were added to TOM–Skype lists (3.6–3.8, 4.0–4.2, 5.5–6.1 Surveillance–only) referencing Jamyang Palden’s self–immolation and the subsequent protests, including: “Jamyang Palden, Monk” (“加央班旦僧人”), “students demonstrations” (“学生示威游行”), “Amdo — pay respects — Longwu monastery” (“安多日贡隆务寺”), “Qinghai, student” (“青海学生”), and “Zeku county, students” (“泽库县学生”). These keywords remain on the TOM–Skype lists. However, since 21 March 2012, no further self–immolation related keywords have been added. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig13">Figure 13</a>.</p>
+
+<p>A possible explanation for the focus on the self–immolation issue at this specific time is that Jamyang Palden’s self–immolation and the following protests over March came at a particularly sensitive period. March 10 marks the anniversary of the 1959 Tibetan uprising and 2008 unrest in Lhasa, which began as observance of the March 10 anniversary, but turned to riots on 14 March. The reportedly large protests that followed Jamyang Palden’s self–immolation may have prompted Chinese authorities to relay specific instructions to private companies around censoring and/or surveillance of content related to the events. Therefore, while the issue did not gain attention previously, the protests in March 2012 could have brought attention from authorities to enact pressure on companies like TOM–Skype.</p>
+
+<p>However, if Jamyang Palden’s immolation and surrounding protests did force pressure to react, it is surprising that no further keywords related to the issue are added to the client lists, as from the last keyword update (21 March) to 31 January 2013, 70 more Tibetans self–immolated, similar demonstrations occurred in Tibetan areas, and aggressive government responses continued.</p>
+
+<p>&nbsp;</p>
+<a name="fig13"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36561" alt="Tibetan self-immolations timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 13:</strong> Tibetan self–immolations timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/42#timeline">https://china-chats.net/categories/42#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr align="center"><td>a</td><td align="center">2011–03–16</td><td>#1 post 2009 self–immolation (Phuntsog)</td></tr>
+<tr align="center"><td>b</td><td align="center">2011–05–16</td><td>Keyword added to TOM–Skype and removed following day</td></tr>
+<tr align="center"><td>c–d</td><td align="center">2011–08–15<br>2012–03–10</td><td>Within this period 26 Tibetans self–immolated</td></tr>
+<tr align="center"><td>d</td><td align="center">2012–03–10</td><td>Anniversary of 1959 Tibet Uprising</td></tr>
+<tr align="center"><td>e</td><td align="center">2012–03–14</td><td>Anniversary of 2008 Lhasa riots, 27th post–2009 self–immolation (Jamyang Palden), Tibetan
+student protests across Qinghai</td></tr>
+<tr align="center"><td>f</td><td align="center">2012–03–16<br>2012–03–17</td><td>28th and 29th post–2009 self–immolation (Lobsang Tsultrim)</td></tr>
+<tr align="center"><td>g</td><td align="center">2012–03–18</td><td>1,000 Tibetans protest in Gepasumdo county (Tongre in Chinese)</td></tr>
+<tr align="center"><td>h</td><td align="center">2012–03–21</td><td>Nine related keywords added to TOM–Skype</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p><em>7.7. Diaoyu/Senkaku Island protests</em></p>
+
+<p>China and Japan have been involved in a territorial dispute over a group of islands in the East China Sea for decades. The uninhabited islands, referred to as “Diaoyu” in Chinese, or “Senkaku” in Japanese, have been a source of considerable political tension and public protest. Diaoyu/Senkaku Islands–related content has been targeted for censorship and surveillance in Chinese IM programs in the past. Keywords related to the issue were present on the 2004 QQ keywords list (Qiang, 2004) and in the TOM–Skype logs collected in 2008 (Villeneuve, 2008a).</p>
+
+<p>The island dispute is one of the few current events reflected in the lists of both TOM–Skype (14 keywords) and Sina UC (eight keywords). Three of these keywords are common between the clients: “Protect Diaoyu” (“保钓”), “Anti–Japan” (“反日”), and Diaoyu Islands (“钓鱼岛”). All of the Sina UC keywords appear on the earliest collected list (Sina UC List 2 2011–08–08, used for censoring usernames), and were therefore likely present before our data collection began. Keywords specific to the island dispute on the TOM–Skype lists include “Protect Diaoyu” (“保钓”) and “Anti–Japan” (“反日”), which were added to the TOM–Skype 5.1 Surveillance–only list on 16 May 2011 and removed the following day. Outside of 16 May 2011, there were no keyword updates related to this topic until September 2012 when tensions around the dispute began to escalate.</p>
+
+<p>Relations between China and Japan over the islands deteriorated following a public campaign launched by Tokyo governor Shintaro Ishihara in April 2012, which sought to raise donations to purchase the islands and place them under control of the Tokyo municipal government. On 11 September 2012, the Japanese government bought and nationalized three of the islands. The purchase was claimed to be conducted from the “viewpoint of peaceful and stable management of the Senkaku Islands” and was also perceived as an
+attempt to block a purchase by Ishihara (Asahi Shimbun, 2012). This move led to the Chinese government denouncing the purchase as an infringement on Chinese territorial sovereignty (Xinhua, 2012a). Subsequently, Chinese surveillance ships entered Japanese territorial waters around the islands, and large–scale anti–Japanese protests broke out in more than 80 cities across China.</p>
+
+<p>The scale and often violent character of the protests led some commentators to question how the protests were allowed to take place, and speculate on the possibility of some level of direct or tacit government approval. Suspicions were furthered by anecdotal reports that in early September previously blocked keywords including “Anti–Japan Protest” (“反日示威”) and “Boycott Japanese Goods” (“抵制日货”) were accessible on Weibo search (Lam, 2012; Dao, 2013).</p>
+
+<p>On 15 September, however, amidst growing and aggressive protests, a leaked directive from the State Council Information Office requested all Web sites “to inspect and clear every forum, blog, Weibo post, and other form of interactive content of material concerning mobilizing anti–Japan demonstrations, stirring up excitement, rioting and looting ...” (<em>China Digital Times</em>, 2012a). Anecdotal reports indicate that on 18 September, the following keywords were blocked on Weibo Search: “beating, smashing and looting” (“打砸抢”), “Liangmaqiao” (“亮马桥”), the location of the Japanese embassy in Beijing, “thug” (“暴徒”), and “school closure” (“封校”), apparently related due to a number of schools being as a result of the escalation of protests (<em>China Digital Times</em>, 2012b). On 19 September, a further number of keywords were reported to be blocked on Weibo search: “anti–Japan” (“反日”), “anti–Japan” (“抗日”), “smash + car” (“砸+桖”), and “smash” (“打砸”) (<em>China Digital Times</em>, 2012c).</p>
+
+<p>These events correlate with changes in the Sina UC and TOM–Skype keyword lists. On 17 September, 10 related keywords were removed from the Sina UC list: “protect Diaoyu Islands” (“保钓”), “anti–Japan” (“反日”), “vandalism” (“打砸抢”), “boycott Japanese products” (“抵制日货”), “Japanese embassy” (“日本大使馆”), “Japanese embassy” (“日本使馆”), “Japanese consulate” (“日本领事馆”), “demonstrate” (“游行”), and “Diaoyu islands” (“钓鱼岛”).</p>
+
+<p>On 20 September, 11 related keywords were added to the TOM–Skype 5.5–6.1 Surveillance–only list: “protesting at embassy” (“使馆游行”), “protect Diaoyu islands” (“保钓”), “sailing out and landing on the island” (“出海登岛”), “anti–Japan” (“反日”), “throwing eggs” (“扔鸡蛋”), “protest” (“抗议”), “slogan” (“标语”), “banner” (“横幅”), “demonstrate” (“游行”), “molotov cocktail” (“燃烧瓶”), “demonstration” (“示威”), “joint” (“联署”).</p>
+
+<p>The TOM-Skype keyword updates follow the pattern of increased restrictions around the issue following the September directive. However, the removal of keywords used to trigger username censorship on Sina UC do not appear to have any sensical purpose and could be the product of a technical or human operator error. See <a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#fig14">Figure 14</a>.</p>
+
+<p>&nbsp;</p>
+<a name="fig14"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36562" alt="Diaoyu/Senkaku Island protests timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 14:</strong> Diaoyu/Senkaku Island protests timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/24#timeline">https://china-chats.net/categories/24#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr align="center"><td>a</td><td align="center">2012–09–11</td><td>Japanese government purchases three Diaoyu/Senkaku Islands</td></tr>
+<tr align="center"><td>b</td><td align="center">2012–03–14</td><td>Chinese surveillance ships arrive in disputed waters</td></tr>
+<tr align="center"><td>c</td><td align="center">2012–03–15</td><td>Large–scale anti–Japan protests begin in China</td></tr>
+<tr align="center"><td>c</td><td align="center">2012–03–15</td><td>State Council Information Office issues directive</td></tr>
+<tr align="center"><td>d</td><td align="center">2012–03–17</td><td>Related keywords removed from Sina UC</td></tr>
+<tr align="center"><td>e</td><td align="center">2012–03–18</td><td>First set of related keywords reported blocked on Weibo</td></tr>
+<tr align="center"><td>f</td><td align="center">2012–03–19</td><td>Second set of related keywords reported blocked on Weibo</td></tr>
+<tr align="center"><td>g</td><td align="center">2012–03–20</td><td>Related keywords added to TOM–Skype</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p><em>7.8. Sensitive events without references on keyword lists</em></p>
+
+<p>In contrast to the above cases, notable political developments occurred during the collection period that were either not represented or seemingly underrepresented in the keyword lists. Given the importance of these events — which included organized protests and China’s once–a–decade leadership transition — relative to other events that appeared in the keyword lists, their exclusion is unexpected.</p>
+
+<p>In January 2013, controversy emerged after a New Year’s editorial from prominent Guangdong–based newspaper <em>Southern Weekly</em> calling for strengthened constitutional rights was censored. Protests outside the offices of the newspaper led to arrests, as well as a notice from central government authorities instructing media and Web sites to publish a government–sanctioned editorial on the story (<em>China Digital Times</em>, 2013a). Reports indicated that many terms relating to the controversy were blocked on Sina Weibo. However, no keywords relating to the controversy were found on any of the keyword lists.</p>
+
+<p>A number of sensitive events relating to Hong Kong occurred during the data collection period but did not appear in any keyword lists. Legislative elections occurred in Hong Kong in September 2012, which led Chinese government authorities to issue instructions restricting media coverage of the elections (<em>China Digital Times</em>, 2012d). That same month, widespread protests occurred following a plan by Hong Kong authorities to introduce changes to the educational curriculum, which were criticized as a means of indoctrinating students into CPC doctrine (Bradsher, 2012). Neither of these events appeared in the keyword lists, and no keywords relating to Hong Kong were added to the lists after May 2011.</p>
+
+<p>In November 2012, the 18th National Congress of the Communist Party of China was held, the once–a–decade leadership transition that saw Xi Jinping become paramount leader of the CPC. This meeting is one of the most important political events in China, made even more sensitive following the Bo Xilai scandal earlier in the year. In total, only four keywords relating to the event were added to the TOM–Skype lists, including “18 great” (“十八大”) and “name successor” (“立接班人”). These words were added in May 2011, a full year and a half before the event took place. That these words were added so far in advance of the event is not necessarily surprising, as China’s leadership transition process is scheduled long in advance. However, given the heightened sensitivity and significance of the event and TOM–Skype’s response to other important political developments, the addition of so few keywords related to the event, as well as the lack of words added in the period leading up to the event, is unexpected. Reports have indicated that during the run–up to the Congress in November 2012, Sina Weibo blocked a number of terms relating to the event (<em>China Digital Times</em>, 2012f) and manipulated the results of dozens of CCP officials’ names (Ng and Landry, 2013), most of which do not appear in our dataset.</p>
+
+<p>The absence and limited representation of these events on the keyword lists illustrates the challenge in identifying which political events have sufficient importance to be added to keyword lists and calls into question how TOM–Online and Sina determine which events to target in their chat clients, as well as how official instructions are given around them.</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p8"></a>8. Discussion</strong></p>
+
+<p>Our dataset enables a comprehensive view of how keyword–based information controls were applied in Sina UC and TOM–Skype over a period of 21 months, providing insight into how and when content was targeted for censorship or surveillance. However, while we gained a greater understanding of these two programs, our analysis raises many questions regarding the implications of industry enforcement of information controls in China, the censorship and surveillance capabilities of the programs and their implications, how controls in these products compare to other types of Chinese services, and in the case of TOM–Skype corporate social responsibility implications for Skype and Microsoft.</p>
+
+<p><em>Implications of industry enforcement of censorship and surveillance in China</em></p>
+
+<p>Overall our findings suggest that the implementation of censorship and surveillance features in Chinese services can be impacted by the actions of the private companies and operators who manage them. These decisions may affect what keywords are targeted, from highly specific content that could be used to monitor discussion of social mobilizations (<em>e.g.</em>, Jasmine Rally locations and instructions) to overly broad keywords that could result in over–blocking or greater surveillance.</p>
+
+<p>Throughout our tracking of the keyword lists we observed erratic update behavior and technical errors which at times appeared to be caused by careless mistakes on the part of the human operators. When companies implement censorship and surveillance of user chats, errors and poor technical practices can have serious implications. TOM–Online has a particularly poor track record in this regard as evidenced by Villeneuve (2008a), which found the company storing collected data on insecure servers, including information that could be used to exploit the entire TOM–Skype server network and potentially expose chat logs and user data to attackers. The lack of accountability and transparency with which these companies operate furthers these concerns.</p>
+
+<p>In our analysis we observed some keyword updates that appeared to be in reaction to politically sensitive events, which in some cases were in line with official directives given to media and Internet companies. However, other events that were clearly issues of concern for the CPC and targeted by other Chinese Internet services were not present in the dataset. This inconsistency raises questions regarding how and when official directives may be communicated to TOM–Online and Sina and the level of discretion with which the companies operate. Despite our access to the keyword lists, the process and details of these interactions for the two companies remain unknown.</p>
+
+<p><em>Changes in censorship and surveillance focus</em></p>
+
+<p>One of the unexpected changes we observed was fluctuation in the keyword lists that effectively rendered the latest versions of TOM–Skype to be focused on surveillance only (rather than also focusing on censorship), and seemingly caused Sina UC to only focus on username censorship.</p>
+
+<p>In the case of TOM–Skype the shift to surveillance–only keyword lists was correlated with the Jasmine Rallies, which could potentially signify pressure from authorities or an independent decision made on the part of the company to monitor discussions of sensitive events, particularly those that may lead to social mobilizations.</p>
+
+<p>For Sina UC the changes are difficult to explain. Given China’s legal and regulatory restrictions it is implausible that the company would discontinue censorship features. However, it is possible that like TOM–Skype, Sina UC has also switched to a surveillance focus but is implementing these features on the server side, which would not be detected by our reverse engineering methods. Due to the peer–to–peer architecture of TOM–Skype, surveillance and censorship must be implemented on the client side. Of all the Chinese IM programs on the market, TOM–Skype and Sina UC are the only ones we are aware of that implement censorship or surveillance features on the client side. Therefore, server–side implementations are presumably the standard in the Chinese market. China’s most popular IM program, QQ Chat, and new applications
+quickly rising in popularity such as WeChat, are suspected to have surveillance features (Kennedy, 2012; Lam, 2009) but no technical analysis has yet been able to confirm their existence or operation.</p>
+
+<p>Additional exploratory testing we conducted further supports the hypothesis that there may be a move away from a censorship focus in IM clients. In April 2012, we attempted to send messages containing the keywords from the TOM–Skype 5.5–6.1 Surveillance–only list through QQ Chat. In total, nine keywords from that list were filtered, mostly relating to the Falun Gong. In a similar experiment, 15 words from the
+Sina UC lists were censored on QQ Chat, also relating to the Falun Gong. Repeating this experiment in February 2013, zero words from either list were filtered on QQ Chat, even when performing the experiment via a VPN in China. Both experiments demonstrate the lack of overlap in censored content between the different clients, and the most recent results suggest that the focus may have shifted to server–side surveillance.</p>
+
+<p>If the majority of Chinese companies providing IM programs are engaging in surveillance, the potential for massive violations of privacy is acute. It is clear that Chinese companies are obliged to cooperate with government investigations, maintain and disclose records and reports to security authorities, and terminate transmission of state secrets (Human Rights in China, 2010). Yet it is unclear how these regulations affect how private companies decide what specific content to target for surveillance, and what level of government oversight into company practices exists. These obligations to the government and the risk of penalties for non–compliance could be an incentive for overly broad keyword triggers to ensure persistent capture of user data. At the same time, however, our analysis observed inconsistent patterns in how sensitive topics and events were targeted for surveillance.</p>
+
+<p><em>“Public” vs. “private” platforms</em></p>
+
+<p>Instant messaging programs are ostensibly private applications designed for one–on–one or small group communications. Such applications can be used for mobilizing around events and potentially sharing sensitive information, but starkly contrast with “public” platforms such as social media, microblogging and search engines, which are used for widely sharing and accessing information. Information controls on Chinese IM programs may therefore be moving to surveillance to target particular users and sensitive topics, while public platforms experience greater pressure to filter and delete sensitive information before it goes viral.</p>
+
+<p>In our analysis we observed some overlap between keyword list updates and anecdotal reports of censorship on Sina Weibo. However, in other cases events and issues triggered responses from Weibo censorship systems that were not observed in the IM keyword lists. As an exploratory exercise we compared our dataset to two datasets of words found blocked on Weibo collected by Jason Q. Ng (2012) and <em>China Digital Times</em> (2013b). Only 330 unique keywords from our dataset were found in either of those datasets. Of the 282 keywords found in both our dataset and <em>China Digital Times</em> (2013b), 132 were in TOM–Skype lists, 84 in Sina UC lists and 66 were on the lists of both clients. Of the 100 keywords found in both our dataset and Ng (2012), 29 were in TOM–Skype lists, 47 in Sina UC lists and 24 were on the lists of both clients. Fifty–two keywords were shared in common between all three lists. It should be noted that Ng (2012) is a static snapshot from March 2012 and thus would not reflect additions since this time. These comparisons (albeit exploratory and incomplete) raise questions regarding how the operation and targeting of information controls may differ between public platforms like microblogs and private applications like IM programs. As both UC and Weibo are produced by the Sina Corporation, the divergence in what content is censored may be evidence that different platforms are guided by different regulations or are managed by separate internal corporate processes.</p>
+
+<p><em>Corporate social responsibility implications for Skype and Microsoft</em></p>
+
+<p>These findings as well as prior research clearly establish that the TOM–Skype platform incorporates censorship and surveillance of its users as part of its basic functionality. That fact raises significant questions of corporate social responsibility for those Western companies linked to TOM–Skype: Skype and its parent company, Microsoft Corporation.</p>
+
+<p>Skype and TOM Online established a joint venture, Tel–Online Limited, in 2005 to provide instant messaging and VoIP services in China. TOM Online is the majority partner in this joint venture; according to Skype, “TOM Online provides access to Skype for Chinese customers, using a modified version that follows Chinese regulations, called TOM–Skype*.” <a name="8a"></a>[<a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#8">8</a>] (Skype, 2013) In an amended prospectus filed with the SEC in April 2011, Skype noted that its conduct of business in China through the joint venture could present privacy risks:</p>
+
+<table align="center" width="60%"><tbody><tr><td>[I]n China, Tom Online, the majority investor in Tel–Online Limited in which we hold a 49% interest, has added filtering technology to the localized version of our product that allows instant messages to be filtered and stored along with related data based on content. We understand that Tel–Online Limited is obligated by the government to provide this filtering and storage. We received significant negative media attention as a result of these practices, as well as a security
+failure relating to the storage of these instant messages. Further news reports concerning content filtering and the apparent lack of privacy of communications in China and other countries are attracting political attention in the United States and Europe. Such attention could develop into legislative action resulting in additional legal requirements being imposed on us. (Skype, 2011)</td></tr></tbody></table>
+
+<p>Yet Skype has continued its association with TOM Online through to the present, despite its known questionable practices. Notably, the Skype Web site does not alert users to these potential risks of the TOM–Skype platform (Skype, 2013).</p>
+
+<p>With Microsoft Corporation’s acquisition of Skype in October 2011 for US$8.6 billion (Microsoft Corporation, 2012), it too has become associated with the TOM–Skype surveillance and censorship practices. Microsoft, however, is a member of the Global Network Initiative (GNI), a multi–stakeholder group working to protect and advance freedom of expression and privacy in the ICT sector (Global Network Initiative, 2012a). Microsoft has signed onto GNI principles that state participating companies “will employ protections with respect to personal information in all countries where they operate in order to protect the privacy rights of users” and “will respect and protect the privacy rights of users when confronted with government demands, laws or regulations that compromise privacy in a manner inconsistent with internationally recognized laws and standards.” (Global Network Initiative, 2012b) The Skype acquisition therefore calls into question whether Microsoft is ensuring it follows through on corporate social responsibility measures as embodied in its GNI commitments.</p>
+
+<p>These issues have been raised in a 24 January 2013 open letter to Skype and Microsoft from NGOs, journalists, and activists, who called on the companies to release transparency reports regarding Skype’s approach to user data and communications — including implications of the relationship with TOM Online (Reporters Without Borders, 2013).</p>
+
+<p>&nbsp;</p>
+<p><img src="./Chat program censorship and surveillance in China_files/36564" alt="++++++++++"></p>
+<p><strong><a name="p9"></a>9. Conclusion</strong></p>
+
+<p>Unlike other studies of censorship and surveillance in China, this work draws on complete lists of keywords used to trigger censorship and surveillance in two IM programs, offering an unbiased picture into implementation on those programs. However, while our findings shine a light on the practices of these two companies, questions remain.</p>
+
+<p>Possible areas for future work include areas of interest for computer science and social science, such as: further investigative research into the legal frameworks regulating Chinese companies, particularly those that may apply to IM programs; systematic analysis comparing censorship in “public” platforms (<em>e.g.</em>, Sina Weibo, search engines, etc.) to surveillance and censorship in “private” platforms such as IM programs; and, analysis of how various Chinese media sources and online services react to events.</p>
+
+<p>A major challenge for studying censorship over a period of time, including updates to a keyword list, is that typically censorship can only be detected by trying to post/search/send content and then observing the result to see if it is censored or not. In our study we were able to track certain full keyword lists over a long period of time and observe all updates, but this was only possible because the censorship was implemented in
+the chat clients. Looking forward, it is an open research problem to design Internet censorship measurement techniques that are not biased by choices in what content to test for censorship. A promising approach may be to drive tests via other information, such as named entity extraction from news sources (Espinoza and Crandall, 2011) or microblog deletion patterns.</p>
+
+<p>Furthermore, our results suggest a change in emphasis from censorship to surveillance for IM programs. Surveillance is virtually impossible to measure, since it can be performed by the server and its effects are typically not visible outside that server. For blogs, microblogs, e–mail, Web searches, chat, and most other Internet applications, the server is the best place for surveillance, the only exceptions being peer–to–peer applications such as TOM–Skype. Again, other sources of information may provide proxy methods by which to study surveillance, such as correlations between posted content and account cancellations.</p>
+
+<p>We hope that the findings of this study will inform further research into censorship and surveillance in China across other platforms and companies. <img src="./Chat program censorship and surveillance in China_files/36573" alt="End of article"></p>
+        
+<p>&nbsp;</p>
+<a name="author"></a>
+<p><strong>About the authors</strong></p>
+
+<p><strong>Jedidiah R. Crandall</strong> is an Associate Professor in the Department of
+Computer Science at the University of New Mexico. His research group sheds light on censorship and surveillance on the Internet via advanced network probing techniques, reverse–engineering of applications, and social media analysis.<br>
+Web: <a href="http://www.cs.unm.edu/~crandall/">http://www.cs.unm.edu/~crandall/</a><br>
+E–mail: crandall [at] cs [dot] umn [dot] edu</p>
+
+<p><strong>Masashi Crete–Nishihata</strong> is Research Manager at the Citizen Lab, Munk School of Global Affairs, University of Toronto. His current research focuses on information controls (<em>e.g.</em>, Internet censorship and surveillance) and their impact on human rights and international relations. He holds a B.A. in political science from the University of Toronto.<br>
+Web: <a href="https://citizenlab.org/">https://citizenlab.org</a><br>
+E–mail: masashi [at] citizenlab [dot] org</p>
+
+<p><strong>Jeffrey Knockel</strong> is a doctoral candidate in the Department of Computer 
+Science at the University of New Mexico. His research focus is to reverse–engineer censorware and to design network inference techniques to measure Internet censorship globally.<br>
+Web: <a href="http://cs.unm.edu/~jeffk/">http://cs.unm.edu/~jeffk/</a>
+E–mail: jeffk [at] cs [dot] umn [dot] edu</p>
+
+<p><strong>Sarah McKune</strong> is Senior Researcher at the Citizen Lab, Munk School of Global Affairs, University of Toronto. Her work includes comparative analysis of targeted cyber–threats against human rights organizations, as well as research and analysis regarding international cyber–security initiatives and export of rights–implicating technologies. Sarah is a lawyer with a background in international human rights law.<br>
+Web: <a href="https://citizenlab.org/">https://citizenlab.org</a><br>
+E–mail: sarah [dot] mckune [at] utoronto [dot] ca</p>
+
+<p><strong>Adam Senft</strong> is a researcher at the Citizen Lab at the Munk School of Global Affairs, University of Toronto, where he focuses on online freedom of expression and information controls. He holds an M.A. and B.A. in political science from the University of Toronto and a B.Sc. in engineering from the University of Guelph.<br>
+E–mail: adam [dot] senft [at] utoronto [dot] ca</p>
+
+<p><strong>Diana Tseng</strong> holds an LL.M. from New York University in international legal studies, a J.D. from University of Windsor in Canada, and a Bachelor of Journalism from Ryerson University in Canada. Diana current works at the U.N. International Criminal Tribunal for Rwanda. She was the N.Y.U. 2011 Robert L. Bernstein Fellow in International Human Rights. Diana has clerked for a judge at the Federal Court of Canada and has interned at the Media Institute of Southern Africa in Namibia. Diana speaks English, Mandarin, French, and Spanish.</p>
+
+<p><strong>Greg Wiseman</strong> is Senior Analytics and Visualization Developer at the Citizen Lab, Munk School of Global Affairs, University of Toronto, where he helps wrangle data for a variety of projects. He has worked in industry developing visual analysis software and holds a Bachelor of Mathematics in computer science from the University of Waterloo.<br>
+Web: <a href="https://citizenlab.org/">https://citizenlab.org</a><br>
+E–mail: greg [dot] wiseman [at] utoronto [dot] ca</p>
+
+<p>&nbsp;</p>
+<p><strong>Acknowledgments</strong></p>
+
+<p>We are grateful to Matthew Carrieri and Jason Q. Ng for research assistance and comments. We are also grateful to <em>First Monday’s</em> anonymous reviewers for helpful feedback. The contributions of the Citizen Lab to this project were financially supported by the John D. and Catherine T. MacArthur Foundation. This material is based upon work supported by the United States National Science Foundation under grant number #0844880.</p>
+
+<p>&nbsp;</p>
+<p><strong>Notes</strong></p>
+
+<p><a name="1"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#1aa">1.</a> In this paper “keyword” refers to Chinese characters, words, phrases, punctuation, symbols, or other strings that are treated as distinct keywords for triggering censorship or surveillance in the TOM–Skype and Sina UC IM clients.</p>
+
+<p><a name="2"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#2aa">2.</a> Wang’s speech, however, provided more extensive detail on the government’s strategy for control of the Internet. The speech was subsequently redacted for public consumption, though not before the original version was accessed and later translated. See “Human rights in China,” <a href="http://www.hrichina.org/crf/article/3242">http://www.hrichina.org/crf/article/3242</a>.</p>
+
+<p><a name="3"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#3a">3.</a> Microblog services are of particular sensitivity and thus subject to particular scrutiny in China. According to Sina’s head director, Chen Tong, the company’s microblog censorship process includes: “24–7 policing; constant coordination between the editorial department and the ‘monitoring department’ ...; daily meetings; and systems through which both editors and users are constantly reporting problematic content” (MacKinnon, 2010). Microblog content providers in Beijing are subject to numerous stipulations as outlined in the Central Provisions on the Administration of Microblog Development (Beijing Municipal Government, 2011). Companies launching microblog services must apply for a license [Article 6], “stop and restrict users that spread of harmful information ... and make a timely report to the public security authorities upon discovery of any act that constitutes a violation of public order or that is suspected of being a crime” [Article 7.viii], and “establish a comprehensive system for the examination and verification of information content” [Article 8].</p>
+
+<p><a name="4"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#4a">4.</a> The following categories constitute “inappropriate content:” 1) violating the basic principles as they are confirmed in the Constitution; 2) jeopardizing the security of the nation, divulging state secrets, subverting of the national regime or jeopardizing the integrity of the nation’s unity; 3) harming the honor or the interests of the nation; 4) inciting hatred against peoples, racism against peoples, or disrupting the solidarity of peoples; 5) disrupting national policies on religion, propagatin evil cults and feudal superstitions; 6) spreading rumors, disturbing social order, or disrupting social stability; 7) spreading obscenity, pornography, gambling, violence, terror, or abetting the commission of a crime; 8) insulting or defaming third parties, infringing on the legal
+rights and interests of third parties; 9) inciting illegal assemblies, associations, marches, demonstrations, or gatherings that disturb social order; 10) conducting activities in the name of an illegal civil organization; and, 11) any other content prohibited by law or rules. Note that categories 10 and 11 were added in 2005 under the Provisions on the Administration of Internet News Services. See State Council of the People’s Republic of China, Measures for Managing Internet Information Services, available at <a href="http://newmedia.cityu.edu.hk/cyberlaw/gp9/pdf/lr01.pdf">http://newmedia.cityu.edu.hk/cyberlaw/gp9/pdf/lr01.pdf</a>; State Council Information Office and Ministry of Information Industry, Provisions on the Administration of Internet News Services, <a href="http://www.cecc.gov/pages/virtualAcad/index.phpd?showsingle=24396">http://www.cecc.gov/pages/virtualAcad/index.phpd?showsingle=24396</a>; and, Beijing Municipal Government, Central Provisions on the Administration of Micro–blog Development, available at <a href="http://digicha.com/index.php/2011/12/translation-of-beijings-new-weibo-regulations/">http://digicha.com/index.php/2011/12/translation-of-beijings-new-weibo-regulations/</a>.</p>
+
+<p><a name="5"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#5a">5.</a> The last SEC filings from TOM Online were in 2007, as thereafter the company went private and its reporting obligations were
+terminated. The last available Annual Report (Form 20–F) from the company is dated 6 July 2007, and is for the fiscal year ended 31 December 2006: <a href="http://www.sec.gov/Archives/edgar/data/1263288/000119312507150914/d20f.htm">http://www.sec.gov/Archives/edgar/data/1263288/000119312507150914/d20f.htm</a>.</p>
+
+<p><a name="6"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#6a">6.</a> The most recent Annual Report (Form 20–F) from the company is dated 27 April 2012 and is for the fiscal year ended 31 December 2011: <a href="http://www.sec.gov/Archives/edgar/data/1094005/000110465912030028/a12-7070_120f.htm">http://www.sec.gov/Archives/edgar/data/1094005/000110465912030028/a12-7070_120f.htm</a>. Note that the registered entity is Sina Corporation, a holding company incorporated in the Cayman Islands, rather than a PRC–based entity. According to the filing, “The Chinese government restricts foreign investment in Internet–related and MVAS [mobile value–added services] businesses, including Internet access, distribution of content over the Internet and MVAS. Accordingly, we operate our Internet–related and MVAS businesses in China through several VIEs [variable interest entities] that are PRC domestic companies owned principally or completely by certain of our PRC employees or PRC employees of our directly–owned subsidiaries. We control these companies and operate these businesses through contractual arrangements with the respective companies and their
+individual owners, but we have no equity control over these companies.” (p. 18).</p>
+
+<p><a name="7"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#7a">7.</a> TOM–Skype includes Voice–over–IP (VoIP) features; however, our analysis focuses only on text chat functionality (as reported in previous work by Villeneuve there is no indication of VoIP censorship or surveillance).</p>
+
+<p><a name="8"></a><a href="http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727#8a">8.</a> The use of the asterisk is notable — in every instance at which Skype provides a link to TOM–related Web sites, it flags that “Skype is not responsible for the content of external sites.”</p>
+
+<p>&nbsp;</p>
+<p><strong>References</strong></p>
+
+<p>Nicholas Aase, Jedidiah R. Crandall, Alvaro Diaz, Jeffrey Knockel, Jorge Ocana Molinero, Jared Saia, Dan Wallach, and Tao Zhu, 2012. “Whiskey, Weed, and Wukan on the World Wide Web: On measuring censors’ resources and motivations,” <em>FOCI ’12: Second USENIX Workshop on Free and Open Communications on the Internet</em>, at <a href="https://www.usenix.org/conference/foci12/whiskey-weed-and-wukan-world-wide-web-things-research-online-while-eating">https://www.usenix.org/conference/foci12/whiskey-weed-and-wukan-world-wide-web-things-research-online-while-eating</a>, accessed 28 June 2013.</p>
+
+<p>Jonathan Ansfield, 2012. “How crash cover–up altered China’s succession,” <em>New York Times</em> (4 December), at <a href="http://www.nytimes.com/2012/12/05/world/asia/how-crash-cover-up-altered-chinas-succession.html">http://www.nytimes.com/2012/12/05/world/asia/how-crash-cover-up-altered-chinas-succession.html</a>, accessed 28 June 2013.</p>
+
+<p>Asahi Shimbun, 2012. “UNTIL NOW: Tensions start to rise when China enacts law claiming islands” (26 December), at <a href="http://ajw.asahi.com/article/special/senkaku_history/AJ201212260105">http://ajw.asahi.com/article/special/senkaku_history/AJ201212260105</a>, accessed 28 June 2013.</p>
+
+<p>David Bamman, Brendan O’Connor, and Noah Smith, 2012. “Censorship and deletion practices in Chinese social media,” <em>First Monday</em>, volume 17, number 3, at <a href="http://journals.uic.edu/ojs/index.php/fm/article/view/3943/3169">http://journals.uic.edu/ojs/index.php/fm/article/view/3943/3169</a>, accessed 28 June 2013.</p>
+
+<p>BBC News, 2012. “Bo Xilai scandal: Timeline” (25 October), at <a href="http://www.bbc.co.uk/news/world-asia-china-17673505">http://www.bbc.co.uk/news/world-asia-china-17673505</a>, accessed 28 June 2013.</p>
+
+<p>Beijing Municipal Government, 2011. “Central Provisions on the Administration of Microblog Development” (16 December), at <a href="http://digicha.com/index.php/2011/12/translation-of-beijings-new-weibo-regulations">http://digicha.com/index.php/2011/12/translation-of-beijings-new-weibo-regulations/</a>, accessed 28 June 2013.</p>
+
+<p>Keith Bradsher, 2012. “Amid protest, Hong Kong retreats on ‘moral education’ plan,” <em>New York Times</em> (8 September), at <a href="http://www.nytimes.com/2012/09/09/world/asia/amid-protest-hong-kong-backs-down-on-moral-education-plan.html">http://www.nytimes.com/2012/09/09/world/asia/amid-protest-hong-kong-backs-down-on-moral-education-plan.html</a>, accessed 28 June 2013.</p>
+
+<p>Wang Chen, 2010. “Concerning the development and administration of our country’s Internet (May 4 version),” at <a href="http://www.hrichina.org/crf/article/3242">http://www.hrichina.org/crf/article/3242</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2013a. “Ministry of Truth: Urgent Notice on <em>Southern Weekly</em>” (7 January), at  <a href="http://chinadigitaltimes.net/2013/01/ministry-of-truth-urgent-notice-on-southern-weekly/">http://chinadigitaltimes.net/2013/01/ministry-of-truth-urgent-notice-on-southern-weekly/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2013b. “Sensitive Sina Weibo search terms,” at <a href="https://docs.google.com/spreadsheet/ccc?key=0Aqe87wrWj9w_dFpJWjZoM19BNkFfV2JrWS1pMEtYcEE#gid=0">https://docs.google.com/spreadsheet/ccc?key=0Aqe87wrWj9w_dFpJWjZoM19BNkFfV2JrWS1pMEtYcEE#gid=0</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012a. “Ministry of Truth: Anti–Japan Protests” (15 September), at <a href="http://chinadigitaltimes.net/2012/09/ministry-of-truth-anti-japan-protests/">http://chinadigitaltimes.net/2012/09/ministry-of-truth-anti-japan-protests/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012b. Sensitive Words: Trials, Looting and Liver Cancer (18 September). at <a href="http://chinadigitaltimes.net/2012/09/sensitive-words-trials-looting-and-liver-cancer/">http://chinadigitaltimes.net/2012/09/sensitive-words-trials-looting-and-liver-cancer/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012c. “Sensitive Words: Anti–Japan Protests (2),” (19 September), at <a href="http://chinadigitaltimes.net/2012/09/sensitive-words-anti-japan-protests-2/">http://chinadigitaltimes.net/2012/09/sensitive-words-anti-japan-protests-2/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012d. “Ministry of Truth: Hong Kong Elections, Teacher’s Day” (19 September), at <a href="http://chinadigitaltimes.net/2012/09/143459/">http://chinadigitaltimes.net/2012/09/143459/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012e. “Ministry of Truth: Bo Xilai” (5 November), at <a href="http://chinadigitaltimes.net/2012/11/ministry-of-truth-bo-xilai/">http://chinadigitaltimes.net/2012/11/ministry-of-truth-bo-xilai/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012f. “Sensitive Words: 18th Party Congress” (10 November), at <a href="http://chinadigitaltimes.net/2012/11/sensitive-words-18th-party-congress/">http://chinadigitaltimes.net/2012/11/sensitive-words-18th-party-congress/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2012g. “Ministry of Truth: The Almighty God Cult” (19 December), at <a href="http://chinadigitaltimes.net/2012/12/ministry-of-truth-tackling-almighty-god-cult/">http://chinadigitaltimes.net/2012/12/ministry-of-truth-tackling-almighty-god-cult/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2011. “Directives from the Ministry of Truth: July 5–September 28, 2011” (20 October), at <a href="http://chinadigitaltimes.net/2011/10/directives-from-the-ministry-of-truth-july-5-september-28-2011/">http://chinadigitaltimes.net/2011/10/directives-from-the-ministry-of-truth-july-5-september-28-2011/</a>, accessed 28 June 2013.</p>
+
+<p><em>China Digital Times</em>, 2009. “Baidu’s Internal Monitoring and Censorship Document Leaked (1) (Updated),” at <a href="http://chinadigitaltimes.net/2009/04/baidus-internal-monitoring-and-censorship-document-leaked-2/">http://chinadigitaltimes.net/2009/04/baidus-internal-monitoring-and-censorship-document-leaked-2/</a>, accessed 28 June 2013.</p>
+
+<p>China Information Office of the State Council, 2010. “The Internet in China” (8 June), at <a href="http://english.gov.cn/2010-06/08/content_1622956.htm">http://english.gov.cn/2010-06/08/content_1622956.htm</a>, accessed 28 June 2013.</p>
+
+<p>China Ministry of Information Industry, 2000a. “Administration of Internet electronic messaging services provisions” (27 October), at <a href="http://www.chinalawandpractice.com/Article/1694264/Channel/9950/Administration-of-Internet-Electronic-Messaging-Services-Provisions.html">http://www.chinalawandpractice.com/Article/1694264/Channel/9950/Administration-of-Internet-Electronic-Messaging-Services-Provisions.html</a>, accessed 28 June 2013.</p>
+
+<p>China Ministry of Information Industry, 2000b. “Administrative provisions for electronic bulletin services on the Internet” (10 January), at <a href="http://www.china.org.cn/business/2010-01/20/content_19274960.htm">http://www.china.org.cn/business/2010-01/20/content_19274960.htm</a>, accessed 28 June 2013.</p>
+
+<p>China State Administration of Radio Film and Television, 2007. “China’s provisions on the administration of Internet audio and video programming services” (20 December), at <a href="http://opennet.net/news/china-provisions">http://opennet.net/news/china-provisions</a>, accessed 28 June 2013.</p>
+
+<p>China State Council Information Office and Ministry of Information Industry, 2005. “Provisions on the administration of Internet news information services” (25 September), at <a href="http://www.cecc.gov/pages/virtualAcad/index.phpd?showsingle=24396">http://www.cecc.gov/pages/virtualAcad/index.phpd?showsingle=24396</a>, accessed 28 June 2013.</p>
+
+<p>Richard Clayton, Steven J. Murdoch, and Robert N.M. Watson. “Ignoring the Great Firewall of China,” <em>6th Workshop on Privacy Enhancing Technologies</em>, at <a href="http://www.petworkshop.org/2006/preproc/preproc_02.pdf">http://www.petworkshop.org/2006/preproc/preproc_02.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Jedidiah R. Crandall, Daniel Zinn, Michael Byrd, Earl Barr, and Rich East, 2007. “ConceptDoppler: A weather tracker for Internet censorship,” <em>CCS ’07: Proceedings of the 14th ACM Conference on Computer and Communications Security</em>, pp. 352–365.</p>
+
+<p>C. Custer, 2013. “A shocking expose of China’s black PR industry implicates government officials, is quickly deleted from the Web,” <em>Tech in Asia</em> (19 February), at <a href="http://www.techinasia.com/caixin-posts-shocking-expose-chinas-black-pr-industry-story-quickly-deleted-web/">http://www.techinasia.com/caixin-posts-shocking-expose-chinas-black-pr-industry-story-quickly-deleted-web/</a>, accessed 28 June 2013.</p>
+
+<p>Fei Chang Dao, 2013. “2012 in review: 10 examples of free speech with mainland Chinese characteristics (Part 2)” (2 January), at <a href="http://blog.feichangdao.com/2013/01/2012-in-review-10-examples-of-free_2.html">http://blog.feichangdao.com/2013/01/2012-in-review-10-examples-of-free_2.html</a>, accessed 28 June 2013.</p>
+
+<p>Fei Cheng Dao, 2012. “The March 2012 Ferrari crash: Chronicling the censorship” (9 September), at <a href="http://blog.feichangdao.com/2012/09/the-march-2012-ferrari-crash.html">http://blog.feichangdao.com/2012/09/the-march-2012-ferrari-crash.html</a>, accessed 28 June 2013.</p>
+
+<p>Fabrice Desclaux and Kostya Kortchinsky, 2006a. “Vanilla Skype part 1” (17 June), at <a href="http://recon.cx/en/f/vskype-part1.pdf">http://recon.cx/en/f/vskype-part1.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Fabrice Desclaux and Kostya Kortchinsky, 2006b. “Vanilla Skype part 2” (17 June), at <a href="http://recon.cx/en/f/vskype-part2.pdf">http://recon.cx/en/f/vskype-part2.pdf</a>, accessed 28 June 2013.</p>
+
+<p>eMarketer, 2012. “QQ continues to dominate instant messaging in China” (27 April), at <a href="http://www.emarketer.com/Article/QQ-Continues-Dominate-Instant-Messaging-China/1009005">http://www.emarketer.com/Article/QQ-Continues-Dominate-Instant-Messaging-China/1009005</a>, accessed 28 June 2013.</p>
+
+<p>Antonio M. Espinoza and Jedidiah R. Crandall, 2011. “Automated named entity extraction for tracking censorship of current events,” <em>FOCI ’11: USENIX Workshop on Free and Open Communications on the Internet</em>, at <a href="https://www.usenix.org/legacy/event/foci11/tech/slides/espinoza.pdf">https://www.usenix.org/legacy/event/foci11/tech/slides/espinoza.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Bei Feng, 2010. “China’s Internet censorship system,” <em>Human Rights in China</em>, at <a href="http://hrichina.org/crf/article/3244">http://hrichina.org/crf/article/3244</a>, accessed 28 June 2013.</p>
+
+<p>Global Network Initiative, 2012a. “Home,” at <a href="http://globalnetworkinitiative.org/">http://globalnetworkinitiative.org/</a>, accessed 28 June 2013.</p>
+
+<p>Global Network Initiative, 2012b. “Principles,” at <a href="http://globalnetworkinitiative.org/principles/index.php">http://globalnetworkinitiative.org/principles/index.php</a>, accessed 28 June 2013.</p>
+
+<p><em>Global Times</em>, 2012. “China’s legislature adopts online info rules to protect privacy” (28 December), at  <a href="http://www.globaltimes.cn/content/752851.shtml">http://www.globaltimes.cn/content/752851.shtml</a>, accessed 28 June 2013.</p>
+
+<p>Human Rights in China, 2010. “Nationwide state secrets education campaign launched as new law goes into effect” (1 October), at 
+<a href="http://www.hrichina.org/content/842">http://www.hrichina.org/content/842</a>, accessed 28 June 2013.</p>
+
+<p>Human Rights Watch, 2006. “Race to the bottom: Corporate complicity in Chinese Internet censorship” (10 August), at  <a href="http://www.hrw.org/reports/2006/08/09/race-bottom">http://www.hrw.org/reports/2006/08/09/race-bottom</a>, accessed 28 June 2013.</p>
+
+<p>International Campaign for Tibet, 2013. “Self–immolations by Tibetans” (19 June), <a href="http://www.savetibet.org/resources/fact-sheets/self-immolations-by-tibetans/">http://www.savetibet.org/resources/fact-sheets/self-immolations-by-tibetans/</a>, accessed 28 June 2013.</p>
+
+<p>Internet Society of China, 2002. “Public pledge on self–discipline for the Chinese Internet industry” (9 August) at <a href="http://www.isc.org.cn/english/Specails/Self-regulation/listinfo-15321.html">http://www.isc.org.cn/english/Specails/Self-regulation/listinfo-15321.html</a>, accessed 28 June 2013.</p>
+
+<p>Andrew Jacobs, 2012. “Chatter of doomsday makes Beijing nervous,” <em>New York Times</em> (19 December), at <a href="http://www.nytimes.com/2012/12/20/world/asia/doomsday-chatter-makes-chinese-government-nervous.html">http://www.nytimes.com/2012/12/20/world/asia/doomsday-chatter-makes-chinese-government-nervous.html</a>, accessed 28 June 2013.</p>
+
+<p>Andrew Jacobs, 2011. “Chinese government responds to call for protests,” <em>New York Times</em> (20 February), at <a href="http://www.nytimes.com/2011/02/21/world/asia/21china.html">http://www.nytimes.com/2011/02/21/world/asia/21china.html</a>, accessed 28 June 2013.</p>
+
+<p>Min Jiang, 2012. “Internet companies in China: Dancing between the party line and the bottom line,” <em>Asie.Visions</em>, volume 47, at <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1998976">http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1998976</a>, accessed 28 June 2013.</p>
+
+<p>John Kennedy, 2013. “Communist Party is giving more power to members working in Beijing internet companies,” <em>South China Morning Post</em> (11 January), at <a href="http://www.scmp.com/comment/blogs/article/1125390/communist-party-giving-more-power-members-working-beijing-internet">http://www.scmp.com/comment/blogs/article/1125390/communist-party-giving-more-power-members-working-beijing-internet</a>, accessed 28 June 2013.</p>
+
+<p>John Kennedy, 2012. “Hu Jia explains why mobile apps make activism spooky,” <em>South China Morning Post</em> (15 November), at <a href="http://www.scmp.com/comment/blogs/article/1083025/hu-jia-explains-why-mobile-apps-make-activism-spooky">http://www.scmp.com/comment/blogs/article/1083025/hu-jia-explains-why-mobile-apps-make-activism-spooky</a>, accessed 28 June 2013.</p>
+
+<p>Benjamin Kessler, 2013. “Baidu, other top mainland Internet companies, employ thousands of Party members,” <em>FCPA blog</em> (30 January), at <a href="http://www.fcpablog.com/blog/2013/1/30/baidu-other-top-mainland-internet-companies-employ-thousands.html">http://www.fcpablog.com/blog/2013/1/30/baidu-other-top-mainland-internet-companies-employ-thousands.html</a>, accessed 28 June 2013.</p>
+
+<p>Gary King, Jennifer Pan, and Margaret E. Roberts, 2013. “How censorship in China allows government criticism but silences collective expression,” <em>American Political Science Review</em>, volume 107, number 2, pp. 1–18, and at <a href="http://gking.harvard.edu/files/censored.pdf">http://gking.harvard.edu/files/censored.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Jeffrey Knockel, Jedidiah R. Crandall, and Jared Saia, 2011. “Three researchers, five conjectures: An empirical analysis of TOM–Skype censorship and surveillance,” <em>FOCI ’11: USENIX Workshop on Free and Open Communications on the Internet</em>, at <a href="http://www.cs.unm.edu/~crandall/foci11knockel.pdf">http://www.cs.unm.edu/~crandall/foci11knockel.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Oiwan Lam, 2013. “China: Sina Weibo manager discloses Internet censorship practices,” <em>Global Voices</em> (7 January), at <a href="http://advocacy.globalvoicesonline.org/2013/01/07/china-sina-weibo-manager-discloses-internal-censorship-practices/">http://advocacy.globalvoicesonline.org/2013/01/07/china-sina-weibo-manager-discloses-internal-censorship-practices/</a>, accessed 28 June 2013.</p>
+
+<p>Oiwan Lam, 2012. “China: Censor machine suspended for anti–Japan mobilization?” <em>Global Voices</em> (16 September), at <a href="http://globalvoicesonline.org/2012/09/16/china-censor-machine-suspended-for-anti-japan-mobilization/">http://globalvoicesonline.org/2012/09/16/china-censor-machine-suspended-for-anti-japan-mobilization/</a>, accessed 28 June 2013.</p>
+
+<p>Oiwan Lam, 2009. “China: Be aware of QQ!” <em>Global Voices</em> (16 September), at <a href="http://advocacy.globalvoicesonline.org/2009/09/24/china-be-aware-of-qq/">http://advocacy.globalvoicesonline.org/2009/09/24/china-be-aware-of-qq/</a>, accessed 28 June 2013.</p>
+
+<p>Perry Link, 2002. “China: The anaconda in the chandelier,” <em>New York Review of Books</em> (11 April), at <a href="http://www.nybooks.com/articles/archives/2002/apr/11/china-the-anaconda-in-the-chandelier/">http://www.nybooks.com/articles/archives/2002/apr/11/china-the-anaconda-in-the-chandelier/</a>, accessed 28 June 2013.</p>
+
+<p>Rebecca MacKinnon, 2010. “Google’s China troubles continue; Congress examines U.S. investment in Chinese censorship” <em>RConversation</em> (29 June), at <a href="http://rconversation.blogs.com/rconversation/2010/06/index.html">http://rconversation.blogs.com/rconversation/2010/06/index.html</a>, accessed 28 June 2013.</p>
+
+<p>Rebecca MacKinnon, 2009. “China’s Censorship 2.0: How companies censor bloggers,” <em>First Monday</em>, volume 14, number 2, at <a href="http://firstmonday.org/article/view/2378/2089">http://firstmonday.org/article/view/2378/2089</a>, accessed 28 June 2013.</p>
+
+<p>Microsoft Corporation, 2012. “Form 10–K: Annual Report for the Fiscal Year Ended June 30, 2012,” Washington, D.C.: U.S. Securities and Exchange Commission, at <a href="http://www.sec.gov/Archives/edgar/data/789019/000119312512316848/d347676d10k.htm">http://www.sec.gov/Archives/edgar/data/789019/000119312512316848/d347676d10k.htm</a>, accessed 28 June 2013.</p>
+
+<p>National People’s Congress Standing Committee, 2012. “National People’s Congress Standing Committee decision concerning strengthening network information protection” (28 December), at <a href="http://chinacopyrightandmedia.wordpress.com/2012/12/28/national-peoples-congress-standing-committee-decision-concerning-strengthening-network-information-protection/">http://chinacopyrightandmedia.wordpress.com/2012/12/28/national-peoples-congress-standing-committee-decision-concerning-strengthening-network-information-protection/</a>, accessed 28 June 2013.</p>
+
+<p>Jason Q. Ng, 2012. “Blocked on Weibo — Search result logs and full list of banned words,” at <a href="http://blockedonweibo.tumblr.com/post/12729333782/search-result-logs-and-full-list-of-banned-words">http://blockedonweibo.tumblr.com/post/12729333782/search-result-logs-and-full-list-of-banned-words</a>, accessed 28 June 2013.</p>
+
+<p>Jason Q. Ng and Pierre F. Landry, 2013. “The political hierarchy of censorship: An analysis of keyword blocking of CCP officials’ names on Sina Weibo before and after the 2012 National Congress (S)election, ” (15 June) <em>Eleventh Chinese Internet Research Conference</em> (15 June), at <a href="http://ssrn.com/abstract=2267367">http://ssrn.com/abstract=2267367</a>, accessed 28 June 2013.</p>
+
+<p>OpenNet Initiative, 2012. “China” (9 August), at <a href="http://opennet.net/research/profiles/china-including-hong-kong">http://opennet.net/research/profiles/china-including-hong-kong</a>, accessed 28 June 2013.</p>
+
+<p>Evan Osnos, 2012. “How a high–speed rail disaster exposed China’s corruption,” <em>New Yorker</em> (22 October), at <a href="http://www.newyorker.com/reporting/2012/10/22/121022fa_fact_osnos">http://www.newyorker.com/reporting/2012/10/22/121022fa_fact_osnos</a>, accessed 28 June 2013.</p>
+
+<p>Jong Chun Park and Jedidiah R. Crandall, 2010. “Empirical study of a national–scale distributed intrusion detection system: Backbone–level filtering of HTML responses in China,” <em>2010 IEEE 30th International Conference on Distributed Computing Systems (ICDCS)</em>, pp. 315–326.</p>
+
+<p>Xiao Qiang, 2012. “The Grass–Mud Horse lexicon,” <em>China Digital Times</em>, at <a href="http://chinadigitaltimes.net/space/The_Grass-Mud_Horse_Lexicon">http://chinadigitaltimes.net/space/The_Grass-Mud_Horse_Lexicon</a>, accessed 28 June 2013.</p>
+
+<p>Xiao Qiang, 2004. “A list of censored words in Chinese cyberspace,” <em>China Digital Times</em> (30 August), at <a href="http://chinadigitaltimes.net/2004/08/the-words-you-never-see-in-chinese-cyberspace/">http://chinadigitaltimes.net/2004/08/the-words-you-never-see-in-chinese-cyberspace/</a>, accessed 28 June 2013.</p>
+
+<p>Radio Free Asia, 2012a. “Language policy comes under scrutiny” (14 March), at <a href="http://www.rfa.org/english/news/tibet/students-03142012213524.html?searchterm=zeku">http://www.rfa.org/english/news/tibet/students-03142012213524.html?searchterm=zeku</a>, accessed 28 June 2013.</p>
+
+<p>Radio Free Asia, 2012b. “Monk burns himself amid mass protests” (16 March), at <a href="http://www.rfa.org/english/news/tibet/burn-03162012143125.html">http://www.rfa.org/english/news/tibet/burn-03162012143125.html</a>, accessed 28 June 2013.</p>
+
+<p>Reporters Without Borders, 2013. “Letter to Skype about confidentiality concerns” (24 January), at <a href="http://en.rsf.org/spip.php?page=article&id_article=43949">http://en.rsf.org/spip.php?page=article&amp;id_article=43949</a>, accessed 28 June 2013.</p>
+
+<p>Reporters Without Borders, 2007. “China: Journey to the heart of Internet censorship,” at <a href="http://www.rsf.org/IMG/pdf/Voyage_au_coeur_de_la_censure_GB.pdf">http://www.rsf.org/IMG/pdf/Voyage_au_coeur_de_la_censure_GB.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Keith B. Richburg, 2011. “Chinese artist Ai Weiwei arrested in latest government crackdown,” <em>Washington Post</em> (3 April), at <a href="http://articles.washingtonpost.com/2011-04-03/world/35229738_1_chinese-artist-china-researcher-chinese-human-rights-defenders">http://articles.washingtonpost.com/2011-04-03/world/35229738_1_chinese-artist-china-researcher-chinese-human-rights-defenders</a>, accessed 28 June 2013.</p>
+
+<p>Save Tibet, 2012. “Tensions escalate in Qinghai: Rebkong self–immolation,
+student protest, monks commemorate March 10,” at <a href="http://www.savetibet.org/tensions-escalate-in-qinghai-rebkong-self-immolation-student-protest-monks-commemorate-march-10/">http://www.savetibet.org/tensions-escalate-in-qinghai-rebkong-self-immolation-student-protest-monks-commemorate-march-10/</a>, accessed 28 June 2013.</p>
+
+<p>SINA Corporation, 2011. “Form 20–F: Annual Report for the Fiscal Year ended December 31, 2011,” Washington, D.C.: U.S. Securities and Exchange Commission, at <a href="https://www.sec.gov/Archives/edgar/data/1094005/000110465912030028/a12-7070_120f.htm#Item16b_CodeOfEthics_095613">https://www.sec.gov/Archives/edgar/data/1094005/000110465912030028/a12-7070_120f.htm#Item16b_CodeOfEthics_095613</a>, accessed 28 June 2013.</p>
+
+<p>Skype, 2013. “What is TOM Online?” at <a href="https://support.skype.com/en/faq/FA10910/what-is-tom-online">https://support.skype.com/en/faq/FA10910/what-is-tom-online</a>, accessed 28 June 2013.</p>
+
+<p>Skype, 2011. “Skype S.à.r.l. Amendment No. 3 to Form S–1 Registration Statement under the Securities Act of 1933,” Washington, D.C.:U.S. Securities and Exchange Commission, at <a href="http://www.sec.gov/Archives/edgar/data/1498209/000119312511096544/ds1a.htm">http://www.sec.gov/Archives/edgar/data/1498209/000119312511096544/ds1a.htm</a>, accessed 28 June 2013.</p>
+
+<p>Standing Committee of the 11th National People’s Congress, 2010. “Law of the People’s Republic of China on guarding state secrets,” at <a href="http://www.lawinfochina.com/display.aspx?lib=law&id=1191&CGid=">http://www.lawinfochina.com/display.aspx?lib=law&amp;id=1191&amp;CGid=</a>, accessed 28 June 2013.</p>
+
+<p>State Council of the People’s Republic of China, 2000. “Measures for managing Internet information services,” at <a href="http://newmedia.cityu.edu.hk/cyberlaw/gp9/pdf/lr01.pdf">http://newmedia.cityu.edu.hk/cyberlaw/gp9/pdf/lr01.pdf</a>, accessed 28 June 2013.</p>
+
+<p>Nart Villeneuve, 2008a. “Breaching trust: An analysis of surveillance and an analysis of surveillance and security practices on China’s TOM–Skype platform” (1 October), at <a href="http://www.nartv.org/2008/10/01/breaching-trust-tom-skype/">http://www.nartv.org/2008/10/01/breaching-trust-tom-skype/</a>, accessed 28 June 2013.</p>
+
+<p>Nart Villeneuve, 2008b. “Search monitor project: Toward a measure of transparency” (18 June), at <a href="http://www.nartv.org/2008/06/18/search-monitor-toward-a-measure-of-transparency/">http://www.nartv.org/2008/06/18/search-monitor-toward-a-measure-of-transparency/</a>, accessed 28 June 2013.</p>
+
+<p>Wikipedia, 2013. “Carrefour: Boycott of supplies in China,” at <a href="http://en.wikipedia.org/wiki/Carrefour#Boycott_of_supplies_in_China">http://en.wikipedia.org/wiki/Carrefour#Boycott_of_supplies_in_China</a>, accessed 28 June 2013.</p>
+
+<p>Philipp Winter and Stefan Lindskog, 2012. “How China is blocking Tor,” at <a href="http://arxiv.org/abs/1204.0447">http://arxiv.org/abs/1204.0447</a>, accessed 28 June 2013.</p>
+
+<p>Wang Xing, 2010. “MSN China, Sina link up,” <em>China Daily</em> (11 December), at <a href="http://www.chinadaily.com.cn/bizchina/2010-11/12/content_11539903.htm">http://www.chinadaily.com.cn/bizchina/2010-11/12/content_11539903.htm</a>, accessed 28 June 2013.</p>
+
+<p>Xinhua, 2012a. “Statement of the Ministry of Foreign Affairs of the People’s Republic of China” (10 September), at <a href="http://news.xinhuanet.com/english/china/2012-09/10/c_123697340.htm">http://news.xinhuanet.com/english/china/2012-09/10/c_123697340.htm</a>, accessed 28 June 2013.</p>
+
+<p>Xinhua, 2012b. “中共首都互联网协会委员会成立_对话首都_懈华网 (Communist Party of China establishes the Capital Internet Society Committee),” at <a href="http://news.xinhuanet.com/2012-11/06/c_113615083.htm">http://news.xinhuanet.com/2012-11/06/c_113615083.htm</a>, accessed 28 June 2013.</p>
+
+<p>Xueyang Xu, Z. Morley Mao, and J. Alex Halderman, 2011. “Internet censorship in China: Where does the filtering occur?” <em>PAM ’11: Proceedings of the 12th International Conference on Passive and Active Measurement</em>, pp. 133–142.</p>
+
+<p>Tao Zhu, David Phipps, Adam Pridgen, Jedidiah R. Crandall, and Dan S. Wallach, 2013. “The velocity of censorship: High–fidelity detection of microblog post deletions,” <em>22nd USENIX Security Symposium</em>, at <a href="https://www.usenix.org/conference/usenixsecurity13/velocity-censorship-high-fidelity-detection-microblog-post-deletions">https://www.usenix.org/conference/usenixsecurity13/velocity-censorship-high-fidelity-detection-microblog-post-deletions</a>, accessed 28 June 2013.</p>
+
+<p>Jonathan Zittrain and Benjamin Edelman, 2003. Internet filtering in China. <em>IEEE Internet Computing</em>, volume 7, number 2, pp. 70–77.</p>
+
+<p>&nbsp;</p>
+<a name="appa"></a>
+<p><strong>Appendix</strong></p>
+
+<p>See Figure 15.</p>
+
+<p>&nbsp;</p>
+<a name="fig15"></a>
+<table align="center" width="50%" cellpadding="4">
+<tbody><tr align="center"><td><img src="./Chat program censorship and surveillance in China_files/36563" alt="Bo Xilai timeline"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr align="center"><td><strong>Figure 15:</strong> Bo Xilai timeline. A higher resolution version of this figure is available at <a href="https://china-chats.net/categories/2#timeline">https://china-chats.net/categories/2#timeline</a>.</td></tr></tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table align="center" width="60%" border="1" cellpadding="2" cellspacing="2">
+<tbody><tr align="center"><td>a</td><td align="center">2011–11–14</td><td>Neil Heywood dies</td></tr>
+<tr align="center"><td>b</td><td align="center">2012–01–28</td><td>Wang Lijun (王立军), chief of Chongqing’s Public Security Bureau, reports to Bo that Gu is a suspect in the murder of Heywood</td></tr>
+<tr align="center"><td>c</td><td align="center">2012–02–02</td><td>Wang Lijun (王立军) is removed from his position</td></tr>
+<tr align="center"><td>d</td><td align="center">2012–02–06</td><td>Wang Lijun flees to U.S. consulate</td></tr>
+<tr align="center"><td>e</td><td align="center">2012–03–16</td><td>Bo Xilai dismissed as Chongqing party chief</td></tr>
+<tr align="center"><td>f</td><td align="center">2012–03–19</td><td>Document entitled “Report on the Investigation and Assessment of Wang Lijun’s Personal
+Visit to the American Consulate in Chengdu” begins to circulate on the Internet</td></tr>
+<tr align="center"><td>g</td><td align="center">2012–03–21</td><td>Keywords added</td></tr>
+<tr align="center"><td>h</td><td align="center">2012–03–29</td><td>Keyword added/removed</td></tr>
+<tr align="center"><td>i</td><td align="center">2012–04–20</td><td>Gu Kailai detained by authorities</td></tr>
+<tr align="center"><td>j</td><td align="center">2012–07–26</td><td>Gui Kalai charged with Heywood’s murder</td></tr>
+<tr align="center"><td>k</td><td align="center">2012–08–20</td><td>Gu Kailai convicted and sentenced for murder of Heywood</td></tr>
+<tr align="center"><td>l</td><td align="center">2012–09–28</td><td>Announcement that Bo Xilai is expelled from CPC</td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<hr width="300">
+
+<p><strong>Editorial history</strong></p>
+<p>Received 19 March 2013; accepted 24 June 2013.</p>
+<hr>
+
+<p>Copyright © 2013, <em>First Monday</em>.<br>
+Copyright © 2013, Jedidiah R. Crandall, Masashi Crete–Nishihata, Jeffrey Knockel, Sarah McKune, Adam Senft, Diana Tseng, and Greg Wiseman.</p>
+
+<p>Chat program censorship and surveillance in China: Tracking TOM–Skype and Sina UC<br>by Jedidiah R. Crandall, Masashi Crete–Nishihata, Jeffrey Knockel, Sarah McKune, Adam Senft, Diana Tseng, and Greg Wiseman.<br><em>First Monday</em>, Volume 18, Number 7 - 1 July 2013<br>http://firstmonday.org/ojs/index.php/fm/article/view/4628/3727<br>doi:10.5210/fm.v18i7.4628</p>
+</blockquote>
+
+
+	
+					
+
+
+<!-- start AddThis -->
+						<script type="text/javascript">
+				var addthis_pub = 'sgroote@uic.edu';
+			</script>
+				<br>
+		<br>
+		<div class="addthis_container">
+			<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, &#39;&#39;, &#39;&#39;, &#39;Chat program censorship and surveillance in China: Tracking TOM-Skype and Sina UC&#39;)" onmouseout="addthis_close()" onclick="return addthis_sendto()">
+					
+			</a>
+			<script type="text/javascript" src="./Chat program censorship and surveillance in China_files/addthis_widget.js"></script>
+		</div>
+	<!-- end AddThis -->
+
+
+<!-- Google Analytics -->
+<script src="./Chat program censorship and surveillance in China_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-41314203-1";
+urchinTracker();
+</script>
+<!-- /Google Analytics -->
+
+<br><br>
+A Great Cities Initiative of the University of Illinois at Chicago <a href="http://library.uic.edu/">University Library</a>.<p>© <em>First Monday</em>, 1995-2013.</p>
+</div><!-- content -->
+</div><!-- main -->
+</div><!-- body -->
+
+
+
+</div> <!-- container -->
+
+
+</body></html>
