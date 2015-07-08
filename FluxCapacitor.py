@@ -36,7 +36,13 @@ from ctypes   import CDLL, c_uint8, c_uint32, c_char_p, c_void_p, c_char
 from ctypes   import POINTER, pointer, Structure
 
 # Set LD_LIBRARY_PATH appropriately if this fails for you:
-dll = CDLL ("./skype_rc4.so")
+try:
+    dll = CDLL ("./skype_rc4.so")
+except:
+    print "Error: Problem importing skype_rc4.so"
+    print "Did you run make?"
+    from sys import exit
+    exit() 
 
 class RC4_Context (Structure) :
     """ RC4_Context used internally by the Skype_RC4_Expand_IV (which

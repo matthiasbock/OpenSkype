@@ -2,8 +2,10 @@
 
 import sys
 
+# requires python-libpcap
 from pcap import pcapObject
 
+# requires python-dpkt
 from dpkt.ethernet import *
 from dpkt.ip import *
 from dpkt.udp import *

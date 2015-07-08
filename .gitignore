@@ -6,3 +6,8 @@ wireshark
 *.so
 *.pcap
 currentfinalseed
+
+*~
+.*.swp
+.~lock.*
+
