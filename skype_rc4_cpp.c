@@ -87,17 +87,24 @@ static u32 skype_rc4_iv24 (u32 * const key, u32 n);
 
 u32 skype_rc4_iva (u32 * const key, u32 iv)
 {
- u32 k = iv & 15;
+ u32 k = iv & 15; // 15 = 0x000F = b0000 0000 0000 1111  
 
  if (k == 4)
  {
+  // obfuscation: key[7] = key[13] = iv
   (key[10] ^= key[7] - 0x354C1FF2);
   (key[17] += key[13] - 0x292C1156);
+  // obfuscation: key[2] was not modified up to here, so key[2] = iv
   skype_rc4_iv1 (key, key[2]);
  }
  if (k == 8)
  {
+     // obfuscation: calculation evaluates to constant
+     // obfuscation: if expression with constant operand
+     
   (key[13] |= (u8fcos[(0x767255F0)&0xFF]) ? 0x1510A109 : key[14]);
+  // obfuscation: key[14] not changed up to here, so key[14] = iv
+  // obfuscation: key[2] = iv too => if expression with identical then and else
   (key[15] ^= (key[14] < 0x291B9650) ? key[14] : key[2]);
   skype_rc4_iv2 (key, iv);
  }
@@ -124,6 +131,7 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
  if (k == 0)
  {
   (key[ 5] += key[11] | 0xEA02A83);
+  // obfuscation: superfluous BITWISE AND, u32 always remains unchanged
   (key[ 6] = (((key[6])<<((key[13] - 18)&31))|(((key[6])&0xFFFFFFFF)>>((0-(key[13] - 18))&31))));
   skype_rc4_iv6 (key, key[12]);
  }
@@ -148,6 +156,7 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
  }
  if (k == 3)
  {
+     // obfuscation: superfluous calculation u8fcos... evaluates to constant
   (key[13] |= (u8fcos[(0x5947B4C0)&0xFF]) ? 0x1510A109 : key[14]);
   (key[ 9] = ((((key[9])&0xFFFFFFFF)>>(((u8fcos[(key[9])&0xFF]) ? 20 : key[0])&31))|((key[9])<<((0-((u8fcos[(key[9])&0xFF]) ? 20 : key[0]))&31))));
   skype_rc4_iv10 (key, key[12]);
@@ -155,6 +164,7 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
  key[13] *= (u8sqrt[(iv)&0xFF]);
  if (k == 15)
  {
+     // obfuscation: superfluous calculation, evaluates to constant
   (key[ 5] *= (((0x59BBBCF2)<<((3)&31))|(((0x59BBBCF2)&0xFFFFFFFF)>>((0-(3))&31))));
   (key[16] &= (key[11] < 0x5578A05) ? key[11] : key[16]);
   skype_rc4_iv11 (key, key[8]);
@@ -165,6 +175,8 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
   (key[ 4] ^= 17 * key[0]);
   skype_rc4_iv12 (key, key[3]);
  }
+ 
+ 
  iv &= key[19] ^ 0x22BD05B7;
  if (k == 0)
  {
@@ -242,6 +254,8 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
   (key[ 2] += 0xEA2D3D5D * key[7]);
   skype_rc4_iv12 (key, key[6]);
  }
+ 
+ 
  if (k == 4)
  {
   (key[17] ^= 0xDB079C63);
@@ -261,10 +275,16 @@ u32 skype_rc4_iva (u32 * const key, u32 iv)
   (key[ 7] ^= key[10] - 0x3035E544);
   skype_rc4_iv3 (key, key[17]);
  }
+ 
  key[9] -= (((key[18])<<((15)&31))|(((key[18])&0xFFFFFFFF)>>((0-(15))&31)));
+
  return 0;
 }
 
+/*
+ * reads: key[8], key[12], key[13]
+ * 
+ */
 u32 skype_rc4_iv1 (u32 * const key, u32 iv)
 {
  u32 k = (key[13] ^ key[12] ^ key[8]) % 14;
@@ -348,6 +368,7 @@ u32 skype_rc4_iv1 (u32 * const key, u32 iv)
   (key[14] ^= (u8fcos[(key[9])&0xFF]) ? 0x73CD560C : key[4]);
   skype_rc4_iv24 (key, iv);
  }
+ 
  key[10] = (((key[10])<<((25 * key[16])&31))|(((key[10])&0xFFFFFFFF)>>((0-(25 * key[16]))&31)));
  if (k == 0)
  {
@@ -355,6 +376,7 @@ u32 skype_rc4_iv1 (u32 * const key, u32 iv)
   (key[15] ^= (key[14] < 0x291B9650) ? key[14] : key[2]);
   skype_rc4_iv13 (key, iv);
  }
+ 
  key[15] += 0xC7308059 - key[10];
  if (k == 8)
  {
@@ -368,7 +390,9 @@ u32 skype_rc4_iv1 (u32 * const key, u32 iv)
   (key[ 2] &= key[18] - 0x37CF1A3F);
   skype_rc4_iv15 (key, key[12]);
  }
+ 
  key[1] ^= iv & 0xF42F3BCF;
+ 
  return iv;
 }
 
@@ -1043,6 +1067,7 @@ u32 skype_rc4_iv7 (u32 * const key, u32 iv)
   {key[ 3] -= key[17] | 0x2433636; if (key[3] & 1) return 1;};
   skype_rc4_iv24 (key, key[15]);
  }
+ 
  if (k == 0)
  {
   (key[9 ] *= (u8fsin[(0x24FE0880)&0xFF]) ? 0x28D781D2 : key[10]);
@@ -1082,6 +1107,7 @@ u32 skype_rc4_iv7 (u32 * const key, u32 iv)
   {key[ 0] *= 33 * key[0]; if (key[0] & 1) return 1;};
   skype_rc4_iv6 (key, key[9]);
  }
+ 
  iv ^= key[0] + 0xEC0FD36;
  if (k == 1)
  {
@@ -1121,6 +1147,7 @@ u32 skype_rc4_iv7 (u32 * const key, u32 iv)
   (key[10] ^= key[7] - 0x354C1FF2);
   skype_rc4_iv24 (key, key[18]);
  }
+ 
  if (k == 3)
  {
   (key[ 9] -= ((((key[16])&0xFFFFFFFF)>>((25)&31))|((key[16])<<((0-(25))&31))));
@@ -2705,6 +2732,7 @@ u32 skype_rc4_iv24 (u32 * const key, u32 iv)
  key[3] = ((((key[3])&0xFFFFFFFF)>>((iv * 0xA588A375)&31))|((key[3])<<((0-(iv * 0xA588A375))&31)));
  return iv;
 }
+
 # 2862 "skype_rc4.c"
 void RC4_crypt (u8 * buffer, u32 bytes, RC4_context * const rc4, const u32 test)
 {
@@ -2728,23 +2756,44 @@ void Skype_RC4_Expand_IV (const u32 iv, const void *iv2, RC4_context * const rc4
 
  if (!flags || (flags & 1))
     skype_rc4_iva (key, iv);
-
-
-
-
-
-
-
+    
+/*
+ only relevant for DH-389
  for (i = 0, j = __min (iv2_bytes,80); i < j; i+=4)
     (*(u32*)(((u8*)(key))+(i))) ^= (*(u32*)(((u8*)(iv2))+(i)));
  for (; i < j; i++)
     (*(u8*)(((u8*)(key))+(i))) ^= (*(u8*)(((u8*)(iv2))+(i)));
+*/
 
-
+ // initialize RC4 substition matrix s of 256 elements with static default values
  for (i = 0, j = 0x03020100; i < 256; i += 4, j += 0x04040404)
-    (*(u32*)(((u8*)(rc4->s))+(i))) = j;
+ {
+     // set 32-bit values for substition matrix
+     // rc4->s is a pointer to an array of u8
+     // +i: walk over all values of the u8 array
+     // four at a time: u32
+     // assign the current value of j to the currently selected u32 
+    (*(u32*) (((u8*)(rc4->s)) + i) ) = j;
+ }
+ 
+ // mix all 256 elements of substitution matrix s using a key of 80 bytes
  for (i = 0, j = 0; i < 256; i++)
-    ((t)=rc4->s[i],(j)=((j)+(t)+((*(u8*)(((u8*)(key))+(i%80)))))&0xFF,rc4->s[i]=rc4->s[j],rc4->s[j]=(u8)(t),rc4->s[(rc4->s[i]+(t))&0xFF]);
+ {
+     // triangular exchange: t -> s[i] -> s[j] -> t
+    t = rc4->s[i];
+
+    // interpret key as pointer to u8
+    // add i modulo 80 to pointer = key[i mod 80]
+    // new index j = j from previous round + value at previous index i + key value
+    // result modulo 256 (BITWISE AND 0xFF)
+    j = (j + t + ((*(u8*)((u8* key)+(i % 80))))) & 0xFF;
+
+    rc4->s[i] = rc4->s[j];
+    rc4->s[j] = t;
+
+    // obfuscation: calculation result not used
+    //rc4->s[(rc4->s[i]+t) & 0xFF];
+ }
 
  rc4->i = 0, rc4->j = 0;
 }
