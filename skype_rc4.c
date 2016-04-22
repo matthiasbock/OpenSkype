@@ -54,6 +54,14 @@
 #define byte(x,n)			(*(u8*)(((u8*)(x))+(n)))
 #define dword(x,n)			(*(u32*)(((u8*)(x))+(n)))
 
+/*
+ * array from 0 to 255
+ *
+ * u8 u8sqrt(x)
+ * {
+ *   return u8(sqrt(x+1))
+ * }
+ */
 static const u8				u8sqrt[256] =
 {
 	 1,  1,  1,  2,  2,  2,  2,  2,  3,  3,  3,  3,  3,  3,  3,  4,
@@ -2841,6 +2849,14 @@ u32 skype_rc4_iv24 (u32 * const key, u32 iv)
 	return iv;
 }
 
+/*
+ * This is where the RC4 cryptography happens
+ *
+ * Obvious question:
+ * What is the RC4_round-stuff about,
+ * why is RC4_crypt more complicated than simple "C=A xor B"s ?
+ */
+
 #define RC4_round(i,j,t,k,RC4) ((t)=RC4[i],(j)=((j)+(t)+(k))&0xFF,RC4[i]=RC4[j],RC4[j]=(u8)(t),RC4[(RC4[i]+(t))&0xFF])
 
 void RC4_crypt (u8 * buffer, u32 bytes, RC4_context * const rc4, const u32 test)
@@ -2852,19 +2868,36 @@ void RC4_crypt (u8 * buffer, u32 bytes, RC4_context * const rc4, const u32 test)
 	if (!test) rc4->i = i, rc4->j = j;
 }
 
+/*
+ * This is where the secret key is expanded
+ */
 void Skype_RC4_Expand_IV (const u32 iv, const void *iv2, RC4_context * const rc4, const u32 flags, const u32 iv2_bytes)
 {
 	u32			i, j, key[20];
 	u8			t;
 	
-	for (i = 0; i < 20; i++) key[i] = iv;
+	for (i = 0; i < 20; i++)
+	   key[i] = iv;
 	
-	if (!flags || (flags & 1)) skype_rc4_iva (key, iv);
+	if (!flags || (flags & 1))
+	   skype_rc4_iva (key, iv);
+
 	// if (flags & 2) skype_rc4_ivb (key, iv);	// not included here as it is not in use
-	for (i = 0, j = __min (iv2_bytes,80); i < j; i+=4) dword(key,i) ^= dword(iv2,i);
-	for (; i < j; i++) byte(key,i) ^= byte(iv2,i);
+	
+	/*
+	 * According to rsc at runtux.com, iv2 is only for the latest DH-384 based protocol.
+	 * Otherwise iv2 is an empty string and iv2_bytes equal to 0.
+	 */
+	for (i = 0, j = __min (iv2_bytes,80); i < j; i+=4)
+	   dword(key,i) ^= dword(iv2,i);
+	for (; i < j; i++)
+	   byte(key,i) ^= byte(iv2,i);
+
 	// now the standard RC4 init
-	for (i = 0, j = 0x03020100; i < 256; i += 4, j += 0x04040404) dword(rc4->s,i) = j;
-	for (i = 0, j = 0; i < 256; i++) RC4_round (i, j, t, byte(key,i%80), rc4->s);
+	for (i = 0, j = 0x03020100; i < 256; i += 4, j += 0x04040404)
+	   dword(rc4->s,i) = j;
+	for (i = 0, j = 0; i < 256; i++)
+	   RC4_round (i, j, t, byte(key,i%80), rc4->s);
+
 	rc4->i = 0, rc4->j = 0;
 }

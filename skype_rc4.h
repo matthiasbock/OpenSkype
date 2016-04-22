@@ -37,7 +37,10 @@ typedef struct _RC4_context
 	u8			i, j, s[256];
 } RC4_context;
 
-void RC4_crypt (u8 * buffer, u32 bytes, RC4_context * const rc4, const u32 test); // RC4 encrypt/decrypt (test=1 leaves rc4 context unaltered)
-void Skype_RC4_Expand_IV (const u32 iv, const void *iv2, RC4_context * const rc4, const u32 flags, const u32 iv2_bytes);	// Main RC4 IV expansion function, matching Skype parameters, with optional IV2 for the latest DH-384 based protocol
+// RC4 encrypt/decrypt (test=1 leaves rc4 context unaltered)
+void RC4_crypt (u8 * buffer, u32 bytes, RC4_context * const rc4, const u32 test);
+
+// Main RC4 IV expansion function, matching Skype parameters, with optional IV2 for the latest DH-384 based protocol
+void Skype_RC4_Expand_IV (const u32 iv, const void *iv2, RC4_context * const rc4, const u32 flags, const u32 iv2_bytes);
 
 #endif
